@@ -1,3 +1,4 @@
+// layout.tsx
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col min-h-screen">
         <header className="fixed top-0 left-0 right-0 z-10 bg-header-green text-white p-4">
           <nav className="flex justify-between items-center container mx-auto">
             <div className="flex items-center">
@@ -46,11 +47,11 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow mt-20">{children}</main>
 
-        <footer className="bg-header-green text-white p-4 text-center">
+        <footer className="bg-header-green text-white p-4 text-center mt-auto">
           <p>
-            &copy; © 2024 SoftCreatix official website. All rights reserved.
+            &copy; 2024 SoftCreatix official website. All rights reserved.
             Developed by SoftCreatix.
           </p>
         </footer>

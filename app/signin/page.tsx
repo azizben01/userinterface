@@ -4,7 +4,7 @@ export default function SignInPage() {
   return (
     <main
       className="flex items-center justify-center min-h-screen bg-custom-gray bg-center"
-      style={{ backgroundImage: "url('/images/auth-bg.jpg')" }}
+      // style={{ backgroundImage: "url('/images/auth-bg.jpg')" }}
     >
       <div className="flex w-1/2 bg-white rounded-lg shadow-lg overflow-hidden">
         <div className=" w-1/2 p-8 bg-custom-gray3">

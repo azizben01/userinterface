@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+// app/page.tsx
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -12,9 +11,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
         {/* Content in front of the background */}
-        <div className="relative z-10 text-center p-8 bg-white/40 rounded-lg shadow-lg animate-fade-in">
-          {/* Logo placeholder */}
-
+        <div className="relative z-10 text-center p-8 bg-white/50 rounded-lg shadow-lg animate-fade-in">
           {/* Slogan with animation */}
           <h1 className="text-5xl font-bold text-gray-1000 mb-4 animate-slide-in">
             Empowering Ideas, Transforming Software
