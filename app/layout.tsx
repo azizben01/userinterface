@@ -32,6 +32,24 @@ export default function RootLayout({
                 Home
               </Link>
               <Link
+                href="/services"
+                className="px-4 py-2 hover:bg-gray-700 rounded"
+              >
+                Services
+              </Link>
+              <Link
+                href="/user"
+                className="px-4 py-2 hover:bg-gray-700 rounded"
+              >
+                User Account
+              </Link>
+              <Link
+                href="/admin"
+                className="px-4 py-2 hover:bg-gray-700 rounded"
+              >
+                Admin
+              </Link>
+              <Link
                 href="/signin"
                 className="px-4 py-2 hover:bg-gray-700 rounded"
               >
@@ -50,10 +68,7 @@ export default function RootLayout({
         <main className="flex-grow mt-20">{children}</main>
 
         <footer className="bg-header-green text-white p-4 text-center mt-auto">
-          <p>
-            &copy; 2024 SoftCreatix official website. All rights reserved.
-            Developed by SoftCreatix.
-          </p>
+          <p>&copy; 2024 SoftCreatix official website. All rights reserved.</p>
         </footer>
       </body>
     </html>

@@ -9,6 +9,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      width: {
+        "custom-width": "800px",
+      },
+      height: {
+        "custom-height": "500px",
+      },
       animation: {
         "fade-in": "fadeIn 1s ease-out",
         "fade-in-delay": "fadeIn 1.5s ease-out",
