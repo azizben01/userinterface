@@ -23,7 +23,7 @@ const services = [
 ];
 
 const ServicesPage = () => {
-  const [selectedService, setSelectedService] = useState("");
+  const [, setSelectedService] = useState("");
   const [requestStatus, setRequestStatus] = useState("");
 
   const handleServiceRequest = (serviceName: string) => {

@@ -9,7 +9,7 @@ interface Message {
 }
 
 const AdminPage = () => {
-  const [messages, setMessages] = useState<Message[]>([
+  const [messages] = useState<Message[]>([
     { id: 1, user: "John Doe", content: "Hello, I need help.", isOnline: true },
     {
       id: 2,
