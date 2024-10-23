@@ -254,16 +254,16 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 bg-white rounded-lg shadow-lg">
             <p className="text-lg font-italic">
-              "SoftCreatix helped us streamline our business processes with a
+              SoftCreatix helped us streamline our business processes with a
               custom solution. The team was incredibly professional, and the
-              results exceeded our expectations."
+              results exceeded our expectations.
             </p>
             <p className="text-md font-bold mt-4">John Doe, CEO of TechBiz</p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-lg">
             <p className="text-lg font-italic">
-              "Their mobile app development service transformed our customer
-              engagement strategy. Highly recommend!"
+              Their mobile app development service transformed our customer
+              engagement strategy. Highly recommend!
             </p>
             <p className="text-md font-bold mt-4">
               Jane Smith, CTO of FinStart
@@ -360,7 +360,7 @@ export default function HomePage() {
           Ready to Start Your Project?
         </h2>
         <p className="text-lg mb-6">
-          Let’s work together to build something amazing.
+          Let work together to build something amazing.
         </p>
         <Link
           href="/contact"
