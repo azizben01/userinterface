@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SignInPage() {
   return (
@@ -7,8 +8,10 @@ export default function SignInPage() {
         {/* Left Panel */}
         <div className="w-1/2 bg-gradient-to-b from-green-500 to-teal-600 flex flex-col items-center justify-center p-8">
           <div className="text-center">
-            <img
-              src="/images/logo3.png" // Replace with your logo
+            <Image
+              src="/images/logo3.png"
+              width={100}
+              height={100}
               alt="softcreatix Logo"
               className="h-16 mb-4 animate-pulse absolute top-20 left-50 "
             />

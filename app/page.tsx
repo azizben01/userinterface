@@ -1,5 +1,6 @@
 // app/page.tsx
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -95,9 +96,11 @@ export default function HomePage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center">
-            <img
+            <Image
               src="/images/background5.jpg"
               alt="Experience"
+              width={100}
+              height={100}
               className="mx-auto h-16 mb-4"
             />
             <h3 className="text-xl font-semibold">Decades of Experience</h3>
@@ -107,9 +110,11 @@ export default function HomePage() {
             </p>
           </div>
           <div className="text-center">
-            <img
+            <Image
               src="/images/background4.png"
               alt="Innovation"
+              width={100}
+              height={100}
               className="mx-auto h-16 mb-4"
             />
             <h3 className="text-xl font-semibold">Cutting-Edge Innovation</h3>
@@ -119,9 +124,11 @@ export default function HomePage() {
             </p>
           </div>
           <div className="text-center">
-            <img
+            <Image
               src="/images/background3.jpg"
               alt="Support"
+              width={100}
+              height={100}
               className="mx-auto h-16 mb-4"
             />
             <h3 className="text-xl font-semibold">24/7 Support</h3>
@@ -159,54 +166,74 @@ export default function HomePage() {
           Technologies We Use
         </h2>
         <div className="flex space-x-6 animate-slide-logo">
-          <img
+          <Image
             src="/images/reactnative.png"
             alt="AWS"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
           />
-          <img
+          <Image
             src="/images/python.jpg"
             alt="Node.js"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out "
           />
-          <img
+          <Image
             src="/images/htmllogo.png"
             alt="AWS"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
           />
-          <img
+          <Image
             src="/images/Golang.png"
             alt="AWS"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
           />
-          <img
+          <Image
             src="/images/nextjs.jpg"
             alt="AWS"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
           />
-          <img
+          <Image
             src="/images/javascript.png"
             alt="React"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
           />
-          <img
+          <Image
             src="/images/csslogo.png"
             alt="AWS"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
           />
-          <img
+          <Image
             src="/images/angular.png"
             alt="AWS"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
           />
-          <img
+          <Image
             src="/images/postgresql.png"
             alt="AWS"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
           />
-          <img
+          <Image
             src="/images/sqlite.png"
             alt="AWS"
+            width={100}
+            height={100}
             className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
           />
         </div>
@@ -303,8 +330,10 @@ export default function HomePage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="text-center">
-            <img
+            <Image
               src="/images/ceopicture.jpg"
+              width={100}
+              height={100}
               alt="Ben Aziz"
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
@@ -312,8 +341,10 @@ export default function HomePage() {
             <p>Founder & CEO</p>
           </div>
           <div className="text-center">
-            <img
+            <Image
               src="/images/backenddevelopper.jpeg"
+              width={100}
+              height={100}
               alt="Jane Smith"
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
