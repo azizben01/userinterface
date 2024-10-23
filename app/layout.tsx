@@ -1,4 +1,3 @@
-// layout.tsx
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -16,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen">
-        <header className="fixed top-0 left-0 right-0 z-10 bg-header-green text-white p-4">
+        <header className="fixed top-0 left-0 right-0 z-20 bg-header-green text-white p-4 h-16">
           <nav className="flex justify-between items-center container mx-auto">
             <div className="flex items-center">
               <Image
@@ -28,36 +27,39 @@ export default function RootLayout({
               <span className="ml-2 text-2xl font-bold">SoftCreatix</span>
             </div>
             <div>
-              <Link href="/" className="px-4 py-2 hover:bg-gray-700 rounded">
+              <Link
+                href="/"
+                className="px-4 py-2 hover:bg-gray-700 rounded-2xl"
+              >
                 Home
               </Link>
               <Link
                 href="/services"
-                className="px-4 py-2 hover:bg-gray-700 rounded"
+                className="px-4 py-2 hover:bg-gray-700 rounded-2xl"
               >
                 Services
               </Link>
               <Link
                 href="/user"
-                className="px-4 py-2 hover:bg-gray-700 rounded"
+                className="px-4 py-2 hover:bg-gray-700 rounded-2xl"
               >
                 User Account
               </Link>
               <Link
                 href="/admin"
-                className="px-4 py-2 hover:bg-gray-700 rounded"
+                className="px-4 py-2 hover:bg-gray-700 rounded-2xl"
               >
                 Admin
               </Link>
               <Link
                 href="/signin"
-                className="px-4 py-2 hover:bg-gray-700 rounded"
+                className="px-4 py-2 hover:bg-gray-700 rounded-2xl"
               >
                 Sign In
               </Link>
               <Link
                 href="/signup"
-                className="px-4 py-2 hover:bg-gray-700 rounded"
+                className="px-4 py-2 hover:bg-gray-700 rounded-2xl"
               >
                 Sign Up
               </Link>
@@ -65,11 +67,15 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main className="flex-grow mt-20">{children}</main>
+        {/* Ensure that the main section fills the available space */}
+        <main className="flex-grow ">{children}</main>
 
-        <footer className="bg-header-green text-white p-4 text-center mt-auto">
-          <p>&copy; 2024 SoftCreatix official website. All rights reserved.</p>
-        </footer>
+        {/* Footer should always be visible */}
+        {/* <footer className="bg-header-green text-white p-4 text-center">
+          <p>&copy; 2024 SoftCreatix. All rights reserved.</p>
+          <p>email: info@softcreatix.com</p>
+          <p>tel: +250 782354872</p>
+        </footer> */}
       </body>
     </html>
   );
