@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function SignUpPage() {
   return (
-    <main className="flex items-center justify-center min-h-screen bg-gradient-to-r from-green-200 ">
-      <div className="flex w-3/4 max-w-4xl bg-white rounded-lg shadow-2xl overflow-hidden transform transition-all h-custom-height ">
+    <main className="flex items-center justify-center min-h-screen bg-gray-400 ">
+      <div className="flex w-3/4 max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden transform transition-all h-custom-height ">
         {/* Left Panel */}
-        <div className="w-1/2 bg-gradient-to-b from-green-500 to-teal-600 flex flex-col items-center justify-center p-8">
+        <div className="w-1/2 bg-gray-900 to-teal-600 flex flex-col items-center justify-center p-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-white mb-2 animate-slide-in">
               Welcome Back!
@@ -38,19 +38,19 @@ export default function SignUpPage() {
             <input
               type="username"
               placeholder="user name"
-              className="border border-gray-300 px-4 py-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+              className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
             />
             <input
               type="email"
               placeholder="Email"
-              className="border border-gray-300 px-4 py-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+              className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
             />
             <input
               type="password"
               placeholder="Password"
-              className="border border-gray-300 px-4 py-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+              className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
             />
-            <button className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-md hover:from-green-600 hover:to-teal-600 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full">
+            <button className="bg-gradient-to-b from-gray-700 to-gray-500 text-white px-4 py-2 rounded-3xl hover:gray-900 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full">
               Sign up
             </button>
           </form>

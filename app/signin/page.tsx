@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function SignInPage() {
   return (
-    <main className="flex items-center justify-center min-h-screen bg-gradient-to-r from-green-200 ">
+    <main className="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-700 ">
       <div className="flex w-3/4 max-w-4xl bg-white rounded-lg shadow-2xl overflow-hidden transform transition-all h-custom-height ">
         {/* Left Panel */}
-        <div className="w-1/2 bg-gradient-to-b from-green-500 to-teal-600 flex flex-col items-center justify-center p-8">
+        <div className="w-1/2 bg-gray-900 to-teal-600 flex flex-col items-center justify-center p-8">
           <div className="text-center">
             <Image
               src="/images/logo3.png"
@@ -19,7 +19,7 @@ export default function SignInPage() {
               SoftCreatix
             </h1>
             <p className="text-white text-lg">
-              Empowering Ideas, Transforming Software
+              Creating Tomorrow’s Solutions, Today.{" "}
             </p>
           </div>
         </div>
@@ -38,14 +38,14 @@ export default function SignInPage() {
             <input
               type="email"
               placeholder="Email"
-              className="border border-gray-300 px-4 py-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+              className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
             />
             <input
               type="password"
               placeholder="Password"
-              className="border border-gray-300 px-4 py-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+              className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
             />
-            <button className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-md hover:from-green-600 hover:to-teal-600 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full">
+            <button className="bg-gradient-to-b from-gray-700 to-gray-500 text-white px-4 py-2 rounded-3xl hover:gray-900 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full">
               Login
             </button>
           </form>
@@ -53,7 +53,7 @@ export default function SignInPage() {
           <div className="mt-4 text-center">
             <Link
               href="/resetpassword"
-              className="text-gray-500 hover:text-teal-600 transition-all duration-300"
+              className="text-gray-900 hover:text-teal-600 transition-all duration-300"
             >
               Forgot Password?
             </Link>
@@ -62,7 +62,7 @@ export default function SignInPage() {
           <div className="mt-4 text-center">
             <Link
               href="/signup"
-              className="text-teal-600 hover:text-teal-800 hover:underline transition-all duration-300"
+              className="text-gray-900 hover:text-teal-800 hover:underline transition-all duration-300"
             >
               Create an Account
             </Link>

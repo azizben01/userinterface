@@ -9,31 +9,41 @@ export default function HomePage() {
       <main className="flex-1 flex flex-col items-center justify-center text-center relative pt-20 min-h-screen">
         <div
           className="absolute inset-0 bg-cover bg-center filter blur-sm"
-          style={{ backgroundImage: "url('/images/background5.jpg')" }}
+          style={{ backgroundImage: "url('/images/backgroundimage4.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
         <div className="relative z-10 p-8 animate-fade-in">
           <h1 className="text-4xl font-bold text-white mb-4">
             Welcome to SoftCreatix
           </h1>
-          <p className="text-lg text-white mb-6">
-            We build innovative software solutions to drive your business
-            forward. SoftCreatix is a leading software development company in
-            Rwanda, specializing in creating innovative software applications.
-            We are dedicated to delivering exceptional solutions that drive
-            business growth and empower our clients to achieve their goals. With
-            a focus on local insights and global expertise.
+          <p className=" text-white mb-6">
+            At SoftCreatix, we are thrilled to have you on board! Whether you're
+            here to explore innovative solutions or looking to collaborate with
+            a team of experts in software development, web design, and digital
+            transformation, you’ve come to the right place. We are passionate
+            about crafting custom-made solutions tailored to your specific
+            needs, from seamless mobile applications to advanced business
+            platforms that drive growth and efficiency. Our mission is to
+            deliver exceptional quality, foster innovation, and create digital
+            experiences that leave a lasting impact.
           </p>
+          <p className="text-white text-lg font-bold">
+            Let’s work together to transform your ideas into reality!{" "}
+          </p>
+          <p className="text-white text-lg font-bold mb-10">
+            SoftCreatix - Creating Tomorrow's Solutions, Today.
+          </p>
+
           <div className="space-x-4 ">
             <Link
               href="/signup"
-              className="px-6 py-3 bg-get-started text-white rounded-xl hover:bg-get-started-hover transition-transform duration-300 transform hover:scale-105"
+              className="slide-up px-6 py-3 bg-custom-gray1 text-white rounded-3xl hover:bg-custom-gray2 transition-transform duration-300 transform hover:scale-105"
             >
               Get Started
             </Link>
             <Link
               href="/signin"
-              className="px-6 py-3 bg-gray-600 text-white rounded-xl hover:bg-gray-800"
+              className="px-6 py-3 bg-gray-600 text-white rounded-3xl hover:bg-gray-800"
             >
               Login
             </Link>
@@ -46,47 +56,88 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold text-center text-gray-500 mb-6">
           Our Services
         </h2>
+        <h6 className="text-lg font-bold text-center text-gray-500 mb-6">
+          Softcreatix, a specialized web development company, offers a
+          comprehensive range of services to meet the needs of its clients.
+          Here's a list of the main services provided:
+        </h6>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 bg-gray-50 rounded-xl shadow-md transform transiton-transform duration-300 hover:scale-90 hover:shadow-xl hover:bg-get-started hover:text-white">
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-90 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-xl font-semibold">
-              Custom Software Development
+              Website Design and Development
             </h3>
-            <p>Tailored solutions to meet your specific business needs.</p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-xl shadow-lg transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
-            <h3 className="text-xl font-semibold">Mobile App Development</h3>
             <p>
-              Engaging mobile applications for both iOS and Android platforms.
+              Creation of custom websites optimized for an exceptional user
+              experience.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
-            <h3 className="text-xl font-semibold">Web Development</h3>
-            <p>Modern, responsive websites that enhance user experience.</p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
-            <h3 className="text-xl font-semibold">Maintenance</h3>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-lg transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">UX/UI Design</h3>
             <p>
-              Our team ensures the smooth and uninterrupted operation of your IT
-              systems through regular maintenance, updates, and troubleshooting,
-              minimizing downtime and maximizing efficiency.
+              Design of intuitive and aesthetically pleasing user interfaces to
+              enhance visitor engagement.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
-            <h3 className="text-xl font-semibold">Cloud Consulting</h3>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">E-commerce Development</h3>
+            <p>Robust and secure online commerce solutions to boost sales.</p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">
+              Search Engine Optimization (SEO)
+            </h3>
             <p>
-              We provide expert guidance and solutions for businesses to
-              leverage cloud technology effectively, optimizing costs,
-              scalability, and security.
+              SEO strategies to improve website visibility and ranking on search
+              engines.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
-            <h3 className="text-xl font-semibold">Software Prototyping</h3>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">Maintenance and Support</h3>
             <p>
-              We rapidly develop functional prototypes of your software
-              concepts, allowing you to visualize and validate ideas before
-              investing in full-scale development.
+              Ongoing maintenance services to ensure website functionality and
+              security..
             </p>
           </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">Web Hosting</h3>
+            <p>
+              Reliable and high-performance hosting solutions to guarantee
+              maximum website uptime.
+            </p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">
+              Web Application Development
+            </h3>
+            <p>
+              Creation of custom web applications to meet specific business
+              needs.{" "}
+            </p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">System Integration</h3>
+            <p>
+              Integration of various systems and tools for efficient online
+              operations management.
+            </p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">
+              Digital Consulting and Strategy
+            </h3>
+            <p>
+              Advice and strategies to maximize online impact and achieve
+              business objectives.{" "}
+            </p>
+          </div>
+        </div>
+        <div className="text-center items-center mt-10">
+          <Link
+            href="/services"
+            className="px-6 py-3 bg-gray-600 text-white rounded-2xl hover:bg-gray-800"
+          >
+            Request a service
+          </Link>
         </div>
       </section>
       {/* Why choose us */}
@@ -140,112 +191,167 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About us section */}
-      <section className="p-8 bg-gray-50 mt-8">
-        <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
-          About SoftCreatix
-        </h2>
-        <p className="text-lg text-center mb-6">
-          SoftCreatix is a leading software development company committed to
-          creating innovative digital solutions for businesses worldwide. Our
-          passion for technology and dedication to customer satisfaction drives
-          us to deliver cutting-edge software tailored to your needs.
-        </p>
-        <div className="text-center">
-          <Link
-            href="/about"
-            className="px-6 py-3 bg-get-started text-white rounded-md hover:bg-gray-800"
-          >
-            Learn More
-          </Link>
-        </div>
-      </section>
       {/* Technology and tools */}
-      <section className="p-8 bg-white mt-8">
+      <section className="p-8 bg-white mt-8 mb-4">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
           Technologies We Use
         </h2>
-        <div className="flex space-x-6 animate-slide-logo">
-          <Image
-            src="/images/reactnative.png"
-            alt="AWS"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
-          />
-          <Image
-            src="/images/python.jpg"
-            alt="Node.js"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out "
-          />
-          <Image
-            src="/images/htmllogo.png"
-            alt="AWS"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
-          />
-          <Image
-            src="/images/Golang.png"
-            alt="AWS"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
-          />
-          <Image
-            src="/images/nextjs.jpg"
-            alt="AWS"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
-          />
-          <Image
-            src="/images/javascript.png"
-            alt="React"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
-          />
-          <Image
-            src="/images/csslogo.png"
-            alt="AWS"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
-          />
-          <Image
-            src="/images/angular.png"
-            alt="AWS"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
-          />
-          <Image
-            src="/images/postgresql.png"
-            alt="AWS"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
-          />
-          <Image
-            src="/images/sqlite.png"
-            alt="AWS"
-            width={100}
-            height={100}
-            className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
-          />
-        </div>
-        <div className="text-center mt-20">
+        <div className="overflow-hidden">
+          <div className="flex space-x-6 animate-slide-logo">
+            <Image
+              src="/images/reactnative.png"
+              alt="React Native"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/python.jpg"
+              alt="Python"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/htmllogo.png"
+              alt="HTML"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/Golang.png"
+              alt="Go"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/nextjs.jpg"
+              alt="Next.js"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/javascript.png"
+              alt="JavaScript"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/csslogo.png"
+              alt="CSS"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/angular.png"
+              alt="Angular"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/postgresql.png"
+              alt="PostgreSQL"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/sqlite.png"
+              alt="SQLite"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+          </div>
+          <div className="flex space-x-6 animate-slide-logo-back">
+            <Image
+              src="/images/reactnative.png"
+              alt="React Native"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/python.jpg"
+              alt="Python"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/htmllogo.png"
+              alt="HTML"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/Golang.png"
+              alt="Go"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/nextjs.jpg"
+              alt="Next.js"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/javascript.png"
+              alt="JavaScript"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/csslogo.png"
+              alt="CSS"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/angular.png"
+              alt="Angular"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/postgresql.png"
+              alt="PostgreSQL"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/sqlite.png"
+              alt="SQLite"
+              width={70}
+              height={50}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+          </div>
+          {/* <div className="text-center mt-20">
           <Link
             href="/about"
-            className="px-6 py-3 bg-get-started text-white rounded-md hover:bg-gray-800"
+            className="px-6 py-3 bg-gray-600 text-white rounded-md hover:bg-gray-800"
           >
             View entire tools
           </Link>
+        </div> */}
         </div>
       </section>
+
       {/* Testimonials  */}
       <section className="p-8 bg-gray-50 mt-8">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
@@ -277,37 +383,36 @@ export default function HomePage() {
           Our Portfolio
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">Holy Spirit Academia</h3>
+            <p>The Custome website for the church Holy Spirit Academia.</p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">The SoftCreatix Website</h3>
+            <p>
+              We, SOftCreatix created our own modern website where you can view
+              and request our services.{" "}
+            </p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-xl font-semibold">Project Name</h3>
             <p>
               A brief description of the project and the technology stack used.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-xl font-semibold">Project Name</h3>
             <p>
               A brief description of the project and the technology stack used.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-xl font-semibold">Project Name</h3>
             <p>
               A brief description of the project and the technology stack used.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
-            <h3 className="text-xl font-semibold">Project Name</h3>
-            <p>
-              A brief description of the project and the technology stack used.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
-            <h3 className="text-xl font-semibold">Project Name</h3>
-            <p>
-              A brief description of the project and the technology stack used.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-get-started hover:text-white">
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-xl font-semibold">Project Name</h3>
             <p>
               A brief description of the project and the technology stack used.
@@ -317,7 +422,7 @@ export default function HomePage() {
         <div className="text-center mt-6">
           <Link
             href="/portfolio"
-            className="px-6 py-3 bg-get-started text-white rounded-md hover:bg-gray-800"
+            className="px-6 py-3 bg-gray-600 text-white rounded-2xl hover:bg-gray-800"
           >
             View Full Portfolio
           </Link>
@@ -354,8 +459,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* About us section */}
+      <section className="p-8 bg-gray-50 mt-8">
+        <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
+          About SoftCreatix
+        </h2>
+        <p className="text-lg text-center mb-6">
+          SoftCreatix is a leading software development company committed to
+          creating innovative digital solutions for businesses worldwide. Our
+          passion for technology and dedication to customer satisfaction drives
+          us to deliver cutting-edge software tailored to your needs.
+        </p>
+        <div className="text-center">
+          <Link
+            href="/about"
+            className="px-6 py-3 bg-gray-600 text-white rounded-2xl hover:bg-gray-800"
+          >
+            Learn More
+          </Link>
+        </div>
+      </section>
+
       {/* Call to action */}
-      <section className="p-8 bg-get-started mt-8 text-white text-center">
+      <section className="p-8 bg-gray-900 mt-8 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">
           Ready to Start Your Project?
         </h2>
@@ -364,10 +490,12 @@ export default function HomePage() {
         </p>
         <Link
           href="/contact"
-          className="px-6 py-3 bg-white text-get-started rounded-md hover:bg-gray-100"
+          className="px-6 py-3 bg-white text-get-started rounded-2xl hover:bg-gray-100"
         >
           Contact Us
         </Link>
+        <p className="mt-8">&copy; 2024 SoftCreatix. All rights reserved.</p>
+        <p>Developped by SoftCreatix.</p>
       </section>
     </div>
   );

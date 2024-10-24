@@ -15,11 +15,15 @@ const config: Config = {
       height: {
         "custom-height": "450px",
       },
+      margin: {
+        "custom-margin": "-300px",
+      },
       animation: {
         "fade-in": "fadeIn 1s ease-out",
         "fade-in-delay": "fadeIn 2s ease-out",
         "slide-in": "slideIn 1s ease-out",
-        "slide-logo": "slide 20s linear infinite",
+        "slide-logo": "slide 30s linear infinite",
+        "slide-logo-back": "slideback 30s linear infinite",
         "zoom-in": "zoom-in 0.5s ease forwards",
         "slide-up": "slide-up 0.5s ease forwards",
       },
@@ -37,8 +41,12 @@ const config: Config = {
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
         slide: {
-          "0%": { transform: "translateX(0)" },
+          "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+        slideback: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
         },
         zoomin: {
           "0%": { transform: "scale(0.9)", opacity: "0" },
@@ -61,8 +69,8 @@ const config: Config = {
         "custom-brown-hover": "#552E10",
         "custom-brown1": "#895737",
         "custom-gray": "#F0F5F9",
-        "custom-gray1": "#52616B",
-        "custom-gray2": "#1E2022",
+        "custom-gray1": "#2D82B5", //#76A6C5
+        "custom-gray2": "#015C92",
         "custom-gray3": "#c3c8e3",
         "get-started": "#344C3D",
         "get-started-hover": "#8EA58C",
