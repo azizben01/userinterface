@@ -24,6 +24,7 @@ export default function RootLayout({
 }) {
   const [selectedLanguage, setSelectedLanguage] = useState("English");
   const [dropdownOpen, setDropdownOpen] = useState(false); // State to manage dropdown visibility
+  const [menuOpen, setMenuOpen] = useState(false); // State to manage mobile menu visibility
 
   // Use effect to load selected language from localStorage (if available)
   useEffect(() => {
@@ -43,6 +44,11 @@ export default function RootLayout({
   // Toggle dropdown visibility
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
+  };
+
+  // Toggle mobile menu visibility
+  const toggleMobileMenu = () => {
+    setMenuOpen((prev) => !prev);
   };
 
   return (
@@ -149,7 +155,10 @@ export default function RootLayout({
 
             {/* Mobile Menu Icon */}
             <div className="md:hidden">
-              <button className="text-white focus:outline-none">
+              <button
+                onClick={toggleMobileMenu}
+                className="text-white focus:outline-none"
+              >
                 {/* Hamburger Menu Icon */}
                 <svg
                   className="w-8 h-8"
@@ -168,6 +177,50 @@ export default function RootLayout({
               </button>
             </div>
           </nav>
+
+          {/* Mobile Navigation Menu */}
+          {menuOpen && (
+            <div className="md:hidden mt-4 bg-gray-900 text-white py-4">
+              <div className="flex flex-col items-center space-y-4">
+                <Link
+                  href="/"
+                  className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/services"
+                  className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
+                >
+                  Services
+                </Link>
+                <Link
+                  href="/user"
+                  className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
+                >
+                  User Account
+                </Link>
+                <Link
+                  href="/admin"
+                  className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
+                >
+                  Admin
+                </Link>
+                <Link
+                  href="/signin"
+                  className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
+                >
+                  Sign In
+                </Link>
+                <Link
+                  href="/signup"
+                  className="px-4 py-2 text-lg bg-gray-800 hover:bg-gray-700 rounded-lg"
+                >
+                  Sign Up
+                </Link>
+              </div>
+            </div>
+          )}
         </header>
 
         {/* Main content to ensure it fills the available space */}
