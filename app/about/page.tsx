@@ -46,7 +46,7 @@ function AboutUsPage() {
               partnerships.
             </li>
             <li>
-              Client Focus: Our clients' success is at the heart of our mission.
+              Client Focus: Our clients success is at the heart of our mission.
             </li>
             <li>
               Integrity: We conduct our business with honesty and transparency.
