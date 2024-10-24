@@ -29,8 +29,8 @@ export default function ServiceRequestPage() {
           Request a Service
         </h1>
         <p className="text-center text-gray-500 mb-8">
-          Fill out the form below to request a service. We'll get back to you as
-          soon as possible.
+          Fill out the form below to request a service. We will get back to you
+          as soon as possible.
         </p>
 
         {/* Service Request Form */}

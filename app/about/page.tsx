@@ -1,11 +1,4 @@
-import Image from "next/image";
-import {
-  FaHandsHelping,
-  FaRocket,
-  FaLightbulb,
-  FaUsers,
-  FaBriefcase,
-} from "react-icons/fa";
+import { FaHandsHelping, FaRocket, FaUsers } from "react-icons/fa";
 
 function AboutUsPage() {
   return (
@@ -53,7 +46,7 @@ function AboutUsPage() {
               partnerships.
             </li>
             <li>
-              Client Focus: Our clients' success is at the heart of our mission.
+              Client Focus: Our clients success is at the heart of our mission.
             </li>
             <li>
               Integrity: We conduct our business with honesty and transparency.
@@ -121,9 +114,10 @@ function AboutUsPage() {
             Founded in 2015, SoftCreatix started with a vision to revolutionize
             the digital space. What began as a small startup has now evolved
             into a thriving company that serves clients across the globe. Over
-            the years, we've built a team of experts and expanded our portfolio
-            to include cutting-edge software solutions, custom web and mobile
-            applications, and comprehensive digital transformation services.
+            the years, we have built a team of experts and expanded our
+            portfolio to include cutting-edge software solutions, custom web and
+            mobile applications, and comprehensive digital transformation
+            services.
           </p>
           <FaUsers className="text-gray-900 text-6xl mx-auto" />
         </div>
@@ -137,9 +131,9 @@ function AboutUsPage() {
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-center ">
           <div className="p-6 bg-gray-100 shadow-lg rounded-xl transform transition-transform duration-300 hover:scale-90 hover:shadow-xl hover:bg-gray-800 hover:text-white">
             <p className="text-lg italic mb-4 text-gray-600">
-              "SoftCreatix transformed our business with their innovative
-              solutions. Their team's expertise and professionalism exceeded our
-              expectations."
+              SoftCreatix transformed our business with their innovative
+              solutions. Their team expertise and professionalism exceeded our
+              expectations.
             </p>
             <h4 className="font-bold text-gray-800">
               Ben Aziz Professional Intern
@@ -147,9 +141,9 @@ function AboutUsPage() {
           </div>
           <div className="p-6 bg-gray-100 shadow-lg rounded-xl transform transition-transform duration-300 hover:scale-90 hover:shadow-xl hover:bg-gray-800 hover:text-white">
             <p className="text-lg italic mb-4 text-gray-600">
-              "Thanks to SoftCreatix, our mobile app has seen tremendous growth.
+              Thanks to SoftCreatix, our mobile app has seen tremendous growth.
               Their commitment to quality and customer satisfaction is
-              unmatched."
+              unmatched.
             </p>
             <h4 className="font-bold text-gray-800">
               Gloire Professional intern

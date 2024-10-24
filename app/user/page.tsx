@@ -1,10 +1,5 @@
 import Image from "next/image";
-import {
-  FaUserCircle,
-  FaCogs,
-  FaRocket,
-  FaClipboardList,
-} from "react-icons/fa";
+import { FaCogs, FaRocket, FaClipboardList } from "react-icons/fa";
 import Link from "next/link";
 
 function UserAccountPage() {

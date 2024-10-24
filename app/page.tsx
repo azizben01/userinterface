@@ -17,21 +17,21 @@ export default function HomePage() {
             Welcome to SoftCreatix
           </h1>
           <p className=" text-white mb-6">
-            At SoftCreatix, we are thrilled to have you on board! Whether you're
-            here to explore innovative solutions or looking to collaborate with
-            a team of experts in software development, web design, and digital
-            transformation, you’ve come to the right place. We are passionate
-            about crafting custom-made solutions tailored to your specific
-            needs, from seamless mobile applications to advanced business
-            platforms that drive growth and efficiency. Our mission is to
-            deliver exceptional quality, foster innovation, and create digital
-            experiences that leave a lasting impact.
+            At SoftCreatix, we are thrilled to have you on board! Whether you
+            are here to explore innovative solutions or looking to collaborate
+            with a team of experts in software development, web design, and
+            digital transformation, you’ve come to the right place. We are
+            passionate about crafting custom-made solutions tailored to your
+            specific needs, from seamless mobile applications to advanced
+            business platforms that drive growth and efficiency. Our mission is
+            to deliver exceptional quality, foster innovation, and create
+            digital experiences that leave a lasting impact.
           </p>
           <p className="text-white text-lg font-bold">
-            Let’s work together to transform your ideas into reality!{" "}
+            Let’s work together to transform your ideas into reality!
           </p>
           <p className="text-white text-lg font-bold mb-10">
-            SoftCreatix - Creating Tomorrow's Solutions, Today.
+            SoftCreatix - Creating Tomorrow Solutions, Today.
           </p>
 
           <div className="space-x-4 ">
@@ -58,8 +58,8 @@ export default function HomePage() {
         </h2>
         <h6 className="text-lg font-bold text-center text-gray-500 mb-6">
           Softcreatix, a specialized web development company, offers a
-          comprehensive range of services to meet the needs of its clients.
-          Here's a list of the main services provided:
+          comprehensive range of services to meet the needs of its clients. Here
+          a list of the main services provided:
         </h6>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-90 hover:shadow-xl hover:bg-gray-900 hover:text-white">
@@ -111,7 +111,7 @@ export default function HomePage() {
             </h3>
             <p>
               Creation of custom web applications to meet specific business
-              needs.{" "}
+              needs.
             </p>
           </div>
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">

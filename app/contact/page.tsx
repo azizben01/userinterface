@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 function ContactPage() {
   return (
     <div className="container mx-auto py-16 mt-24">
