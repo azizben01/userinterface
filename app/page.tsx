@@ -442,7 +442,7 @@ export default function HomePage() {
               alt="Ben Aziz"
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
-            <h3 className="text-xl font-semibold">Ben Aziz</h3>
+            <h3 className="text-xl font-semibold">Mr Patrick</h3>
             <p>Founder & CEO</p>
           </div>
           <div className="text-center">
