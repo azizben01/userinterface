@@ -20,14 +20,14 @@ export default function HomePage() {
             At SoftCreatix, we are thrilled to have you on board! Whether you
             are here to explore innovative solutions or looking to collaborate
             with a team of experts in software development, web design, and
-            digital transformation, you've come to the right place. SoftCreatix
-            is a leading software development company in Rwanda, specializing in
-            creating innovative software applications. We are passionate about
-            crafting custom-made solutions tailored to your specific needs, from
-            seamless mobile applications to advanced business platforms that
-            drive growth and efficiency. Our mission is to deliver exceptional
-            quality, foster innovation, and create digital experiences that
-            leave a lasting impact.
+            digital transformation, you have come to the right place.
+            SoftCreatix is a leading software development company in Rwanda,
+            specializing in creating innovative software applications. We are
+            passionate about crafting custom-made solutions tailored to your
+            specific needs, from seamless mobile applications to advanced
+            business platforms that drive growth and efficiency. Our mission is
+            to deliver exceptional quality, foster innovation, and create
+            digital experiences that leave a lasting impact.
           </p>
           <p className="text-white text-lg font-bold">
             Let’s work together to transform your ideas into reality!
