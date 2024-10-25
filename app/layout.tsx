@@ -80,8 +80,8 @@ export default function RootLayout({
               <Image
                 src="/images/softcreatixlogo.jpg"
                 alt="softreatixlogo"
-                width={100} // smaller width on mobile
-                height={100} // smaller height on mobile
+                width={120} // smaller width on mobile
+                height={120} // smaller height on mobile
                 className="sm:w-[170px] sm:h-[120px] hover:scale-105 transition-transform duration-300"
               />
               <span className="mt-2 sm:mt-0 sm:ml-4 text-2xl sm:text-3xl font-bold tracking-wide text-center sm:text-left">
