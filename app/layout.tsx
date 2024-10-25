@@ -75,16 +75,16 @@ export default function RootLayout({
           }`}
         >
           <nav className="flex justify-between items-center container mx-auto">
-            <div className="flex items-center">
-              {/* Logo with hover animation */}
+            <div className="flex flex-col sm:flex-row items-center">
+              {/* Logo with responsive size adjustments */}
               <Image
                 src="/images/softcreatixlogo.jpg"
                 alt="softreatixlogo"
-                width={170}
-                height={170}
-                className="hover:scale-105 transition-transform duration-300"
+                width={100} // smaller width on mobile
+                height={100} // smaller height on mobile
+                className="sm:w-[170px] sm:h-[120px] hover:scale-105 transition-transform duration-300"
               />
-              <span className="ml-4 text-3xl font-bold tracking-wide">
+              <span className="mt-2 sm:mt-0 sm:ml-4 text-2xl sm:text-3xl font-bold tracking-wide text-center sm:text-left">
                 SoftCreatix
               </span>
             </div>
@@ -127,7 +127,6 @@ export default function RootLayout({
               >
                 Sign Up
               </Link>
-
               {/* Language Selector */}
               <div className="relative">
                 <button
