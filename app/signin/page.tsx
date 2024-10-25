@@ -52,7 +52,7 @@ export default function SignInPage() {
           <div className="mt-4 text-center">
             <Link
               href="/resetpassword"
-              className="text-gray-900 hover:text-teal-600 transition-all duration-300"
+              className="text-custom-gray2 hover:text-custom-gray3 transition-all duration-300"
             >
               Forgot Password?
             </Link>
@@ -61,7 +61,7 @@ export default function SignInPage() {
           <div className="mt-4 text-center">
             <Link
               href="/signup"
-              className="text-gray-900 hover:text-teal-800 hover:underline transition-all duration-300"
+              className="text-custom-gray2 hover:underline justify-center"
             >
               Create an Account
             </Link>

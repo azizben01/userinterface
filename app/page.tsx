@@ -490,7 +490,7 @@ export default function HomePage() {
         </p>
         <Link
           href="/contact"
-          className="px-6 py-3 bg-white text-get-started rounded-2xl hover:bg-gray-100"
+          className="px-6 py-3 bg-white text-gray-900 rounded-2xl hover:bg-gray-100"
         >
           Contact Us
         </Link>

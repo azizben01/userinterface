@@ -39,7 +39,7 @@ const AdminPage = () => {
 
   return (
     <main className="flex flex-col mt-24 items-center min-h-screen bg-custom-gray py-8">
-      <div className="w-full max-w-4xl p-6 bg-white rounded-md shadow-md">
+      <div className="w-full max-w-4xl p-6 bg-white rounded-2xl shadow-md">
         <h1 className="text-3xl font-bold text-center mb-6">Admin Dashboard</h1>
 
         {/* Online Users Section */}
@@ -94,7 +94,7 @@ const AdminPage = () => {
               {/* Send Reply Button */}
               <button
                 onClick={() => handleReply(msg.id)}
-                className="mt-3 bg-custom-gray1 text-white px-4 py-2 rounded-md hover:bg-custom-gray2"
+                className="mt-3 bg-custom-gray1 text-white px-4 py-2 rounded-3xl hover:bg-custom-gray2"
               >
                 Send Reply
               </button>

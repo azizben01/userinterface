@@ -120,7 +120,7 @@ function AboutUsPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-8 sm:py-16 bg-white">
+      <section className="py-8 sm:py-16 bg-white ">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 text-gray-700">
           What Our Clients Say
         </h2>

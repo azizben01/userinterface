@@ -10,20 +10,20 @@ function ContactPage() {
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 p-4">
           <h2 className="text-2xl font-bold mb-4">Our Contact Information</h2>
-          <p className="text-lg mb-2">
-            <span className="font-bold">Address:</span> KN 4 Av 22,KIGALI -
-            RWANDA
+          <p className="text-gray-700 mb-2">
+            <span className="text-lg font-bold">Address:</span> KN 4 Av
+            22,KIGALI - RWANDA
           </p>
-          <p className="text-lg mb-2">
-            <span className="font-bold">Phone:</span> +250 798 812 499
+          <p className="text-gray-700 mb-2">
+            <span className="text-lg font-bold">Phone:</span> +250 798 812 499
           </p>
-          <p className="text-lg mb-2">
-            <span className="font-bold">Email:</span>
+          <p className="text-gray-700 mb-2">
+            <span className="text-lg font-bold">Email:</span>
             contact@generalconsultinggroups.com
           </p>
-          <p className="text-lg mb-2">
-            <span className="font-bold">Whatsapp:</span> +254 111 827 802 & +34
-            602 39 49 89
+          <p className="text-gray-700 mb-2">
+            <span className="text-lg font-bold">Whatsapp:</span> +254 111 827
+            802 & +34 602 39 49 89
           </p>
         </div>
         <div className="md:w-1/2 p-4">
@@ -32,25 +32,27 @@ function ContactPage() {
             <div className="flex flex-col md:flex-row md:space-x-4 ">
               <input
                 type="text"
-                className="rounded-xl input w-full md:w-1/2 border-2"
-                placeholder="  Name"
+                className="p-2 mb-4 rounded-xl input w-full md:w-1/2 border-2"
+                placeholder="Name"
                 required
               />
               <input
                 type="email"
-                className=" rounded-xl input w-full md:w-1/2 border-2"
-                placeholder="  Email"
+                className="p-2 mb-4 rounded-xl input w-full md:w-1/2 border-2"
+                placeholder="Email"
                 required
               />
             </div>
             <textarea
-              className="input w-full h-40 border-2 rounded-xl"
-              placeholder="  Message"
+              className="p-4 input w-full h-40 border-2 rounded-xl"
+              placeholder="Message"
               required
             ></textarea>
-            <button className="bg-gray-900 text-white px-4 py-2 rounded-lg hover:from-green-600 hover:to-teal-600 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-3/4 mx-auto">
-              Submit
-            </button>
+            <div className="flex justify-center">
+              <button className="bg-gray-900 text-white px-4 py-2 rounded-3xl hover:from-green-600 hover:to-teal-600 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-3/4 mx-auto">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </div>

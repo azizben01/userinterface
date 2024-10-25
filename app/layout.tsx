@@ -25,6 +25,7 @@ export default function RootLayout({
   const [selectedLanguage, setSelectedLanguage] = useState("English");
   const [dropdownOpen, setDropdownOpen] = useState(false); // State to manage dropdown visibility
   const [menuOpen, setMenuOpen] = useState(false); // State to manage mobile menu visibility
+  const [isScrolled, setIsScrolled] = useState(false); // State to manage header background color on scroll
 
   // Use effect to load selected language from localStorage (if available)
   useEffect(() => {
@@ -51,11 +52,28 @@ export default function RootLayout({
     setMenuOpen((prev) => !prev);
   };
 
+  // Effect to handle scroll event for header background color change
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0); // Set true if scrolled down, otherwise false
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen">
         {/* Header Section */}
-        <header className="fixed top-0 left-0 right-0 z-20 bg-transparent text-lg text-custom-gray1 p-4 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-transparent h-20">
+        <header
+          className={`fixed top-0 left-0 right-0 z-20 text-lg text-custom-gray1 p-4 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-transparent h-20 ${
+            isScrolled ? "bg-gray-900 text-white" : "bg-transparent"
+          }`}
+        >
           <nav className="flex justify-between items-center container mx-auto">
             <div className="flex items-center">
               {/* Logo with hover animation */}
