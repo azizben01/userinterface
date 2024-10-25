@@ -11,10 +11,10 @@ interface Message {
 const AdminPage = () => {
   // Initial list of messages
   const [messages] = useState<Message[]>([
-    { id: 1, user: "John Doe", content: "Hello, I need help.", isOnline: true },
+    { id: 1, user: "Ben Aziz", content: "Hello, I need help.", isOnline: true },
     {
       id: 2,
-      user: "Jane Smith",
+      user: "Kate Saramaya",
       content: "My service is not working.",
       isOnline: false,
     },
@@ -40,7 +40,9 @@ const AdminPage = () => {
   return (
     <main className="flex flex-col mt-24 items-center min-h-screen bg-custom-gray py-8">
       <div className="w-full max-w-4xl p-6 bg-white rounded-2xl shadow-md">
-        <h1 className="text-3xl font-bold text-center mb-6">Admin Dashboard</h1>
+        <h1 className="text-3xl font-bold text-center text-custom-gray1 mb-6">
+          Admin Dashboard
+        </h1>
 
         {/* Online Users Section */}
         <section className="mb-8">

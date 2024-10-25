@@ -36,7 +36,7 @@ function UserAccountPage() {
     <div className="container bg-custom-gray mx-auto py-16 px-4 mt-24">
       {/* Header Section */}
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-2">
+        <h1 className="text-4xl font-bold text-center text-custom-gray1 mb-2">
           Welcome, {userInfo.name}
         </h1>
         <p className="text-center text-gray-500">

@@ -364,7 +364,9 @@ export default function HomePage() {
               custom solution. The team was incredibly professional, and the
               results exceeded our expectations.
             </p>
-            <p className="text-md font-bold mt-4">John Doe, CEO of TechBiz</p>
+            <p className="text-md font-bold mt-4">
+              Mina Mapaluza, CEO of TechBiz
+            </p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-lg">
             <p className="text-lg font-italic">
@@ -374,6 +376,13 @@ export default function HomePage() {
             <p className="text-md font-bold mt-4">
               Jane Smith, CTO of FinStart
             </p>
+          </div>
+          <div className="p-6 bg-white rounded-lg shadow-lg">
+            <p className="text-lg font-italic">
+              They created my Holy Spirit Academia website in no time and with
+              all the custom features I needed. Highly recommend!
+            </p>
+            <p className="text-md font-bold mt-4">Pastor Jean Bosco</p>
           </div>
         </div>
       </section>
@@ -421,7 +430,7 @@ export default function HomePage() {
         </div>
         <div className="text-center mt-6">
           <Link
-            href="/portfolio"
+            href=""
             className="px-6 py-3 bg-gray-600 text-white rounded-2xl hover:bg-gray-800"
           >
             View Full Portfolio
@@ -454,7 +463,29 @@ export default function HomePage() {
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Mbokani Predit</h3>
-            <p>Backend Developper</p>
+            <p>Lead Developper</p>
+          </div>
+          <div className="text-center">
+            <Image
+              src="/images/gloire.jpg"
+              width={100}
+              height={100}
+              alt="Jane Smith"
+              className="rounded-full mx-auto h-32 w-32 mb-4"
+            />
+            <h3 className="text-xl font-semibold"> Gloire</h3>
+            <p>Full Stack Developper</p>
+          </div>
+          <div className="text-center">
+            <Image
+              src="/images/armel.jpg"
+              width={100}
+              height={100}
+              alt="Jane Smith"
+              className="rounded-full mx-auto h-32 w-32 mb-4"
+            />
+            <h3 className="text-xl font-semibold">Armel </h3>
+            <p>UI/UX Designer</p>
           </div>
         </div>
       </section>
@@ -486,7 +517,7 @@ export default function HomePage() {
           Ready to Start Your Project?
         </h2>
         <p className="text-lg mb-6">
-          Let work together to build something amazing.
+          Let’s work together to transform your ideas into reality!{" "}
         </p>
         <Link
           href="/contact"
