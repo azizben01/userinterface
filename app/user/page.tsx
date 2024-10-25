@@ -108,7 +108,7 @@ function UserAccountPage() {
         </p>
         <Link
           href="/contact"
-          className="px-6 py-3 bg-custom-gray1 text-white hover:bg-custom-gray2 rounded-md transition-transform transform hover:scale-105"
+          className="px-6 py-3 bg-custom-gray1 text-white hover:bg-custom-gray2 rounded-3xl transition-transform transform hover:scale-105"
         >
           Contact Support
         </Link>

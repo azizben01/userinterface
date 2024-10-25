@@ -8,7 +8,7 @@ export default function HomePage() {
       {/* Hero Section with Gradient */}
       <main className="flex-1 flex flex-col items-center justify-center text-center relative pt-20 min-h-screen">
         <div
-          className="absolute inset-0 bg-cover bg-center filter blur-sm"
+          className="absolute inset-0 bg-cover bg-center filter blur-sm object-cover"
           style={{ backgroundImage: "url('/images/backgroundimage4.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
@@ -20,12 +20,14 @@ export default function HomePage() {
             At SoftCreatix, we are thrilled to have you on board! Whether you
             are here to explore innovative solutions or looking to collaborate
             with a team of experts in software development, web design, and
-            digital transformation, you’ve come to the right place. We are
-            passionate about crafting custom-made solutions tailored to your
-            specific needs, from seamless mobile applications to advanced
-            business platforms that drive growth and efficiency. Our mission is
-            to deliver exceptional quality, foster innovation, and create
-            digital experiences that leave a lasting impact.
+            digital transformation, you've come to the right place. SoftCreatix
+            is a leading software development company in Rwanda, specializing in
+            creating innovative software applications. We are passionate about
+            crafting custom-made solutions tailored to your specific needs, from
+            seamless mobile applications to advanced business platforms that
+            drive growth and efficiency. Our mission is to deliver exceptional
+            quality, foster innovation, and create digital experiences that
+            leave a lasting impact.
           </p>
           <p className="text-white text-lg font-bold">
             Let’s work together to transform your ideas into reality!
@@ -197,19 +199,19 @@ export default function HomePage() {
           Technologies We Use
         </h2>
         <div className="overflow-hidden">
-          <div className="flex space-x-6 animate-slide-logo">
+          <div className="mb-4 mt-3 flex space-x-6 animate-slide-logo">
             <Image
               src="/images/reactnative.png"
               alt="React Native"
-              width={70}
-              height={50}
+              width={170}
+              height={265}
               className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
             />
             <Image
               src="/images/python.jpg"
               alt="Python"
-              width={70}
-              height={50}
+              width={60}
+              height={500}
               className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
             />
             <Image
@@ -222,15 +224,15 @@ export default function HomePage() {
             <Image
               src="/images/Golang.png"
               alt="Go"
-              width={70}
-              height={50}
+              width={100}
+              height={100}
               className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
             />
             <Image
-              src="/images/nextjs.jpg"
+              src="/images/nextjs.jpeg"
               alt="Next.js"
-              width={70}
-              height={50}
+              width={150}
+              height={5}
               className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
             />
             <Image
@@ -243,45 +245,80 @@ export default function HomePage() {
             <Image
               src="/images/csslogo.png"
               alt="CSS"
-              width={70}
-              height={50}
+              width={80}
+              height={100}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
             <Image
               src="/images/angular.png"
               alt="Angular"
-              width={70}
+              width={150}
               height={50}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
             <Image
               src="/images/postgresql.png"
               alt="PostgreSQL"
-              width={70}
+              width={150}
               height={50}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
             <Image
               src="/images/sqlite.png"
               alt="SQLite"
-              width={70}
-              height={50}
+              width={100}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/nodejs.jpeg"
+              alt="SQLite"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/php.jpeg"
+              alt="php"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/git.jpeg"
+              alt="git"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/django.jpeg"
+              alt="django"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/mysql.jpeg"
+              alt="mysql"
+              width={200}
+              height={270}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
           </div>
-          <div className="flex space-x-6 animate-slide-logo-back">
+          <div className="flex space-x-6 animate-slide-logo-back mb-4">
             <Image
               src="/images/reactnative.png"
               alt="React Native"
-              width={70}
-              height={50}
+              width={170}
+              height={265}
               className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
             />
             <Image
               src="/images/python.jpg"
               alt="Python"
-              width={70}
-              height={50}
+              width={60}
+              height={500}
               className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
             />
             <Image
@@ -299,10 +336,10 @@ export default function HomePage() {
               className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
             />
             <Image
-              src="/images/nextjs.jpg"
+              src="/images/nextjs.jpeg"
               alt="Next.js"
-              width={70}
-              height={50}
+              width={150}
+              height={5}
               className="h-16 hover:scale-110 hover:shadow-2xl transform transition duration-300 ease-in-out"
             />
             <Image
@@ -315,29 +352,64 @@ export default function HomePage() {
             <Image
               src="/images/csslogo.png"
               alt="CSS"
-              width={70}
-              height={50}
+              width={80}
+              height={100}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
             <Image
               src="/images/angular.png"
               alt="Angular"
-              width={70}
+              width={150}
               height={50}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
             <Image
               src="/images/postgresql.png"
               alt="PostgreSQL"
-              width={70}
+              width={150}
               height={50}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
             <Image
               src="/images/sqlite.png"
               alt="SQLite"
-              width={70}
-              height={50}
+              width={100}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/nodejs.jpeg"
+              alt="node"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/php.jpeg"
+              alt="php"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/git.jpeg"
+              alt="git"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/django.jpeg"
+              alt="django"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/mysql.jpeg"
+              alt="mysql"
+              width={200}
+              height={270}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
           </div>
@@ -486,6 +558,28 @@ export default function HomePage() {
             />
             <h3 className="text-xl font-semibold">Armel </h3>
             <p>UI/UX Designer</p>
+          </div>
+          <div className="text-center">
+            <Image
+              src="/images/armel.jpg"
+              width={100}
+              height={100}
+              alt="Jane Smith"
+              className="rounded-full mx-auto h-32 w-32 mb-4"
+            />
+            <h3 className="text-xl font-semibold">Loic </h3>
+            <p>Backend Developper</p>
+          </div>
+          <div className="text-center">
+            <Image
+              src="/images/armel.jpg"
+              width={100}
+              height={100}
+              alt="Jane Smith"
+              className="rounded-full mx-auto h-32 w-32 mb-4"
+            />
+            <h3 className="text-xl font-semibold">Ben Aziz </h3>
+            <p>Full stack Developper</p>
           </div>
         </div>
       </section>

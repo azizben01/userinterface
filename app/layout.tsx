@@ -70,7 +70,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen">
         {/* Header Section */}
         <header
-          className={`fixed top-0 left-0 right-0 z-20 text-lg text-custom-gray1 p-4 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-transparent h-20 ${
+          className={`fixed top-0 left-0 right-0 z-20 text-lg text-custom-gray1 p-1 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-transparent h-29 ${
             isScrolled ? "bg-gray-900 text-white" : "bg-transparent"
           }`}
         >
@@ -80,8 +80,8 @@ export default function RootLayout({
               <Image
                 src="/images/softcreatixlogo.jpg"
                 alt="softreatixlogo"
-                width={100}
-                height={100}
+                width={170}
+                height={170}
                 className="hover:scale-105 transition-transform duration-300"
               />
               <span className="ml-4 text-3xl font-bold tracking-wide">

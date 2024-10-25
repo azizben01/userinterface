@@ -2,10 +2,7 @@ import Link from "next/link";
 
 export default function ResetPasswordPage() {
   return (
-    <main
-      className="flex flex-col items-center justify-center min-h-screen bg-custom-gray bg-center px-4 sm:px-0"
-      style={{ backgroundImage: "url('/images/auth-bg.jpg')" }}
-    >
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-gray-700 bg-center px-4 sm:px-0">
       <div className="bg-white p-6 sm:p-8 rounded-xl shadow-xl w-full sm:w-3/4 md:w-2/6 max-w-md">
         <h1 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-800">
           Forgot Password

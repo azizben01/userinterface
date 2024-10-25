@@ -23,7 +23,7 @@ export default function ServiceRequestPage() {
   };
 
   return (
-    <div className="min-h-screen bg-custom-gray flex justify-center items-center mt-9 p-8">
+    <div className="min-h-screen bg-custom-gray flex justify-center items-center mt-12 p-8">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-xl w-full max-h-lg h-full">
         <h1 className="text-3xl font-bold text-gray-900 mb-6 text-center">
           Request a Service
