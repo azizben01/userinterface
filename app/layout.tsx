@@ -78,11 +78,11 @@ export default function RootLayout({
             <div className="flex flex-col sm:flex-row items-center">
               {/* Logo with responsive size adjustments */}
               <Image
-                src="/images/softcreatixlogo.jpg"
+                src="/images/logo2.jpg"
                 alt="softreatixlogo"
-                width={120} // smaller width on mobile
-                height={120} // smaller height on mobile
-                className="sm:w-[170px] sm:h-[120px] hover:scale-105 transition-transform duration-300"
+                width={190} // smaller width on mobile
+                height={180} // smaller height on mobile
+                // className="sm:w-[200px] sm:h-[140px] hover:scale-105 transition-transform duration-300"
               />
               <span className="mt-2 sm:mt-0 sm:ml-4 text-2xl sm:text-3xl font-bold tracking-wide text-center sm:text-left">
                 SoftCreatix
