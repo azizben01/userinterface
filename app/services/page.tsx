@@ -1,8 +1,9 @@
 "use client"; // For animations and interactive components
 import { useState } from "react";
 
-export default function ServiceRequestPage() {
+export default function ServiceRequestpage() {
   const [formData, setFormData] = useState({
+    //formData holds the valu entered on the form and setFormData updates it.
     name: "",
     email: "",
     service: "",
@@ -10,7 +11,9 @@ export default function ServiceRequestPage() {
   });
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -23,9 +26,9 @@ export default function ServiceRequestPage() {
   };
 
   return (
-    <div className="min-h-screen bg-custom-gray flex justify-center items-center mt-12 p-8">
+    <div className="min-h-screen bg-custom-gray flex justify-center items-center mt-16 p-8">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-xl w-full max-h-lg h-full">
-        <h1 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+        <h1 className="text-3xl font-bold text-custom-gray1 mb-6 text-center">
           Request a Service
         </h1>
         <p className="text-center text-gray-500 mb-8">
@@ -36,12 +39,12 @@ export default function ServiceRequestPage() {
         {/* Service Request Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label
+            {/* <label
               htmlFor="name"
               className="block text-md font-medium text-gray-700"
             >
-              {/* Your Name */}
-            </label>
+              Your Name
+            </label> */}
             <input
               type="text"
               id="name"
@@ -55,12 +58,6 @@ export default function ServiceRequestPage() {
           </div>
 
           <div>
-            <label
-              htmlFor="email"
-              className="block text-md font-medium text-gray-700"
-            >
-              {/* Your Email */}
-            </label>
             <input
               type="email"
               id="email"
@@ -74,17 +71,11 @@ export default function ServiceRequestPage() {
           </div>
 
           <div>
-            <label
-              htmlFor="service"
-              className="block text-md font-medium text-gray-700"
-            >
-              {/* Select a Service */}
-            </label>
             <select
               id="service"
               name="service"
               value={formData.service}
-              //onChange={handleInputChange}
+              onChange={handleInputChange}
               required
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
             >

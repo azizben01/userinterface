@@ -4,48 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-// List of languages for the dropdown
-const languages = [
-  { code: "en", name: "English" },
-  { code: "fr", name: "Français" },
-  { code: "es", name: "Español" },
-  { code: "de", name: "Deutsch" },
-  { code: "pt", name: "Português" },
-  { code: "ru", name: "Русский" },
-  { code: "ar", name: "العربية" },
-  { code: "zh", name: "中文" },
-];
-
 // RootLayout component that wraps the entire app
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [selectedLanguage, setSelectedLanguage] = useState("English");
-  const [dropdownOpen, setDropdownOpen] = useState(false); // State to manage dropdown visibility
   const [menuOpen, setMenuOpen] = useState(false); // State to manage mobile menu visibility
   const [isScrolled, setIsScrolled] = useState(false); // State to manage header background color on scroll
-
-  // Use effect to load selected language from localStorage (if available)
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem("selectedLanguage");
-    if (savedLanguage) {
-      setSelectedLanguage(savedLanguage);
-    }
-  }, []);
-
-  // Handle language change
-  const handleLanguageChange = (languageName: string) => {
-    setSelectedLanguage(languageName);
-    localStorage.setItem("selectedLanguage", languageName);
-    setDropdownOpen(false); // Close dropdown after selecting a language
-  };
-
-  // Toggle dropdown visibility
-  const toggleDropdown = () => {
-    setDropdownOpen((prev) => !prev);
-  };
 
   // Toggle mobile menu visibility
   const toggleMobileMenu = () => {
@@ -78,7 +44,7 @@ export default function RootLayout({
             <div className="flex flex-col sm:flex-row items-center">
               {/* Logo with responsive size adjustments */}
               <Image
-                src="/images/logo2.jpg"
+                src="/images/logobackground.png"
                 alt="softreatixlogo"
                 width={190} // smaller width on mobile
                 height={180} // smaller height on mobile
@@ -115,59 +81,6 @@ export default function RootLayout({
               >
                 Admin
               </Link>
-              <Link
-                href="/signin"
-                className="px-4 py-2 text-md rounded-full bg-transparent hover:bg-gray-800 hover:text-white transition-colors duration-300"
-              >
-                Sign In
-              </Link>
-              <Link
-                href="/signup"
-                className="px-4 py-2 text-md rounded-full bg-gray-800 hover:bg-gray-900 transition-colors duration-300 text-white"
-              >
-                Sign Up
-              </Link>
-              {/* Language Selector */}
-              <div className="relative">
-                <button
-                  onClick={toggleDropdown}
-                  className="px-4 py-2 bg-gray-900 text-white rounded-full flex items-center"
-                >
-                  🌐 {selectedLanguage}
-                  <svg
-                    className={`ml-2 w-4 h-4 transition-transform duration-200 ${
-                      dropdownOpen ? "rotate-180" : ""
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-
-                {/* Dropdown Menu (only shown when dropdownOpen is true) */}
-                {dropdownOpen && (
-                  <ul className="absolute mt-2 w-40 bg-gray-800 text-white rounded-lg shadow-lg">
-                    {languages.map((lang) => (
-                      <li key={lang.code}>
-                        <button
-                          onClick={() => handleLanguageChange(lang.name)}
-                          className="block w-full text-left px-4 py-2 hover:bg-gray-700"
-                        >
-                          {lang.name}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
             </div>
 
             {/* Mobile Menu Icon */}

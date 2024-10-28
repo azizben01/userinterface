@@ -38,16 +38,10 @@ export default function HomePage() {
 
           <div className="space-x-4 ">
             <Link
-              href="/signup"
+              href="/services"
               className="slide-up px-6 py-3 bg-custom-gray1 text-white rounded-3xl hover:bg-custom-gray2 transition-transform duration-300 transform hover:scale-105"
             >
               Get Started
-            </Link>
-            <Link
-              href="/signin"
-              className="px-6 py-3 bg-gray-600 text-white rounded-3xl hover:bg-gray-800"
-            >
-              Login
             </Link>
           </div>
         </div>
@@ -129,7 +123,7 @@ export default function HomePage() {
             </h3>
             <p>
               Advice and strategies to maximize online impact and achieve
-              business objectives.{" "}
+              business objectives.
             </p>
           </div>
         </div>
@@ -272,13 +266,13 @@ export default function HomePage() {
             />
             <Image
               src="/images/nodejs.jpeg"
-              alt="SQLite"
+              alt="node"
               width={200}
               height={270}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
             <Image
-              src="/images/php.jpeg"
+              src="/images/PHP.jpeg"
               alt="php"
               width={200}
               height={270}
@@ -500,14 +494,14 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <div className="text-center mt-6">
+        {/* <div className="text-center mt-6">
           <Link
             href=""
             className="px-6 py-3 bg-gray-600 text-white rounded-2xl hover:bg-gray-800"
           >
             View Full Portfolio
           </Link>
-        </div>
+        </div> */}
       </section>
       {/* Team members */}
       <section className="p-8 bg-white mt-8">
