@@ -12,7 +12,7 @@ export default function HomePage() {
           style={{ backgroundImage: "url('/images/backgroundimage4.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
-        <div className="relative z-10 p-8 animate-fade-in">
+        <div className="relative p-8 animate-fade-in">
           <h1 className="text-4xl font-bold text-white mb-4">
             Welcome to SoftCreatix
           </h1>
@@ -299,6 +299,13 @@ export default function HomePage() {
               height={270}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
+            <Image
+              src="/images/slack logo.jpeg"
+              alt="mysql"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
           </div>
           <div className="flex space-x-6 animate-slide-logo-back mb-4">
             <Image
@@ -401,6 +408,13 @@ export default function HomePage() {
             />
             <Image
               src="/images/mysql.jpeg"
+              alt="mysql"
+              width={200}
+              height={270}
+              className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
+            />
+            <Image
+              src="/images/slack logo.jpeg"
               alt="mysql"
               width={200}
               height={270}

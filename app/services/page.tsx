@@ -1,13 +1,16 @@
 "use client"; // For animations and interactive components
 import { useState } from "react";
+import { MdEmail } from "react-icons/md";
+import { IoPersonSharp } from "react-icons/io5";
+import { MdPhoneIphone } from "react-icons/md";
 
 export default function ServiceRequestpage() {
   const [formData, setFormData] = useState({
-    //formData holds the valu entered on the form and setFormData updates it.
     name: "",
     email: "",
-    service: "",
-    message: "",
+    phonenumber: "",
+    services: "",
+    description: "",
   });
 
   const handleInputChange = (
@@ -19,15 +22,42 @@ export default function ServiceRequestpage() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here (e.g., send data to backend)
-    console.log(formData);
+
+    try {
+      const response = await fetch("http://192.168.1.72:2020/services", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log("Response from server:", data);
+        alert("Service request submitted successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          services: "",
+          phonenumber: "",
+          description: "",
+        });
+      } else {
+        console.error("Server error:", response.statusText);
+        alert("Failed to submit the service request.");
+      }
+    } catch (error) {
+      console.error("Request error:", error);
+      alert("There was an error submitting the form. Please try again.");
+    }
   };
 
   return (
-    <div className="min-h-screen bg-custom-gray flex justify-center items-center mt-16 p-8">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-xl w-full max-h-lg h-full">
+    <div className="min-h-screen bg-custom-gray flex justify-center items-center p-8">
+      <div className="bg-white mt-28 p-8 rounded-lg shadow-lg max-w-xl w-full max-h-lg h-full">
         <h1 className="text-3xl font-bold text-custom-gray1 mb-6 text-center">
           Request a Service
         </h1>
@@ -38,13 +68,8 @@ export default function ServiceRequestpage() {
 
         {/* Service Request Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            {/* <label
-              htmlFor="name"
-              className="block text-md font-medium text-gray-700"
-            >
-              Your Name
-            </label> */}
+          <div className="relative mt-1">
+            <IoPersonSharp className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-500" />
             <input
               type="text"
               id="name"
@@ -53,11 +78,12 @@ export default function ServiceRequestpage() {
               onChange={handleInputChange}
               placeholder="your name"
               required
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
+              className="pl-10 mt-1 block w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
             />
           </div>
 
-          <div>
+          <div className="relative mt-1">
+            <MdEmail className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-500" />
             <input
               type="email"
               id="email"
@@ -66,18 +92,31 @@ export default function ServiceRequestpage() {
               onChange={handleInputChange}
               placeholder="your email"
               required
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
+              className="pl-10 mt-1 block w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
+            />
+          </div>
+          <div className="relative mt-1">
+            <MdPhoneIphone className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-500" />
+            <input
+              type="phonenumber"
+              id="phonenumber"
+              name="phonenumber"
+              value={formData.phonenumber}
+              onChange={handleInputChange}
+              placeholder="your phone number"
+              required
+              className="pl-10 border border-gray-300 w-full px-4 py-2 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
             />
           </div>
 
           <div>
             <select
-              id="service"
-              name="service"
-              value={formData.service}
+              id="services"
+              name="services"
+              value={formData.services}
               onChange={handleInputChange}
               required
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
+              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
             >
               <option value="" disabled>
                 Select a service
@@ -103,18 +142,12 @@ export default function ServiceRequestpage() {
           </div>
 
           <div>
-            <label
-              htmlFor="message"
-              className="block text-md font-medium text-gray-700"
-            >
-              Additional Details
-            </label>
             <textarea
-              id="message"
-              name="message"
-              value={formData.message}
+              id="description"
+              name="description"
+              value={formData.description}
               onChange={handleInputChange}
-              rows={4}
+              rows={2}
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
               placeholder="Describe your project or requirements in detail."
             />
