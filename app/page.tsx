@@ -8,7 +8,7 @@ export default function HomePage() {
       {/* Hero Section with Gradient */}
       <main className="flex-1 flex flex-col items-center justify-center text-center relative pt-20 min-h-screen">
         <div
-          className="absolute inset-0 bg-cover bg-center filter blur-sm object-cover"
+          className="absolute bg-fixed inset-0 bg-cover bg-center filter blur-sm object-cover"
           style={{ backgroundImage: "url('/images/backgroundimage4.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
@@ -91,7 +91,7 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold">Maintenance and Support</h3>
             <p>
               Ongoing maintenance services to ensure website functionality and
-              security..
+              security.
             </p>
           </div>
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
@@ -117,7 +117,13 @@ export default function HomePage() {
               operations management.
             </p>
           </div>
-          application mobile
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">Mobile Application</h3>
+            <p>
+              Creation of custom mobile applications to meet specific business
+              needs.
+            </p>
+          </div>
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-xl font-semibold">
               Digital Consulting and Strategy

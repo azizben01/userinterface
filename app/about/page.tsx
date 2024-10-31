@@ -2,7 +2,7 @@ import { FaHandsHelping, FaRocket, FaUsers } from "react-icons/fa";
 
 function AboutUsPage() {
   return (
-    <div className="container mx-auto py-8 sm:py-16 mt-16 sm:mt-24 px-4">
+    <div className="container mt-28">
       <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-6 sm:mb-10 text-gray-800">
         About SoftCreatix
       </h1>
@@ -13,7 +13,6 @@ function AboutUsPage() {
         and unparalleled service. We are committed to driving growth and
         fostering innovation through the power of digital transformation.
       </p>
-
       {/* Vision and Values Section */}
       <section className="flex flex-col lg:flex-row text-white space-y-6 lg:space-y-0 lg:space-x-10 ml-0 sm:ml-3 mb-12 sm:mb-16">
         <div className="lg:w-1/2 p-4 bg-gray-800 rounded-2xl shadow-lg">
@@ -88,6 +87,11 @@ function AboutUsPage() {
               title: "Full Stack Developer",
               desc: "Aziz brings technical expertise and creativity to every project.",
             },
+            {
+              name: "Loic",
+              title: "Full stack developer",
+              desc: "Aziz brings technical expertise and creativity to every project.",
+            },
           ].map((member, index) => (
             <div key={index} className="p-4 bg-gray-800 shadow-md rounded-xl">
               <h3 className="text-xl sm:text-2xl font-bold mb-2">
@@ -156,9 +160,8 @@ function AboutUsPage() {
           ))}
         </div>
       </section>
-
       {/* CTA Section */}
-      <section className="py-8 sm:py-16 bg-gray-900 text-white text-center">
+      <section className="sm:py-16 bg-gray-900 text-white text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
           Ready to Transform Your Business?
         </h2>
@@ -168,7 +171,7 @@ function AboutUsPage() {
         </p>
         <a
           href="/contact"
-          className="px-6 sm:px-8 py-3 bg-white text-get-started font-bold rounded-full hover:bg-gray-200 transition duration-300"
+          className="px-6 sm:px-8 py-3 bg-white text-gray-900 font-bold rounded-full hover:bg-gray-200 transition duration-300"
         >
           Get in Touch
         </a>
@@ -176,5 +179,4 @@ function AboutUsPage() {
     </div>
   );
 }
-
 export default AboutUsPage;
