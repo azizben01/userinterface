@@ -13,13 +13,16 @@ export default function SignInPage() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://192.168.1.2:2020/adminlogin", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      const response = await fetch(
+        "https://softcreatixbackend.onrender.com/adminlogin",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Invalid credentials");
