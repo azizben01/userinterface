@@ -17,7 +17,7 @@ const AdminPage = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://192.168.1.72:2020/requestlist");
+        const response = await fetch("http://192.168.1.2:2020/requestlist");
         if (!response.ok) {
           throw new Error("Failed to fetch services");
         }
@@ -34,7 +34,7 @@ const AdminPage = () => {
   const handleComplete = async (id: number) => {
     try {
       const response = await fetch(
-        `http://192.168.1.72:2020/markAsCompleted/${id}/complete`,
+        `http://192.168.1.2:2020/markAsCompleted/${id}/complete`,
         {
           method: "PUT",
         }
@@ -55,7 +55,7 @@ const AdminPage = () => {
     if (window.confirm("Are you sure you want to delete this request?")) {
       try {
         const response = await fetch(
-          `http://192.168.1.72:2020/deleteRequest/${id}`,
+          `http://192.168.1.2:2020/deleteRequest/${id}`,
           {
             method: "PUT", // Update to PUT to match backend
           }
@@ -73,6 +73,11 @@ const AdminPage = () => {
 
   return (
     <main className="min-h-screen bg-custom-gray flex justify-center items-center p-8">
+      <div className="absolute top-4 right-4">
+        <h1 className="text-4xl font-bold p-4 text-custom-gray1">
+          Admin Dashboard
+        </h1>
+      </div>
       <div className="w-full mt-24 max-w-4xl p-6 bg-white rounded-2xl shadow-md">
         <h1 className="text-3xl font-bold text-center text-custom-gray1 mb-6">
           Available client requests
@@ -110,7 +115,7 @@ const AdminPage = () => {
 
                   <PiTrashFill
                     onClick={() => handleDelete(service.id)}
-                    className="text-2xl text-gray-500 hover:text-gray-700 cursor-pointer"
+                    className="text-2xl text-gray-500 hover:text-red-700 cursor-pointer"
                   />
                 </li>
               ))}

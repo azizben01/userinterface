@@ -117,6 +117,7 @@ export default function HomePage() {
               operations management.
             </p>
           </div>
+          application mobile
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-xl font-semibold">
               Digital Consulting and Strategy
@@ -627,7 +628,11 @@ export default function HomePage() {
         >
           Contact Us
         </Link>
-        <p className="mt-8">&copy; 2024 SoftCreatix. All rights reserved.</p>
+        <p className="mt-8">
+          <Link href="/adminlogin">
+            &copy; 2024 SoftCreatix. All rights reserved.
+          </Link>
+        </p>
         <p>Developped by SoftCreatix.</p>
       </section>
     </div>

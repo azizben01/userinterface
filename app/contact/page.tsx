@@ -3,8 +3,8 @@ function ContactPage() {
     <div className="container mx-auto py-16 mt-24">
       <h1 className="text-4xl font-bold text-center mb-5">Contact Us</h1>
       <h6 className="px-5 text-lg mb-16">
-        For any information or assistance you may need on Kigali Independent
-        University ULK, please contact us at the addresses below.
+        For any information or assistance you may need at General
+        consulting groups SARL, please contact us at the addresses below.
         <br /> We ensure you to give a very prompt feedback.
       </h6>
       <div className="flex flex-col md:flex-row">
@@ -18,7 +18,7 @@ function ContactPage() {
             <span className="text-lg font-bold">Phone:</span> +250 798 812 499
           </p>
           <p className="text-gray-700 mb-2">
-            <span className="text-lg font-bold">Email:</span>
+            <span className="text-lg font-bold">Email:</span>{" "}
             contact@generalconsultinggroups.com
           </p>
           <p className="text-gray-700 mb-2">

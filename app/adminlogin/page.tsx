@@ -1,6 +1,47 @@
+"use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function SignInPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const router = useRouter();
+
+  const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://192.168.1.2:2020/adminlogin", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Invalid credentials");
+      }
+
+      const data = await response.json();
+
+      // Redirect to admin dashboard if login is successful
+      if (data.message === "Login successful") {
+        router.push("/adminrequestlist"); // Adjust the path as needed
+      } else {
+        setError("Invalid login. Please try again.");
+      }
+    } catch (err) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("an unknown error has occured");
+      }
+    }
+  };
+
   return (
     <main className="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-400 ">
       <div className="flex flex-col lg:flex-row w-full max-w-4xl bg-white rounded-lg shadow-2xl overflow-hidden transform transition-all lg:h-custom-height">
@@ -25,19 +66,30 @@ export default function SignInPage() {
             To log into your account, enter your email address and password.
           </h6>
 
-          <form className="flex flex-col space-y-4">
+          {error && <p className="text-red-500 text-center mb-4">{error}</p>}
+
+          <form className="flex flex-col space-y-4" onSubmit={handleLogin}>
             <input
               type="email"
               placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
+              required
             />
             <input
               type="password"
               placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
+              required
             />
 
-            <button className="bg-gradient-to-b from-gray-700 to-gray-500 text-white px-4 py-2 rounded-3xl hover:bg-gray-900 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full">
+            <button
+              type="submit"
+              className="bg-gradient-to-b from-gray-700 to-gray-500 text-white px-4 py-2 rounded-3xl hover:bg-gray-900 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full"
+            >
               Login
             </button>
           </form>

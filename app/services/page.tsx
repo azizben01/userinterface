@@ -26,7 +26,7 @@ export default function ServiceRequestpage() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://192.168.1.72:2020/services", {
+      const response = await fetch("http://192.168.1.2:2020/services", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
