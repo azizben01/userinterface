@@ -17,7 +17,9 @@ const AdminPage = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://192.168.1.2:2020/requestlist");
+        const response = await fetch(
+          "https://softcreatixbackend.onrender.com/requestlist"
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch services");
         }
@@ -34,7 +36,7 @@ const AdminPage = () => {
   const handleComplete = async (id: number) => {
     try {
       const response = await fetch(
-        `http://192.168.1.2:2020/markAsCompleted/${id}/complete`,
+        `https://softcreatixbackend.onrender.com/markAsCompleted/${id}/complete`,
         {
           method: "PUT",
         }
@@ -55,7 +57,7 @@ const AdminPage = () => {
     if (window.confirm("Are you sure you want to delete this request?")) {
       try {
         const response = await fetch(
-          `http://192.168.1.2:2020/deleteRequest/${id}`,
+          `https://softcreatixbackend.onrender.com/deleteRequest/${id}`,
           {
             method: "PUT", // Update to PUT to match backend
           }

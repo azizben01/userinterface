@@ -26,13 +26,16 @@ export default function ServiceRequestpage() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://192.168.1.2:2020/services", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://softcreatixbackend.onrender.com/services",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();
