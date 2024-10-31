@@ -59,7 +59,7 @@ const AdminPage = () => {
         const response = await fetch(
           `https://softcreatixbackend.onrender.com/deleteRequest/${id}`,
           {
-            method: "PUT", // Update to PUT to match backend
+            method: "DELETE", // Update to PUT to match backend
           }
         );
         if (response.ok) {
@@ -108,7 +108,7 @@ const AdminPage = () => {
                       <PiCheckCircleFill
                         className={`text-2xl ${
                           service.status === "completed"
-                            ? "text-blue-900"
+                            ? "text-green-900"
                             : "text-blue-400"
                         }`}
                       />
