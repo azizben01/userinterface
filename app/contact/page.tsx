@@ -40,8 +40,12 @@ const ContactPage = () => {
         alert("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        console.error("Failed to send message:", response.statusText);
-        alert("There was an error sending your message. Please try again.");
+        // console.error("Failed to send message:", response.statusText);
+        // alert("There was an error sending your message. Please try again.");
+        const errorData = await response.json(); // Parse the JSON error response
+        const errorMessage = errorData.message || response.statusText; // Use the specific error message if available
+        console.error("Failed to send message:", errorMessage);
+        alert(`There was an error sending your message: ${errorMessage}`);
       }
     } catch (error) {
       console.error("Request error:", error);
