@@ -59,7 +59,7 @@ const AdminPage = () => {
     fetchMessages();
   }, []);
 
-  //Fetch to mark a task as completed
+  //Function to mark a task as completed
   const handleComplete = async (id: number) => {
     try {
       const response = await fetch(
@@ -80,7 +80,7 @@ const AdminPage = () => {
     }
   };
 
-  //Fetch to delete a request service
+  //Function to delete a request service
   const handleDelete = async (id: number) => {
     if (window.confirm("Are you sure you want to delete this request?")) {
       try {
@@ -101,11 +101,12 @@ const AdminPage = () => {
     }
   };
 
+  //function to delete a customer message
   const handleDeleteMessage = async (id: number) => {
     if (window.confirm("Are you sure you want to delete this message?")) {
       try {
         const response = await fetch(
-          `https://softcreatixbackend.onrender.com/deleteMessage/${id}`,
+          `https://softcreatixbackend.onrender.com/deletecustomermessage/${id}`,
           {
             method: "DELETE",
           }
@@ -137,6 +138,10 @@ const AdminPage = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left Column - Requests */}
           <section className="lg:w-1/2">
+            <h5 className="text-green-900 text-sm">
+              TIPS: Only tick a request when it has been completed. Ticked
+              requests cannot be unticked!{" "}
+            </h5>
             <h2 className="text-2xl font-bold text-center mb-4">
               Service Requests
             </h2>
@@ -183,8 +188,8 @@ const AdminPage = () => {
 
           {/* Right Column - Messages */}
           <section className="lg:w-1/2">
-            <h2 className="text-2xl font-bold text-center mb-4">
-              Contact Messages
+            <h2 className="text-2xl font-bold text-center mb-4 mt-10">
+              Customers Messages
             </h2>
             {messages.length > 0 ? (
               <ul>
