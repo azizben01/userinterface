@@ -43,7 +43,7 @@ const AdminPage = () => {
     const fetchMessages = async () => {
       try {
         const response = await fetch(
-          "https://softcreatixbackend.onrender.com/submitcontact"
+          "https://softcreatixbackend.onrender.com/messagelist"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch messages");
@@ -59,6 +59,7 @@ const AdminPage = () => {
     fetchMessages();
   }, []);
 
+  //Fetch to mark a task as completed
   const handleComplete = async (id: number) => {
     try {
       const response = await fetch(
@@ -79,6 +80,7 @@ const AdminPage = () => {
     }
   };
 
+  //Fetch to delete a request service
   const handleDelete = async (id: number) => {
     if (window.confirm("Are you sure you want to delete this request?")) {
       try {
