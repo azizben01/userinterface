@@ -26,7 +26,7 @@ const ContactPage = () => {
 
     try {
       const response = await fetch(
-        "https://softcreatixbackend.onrender.com/messages",
+        "https://softcreatixbackend.onrender.com/submitcontact",
         {
           method: "POST",
           headers: {
