@@ -1,27 +1,32 @@
-"use client"; // For animations and interactive components
+"use client";
 import { useState } from "react";
 
-export default function ContactPage() {
-  // State for form data
-  const [formData, setFormData] = useState({
+interface ContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+const ContactPage = () => {
+  const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
     message: "",
   });
 
-  // Handle input changes
-  const handleInputChange = (e: { target: { name: any; value: any } }) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle form submission
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
       const response = await fetch(
-        "https://softcreatixbackend.onrender.com/submitcontact",
+        "https://softcreatixbackend.onrender.com/messages",
         {
           method: "POST",
           headers: {
@@ -32,21 +37,15 @@ export default function ContactPage() {
       );
 
       if (response.ok) {
-        const data = await response.json();
-        console.log("Response from server:", data);
         alert("Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
+        setFormData({ name: "", email: "", message: "" });
       } else {
-        console.error("Server error:", response.statusText);
-        alert("Failed to send message.");
+        console.error("Failed to send message:", response.statusText);
+        alert("There was an error sending your message. Please try again.");
       }
     } catch (error) {
       console.error("Request error:", error);
-      alert("There was an error sending your message. Please try again.");
+      alert("There was an error submitting the form. Please try again.");
     }
   };
 
@@ -54,10 +53,10 @@ export default function ContactPage() {
     <div className="container mx-auto py-16 mt-24">
       <h1 className="text-4xl font-bold text-center mb-5">Contact Us</h1>
       <h6 className="px-5 text-lg mb-16">
-        For any information or assistance you may need at General Consulting
-        Groups SARL, please contact us at the addresses below.
-        <br /> We ensure you a very prompt response.
+        For any information or assistance you may need, please contact us at the
+        addresses below. We ensure prompt feedback.
       </h6>
+
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 p-4">
           <h2 className="text-2xl font-bold mb-4">Our Contact Information</h2>
@@ -73,10 +72,11 @@ export default function ContactPage() {
             contact@generalconsultinggroups.com
           </p>
           <p className="text-gray-700 mb-2">
-            <span className="text-lg font-bold">Whatsapp:</span> +254 111 827
+            <span className="text-lg font-bold">WhatsApp:</span> +254 111 827
             802 & +34 602 39 49 89
           </p>
         </div>
+
         <div className="md:w-1/2 p-4">
           <h2 className="text-2xl font-bold mb-4">Contact Form</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -111,7 +111,7 @@ export default function ContactPage() {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-gray-900 text-white px-4 py-2 rounded-3xl hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-3/4 mx-auto"
+                className="bg-gray-900 text-white px-4 py-2 rounded-3xl hover:from-green-600 hover:to-teal-600 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-3/4 mx-auto"
               >
                 Submit
               </button>
@@ -121,4 +121,6 @@ export default function ContactPage() {
       </div>
     </div>
   );
-}
+};
+
+export default ContactPage;
