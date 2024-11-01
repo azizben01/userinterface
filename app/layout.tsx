@@ -20,6 +20,9 @@ export default function RootLayout({
   const toggleMobileMenu = () => {
     setMenuOpen((prev) => !prev);
   };
+  const handleLinkClick = () => {
+    setMenuOpen(false); // Closes the menu when a link is clicked
+  };
 
   // Effect to handle scroll event for header background color change
   useEffect(() => {
@@ -40,7 +43,7 @@ export default function RootLayout({
         {/* Header Section */}
         {showHeader && (
           <header
-            className={`fixed top-0 left-0 right-0 z-10 text-lg text-custom-gray1 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-transparent p-[7px] ${
+            className={`fixed top-0 left-0 right-0 z-20 text-lg text-custom-gray1 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-transparent p-[7px] ${
               isScrolled ? "bg-gray-900 text-white" : "bg-transparent"
             }`}
           >
@@ -54,9 +57,9 @@ export default function RootLayout({
                   height={100} // smaller height on mobile
                   // className="sm:w-[200px] sm:h-[140px] hover:scale-105 transition-transform duration-300"
                 />
-                <span className="mt-6 sm:mt-0 sm:ml-4 text-2xl sm:text-3xl font-bold tracking-wide text-center sm:text-left">
+                {/* <span className="mt-6 sm:mt-0 sm:ml-4 text-2xl sm:text-3xl font-bold tracking-wide text-center sm:text-left">
                   SoftCreatix
-                </span>
+                </span> */}
               </div>
               {/* Desktop Navigation Links */}
               <div className="hidden md:flex space-x-6 items-center">
@@ -110,21 +113,19 @@ export default function RootLayout({
                 <div className="flex flex-col items-center space-y-4">
                   <Link
                     href="/"
+                    onClick={handleLinkClick}
+                    passHref
                     className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
                   >
                     Home
                   </Link>
                   <Link
                     href="/services"
+                    onClick={handleLinkClick}
+                    passHref
                     className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
                   >
                     Services
-                  </Link>
-                  <Link
-                    href="/requestlist"
-                    className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
-                  >
-                    Requests
                   </Link>
                 </div>
               </div>

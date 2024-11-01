@@ -37,6 +37,8 @@ const ContactPage = () => {
       );
 
       if (response.ok) {
+        const data = await response.json();
+        console.log("Response fron server", data);
         alert("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } else {

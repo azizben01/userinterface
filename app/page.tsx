@@ -6,17 +6,18 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Hero Section with Gradient */}
-      <main className="flex-1 flex flex-col items-center justify-center text-center relative pt-20 min-h-screen">
+      <main className="flex-1 flex flex-col items-center justify-center text-center relative pt-28 md:pt-20 min-h-screen">
         <div
-          className="absolute bg-fixed inset-0 bg-cover bg-center filter blur-sm object-cover"
+          className="absolute inset-0 bg-cover bg-center filter blur-sm object-cover"
           style={{ backgroundImage: "url('/images/backgroundimage4.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
-        <div className="relative p-8 animate-fade-in">
-          <h1 className="text-4xl font-bold text-white mb-4">
+
+        <div className="relative p-6 sm:p-8 md:animate-fade-in z-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Welcome to SoftCreatix
           </h1>
-          <p className=" text-white mb-6">
+          <p className="text-sm sm:text-base md:text-lg text-white mb-6">
             At SoftCreatix, we are thrilled to have you on board! Whether you
             are here to explore innovative solutions or looking to collaborate
             with a team of experts in software development, web design, and
@@ -29,17 +30,17 @@ export default function HomePage() {
             to deliver exceptional quality, foster innovation, and create
             digital experiences that leave a lasting impact.
           </p>
-          <p className="text-white text-lg font-bold">
+          <p className="text-sm sm:text-base md:text-lg text-white font-bold mb-2">
             Let’s work together to transform your ideas into reality!
           </p>
-          <p className="text-white text-lg font-bold mb-10">
+          <p className="text-sm sm:text-base md:text-lg text-white font-bold mb-10">
             SoftCreatix - Creating Tomorrow Solutions, Today.
           </p>
 
-          <div className="space-x-4 ">
+          <div className="space-x-4">
             <Link
               href="/services"
-              className="slide-up px-6 py-3 bg-custom-gray1 text-white rounded-3xl hover:bg-custom-gray2 transition-transform duration-300 transform hover:scale-105"
+              className="slide-up px-4 py-2 sm:px-6 sm:py-3 bg-custom-gray1 text-white rounded-3xl hover:bg-custom-gray2 transition-transform duration-300 transform hover:scale-105"
             >
               Get Started
             </Link>

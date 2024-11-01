@@ -161,11 +161,11 @@ function AboutUsPage() {
         </div>
       </section>
       {/* CTA Section */}
-      <section className="sm:py-16 bg-gray-900 text-white text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+      <section className="sm:py-16 py-12 px-4 sm:px-8 bg-gray-900 text-white text-center mb-16">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 max-w-[90%] mx-auto">
           Ready to Transform Your Business?
         </h2>
-        <p className="text-base sm:text-lg mb-6 sm:mb-8">
+        <p className="text-base sm:text-lg mb-6 sm:mb-8 max-w-[90%] mx-auto">
           Contact SoftCreatix today to find out how we can help you turn your
           vision into reality.
         </p>
