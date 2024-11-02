@@ -1,9 +1,10 @@
 "use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function VerifyCode() {
-  const [email, setEmail] = useState("");
+  const [code, setCode] = useState("");
   const [error, setError] = useState("");
   const router = useRouter();
 
@@ -11,13 +12,13 @@ export default function VerifyCode() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://softcreatixbackend.onrender.com/requestpasswordreset",
+        "https://softcreatixbackend.onrender.com/verifycode",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email }),
+          body: JSON.stringify({ code }),
         }
       );
       if (!response.ok) {
@@ -55,17 +56,24 @@ export default function VerifyCode() {
           className="flex flex-col space-y-4 mt-6"
         >
           <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
+            type="code"
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
+            placeholder="Enter your 6 digits code"
             className="border px-4 py-2 rounded-3xl w-full"
             required
           />
           <button className="bg-gradient-to-b from-gray-700 to-gray-500 text-white px-4 py-2 rounded-3xl hover:bg-gray-900 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full">
             Verify
           </button>
-          <div className="text-center"></div>
+          <div className="text-center">
+            <Link
+              href="/changeadminpassword"
+              className="text-custom-gray2 hover:underline"
+            >
+              go to reset password
+            </Link>
+          </div>
         </form>
       </div>
     </main>
