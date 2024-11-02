@@ -11,6 +11,13 @@ export default function ChangeAdminPassword() {
 
   const handleRequestCode = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      setError("Passwords do not match");
+      return;
+    }
+
     try {
       const response = await fetch(
         "https://softcreatixbackend.onrender.com/resetpassword",
@@ -22,34 +29,30 @@ export default function ChangeAdminPassword() {
           body: JSON.stringify({ password }),
         }
       );
-      if (!response.ok) {
-        throw new Error("Invalid password");
-      }
-      const data = await response.json();
-      // redirect to verify code if email correct
-      // data.message == "Password reset email sent";
 
-      if (
-        response.ok &&
-        data.message === "Password has been reset successfully"
-      ) {
+      if (!response.ok) {
+        throw new Error("Failed to reset password");
+      }
+
+      const data = await response.json();
+
+      if (data.message === "Password has been reset successfully") {
         router.push("/adminsuccessfullpage");
       } else {
-        setError("password not changed");
+        setError("Password was not changed");
       }
     } catch (err) {
-      if (err instanceof Error) {
-        setError(err.message);
-      } else {
-        setError("an error occured");
-      }
+      const errorMessage =
+        err instanceof Error ? err.message : "An error occurred";
+      setError(errorMessage);
     }
   };
+
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-gray-300 bg-center px-4 sm:px-0">
       <div className="bg-white p-6 sm:p-8 rounded-xl shadow-xl w-full sm:w-3/4 md:w-2/6 max-w-md">
         <h1 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-800">
-          Reset your password !!
+          Reset your password
         </h1>
         <h6 className="text-sm mb-8 sm:mb-10 text-custom-hover">
           You can now provide your new password.
@@ -68,10 +71,10 @@ export default function ChangeAdminPassword() {
             required
           />
           <input
-            type="confirmPassword"
+            type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
-            placeholder="confirm new password"
+            placeholder="Confirm new password"
             className="border px-4 py-2 rounded-3xl w-full"
             required
           />
