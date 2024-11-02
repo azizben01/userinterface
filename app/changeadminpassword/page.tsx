@@ -23,16 +23,19 @@ export default function ChangeAdminPassword() {
         }
       );
       if (!response.ok) {
-        throw new Error("Invalid Email");
+        throw new Error("Invalid password");
       }
       const data = await response.json();
       // redirect to verify code if email correct
       // data.message == "Password reset email sent";
 
-      if (response.ok && data.message === "Password reset email sent") {
-        router.push("/verifycode");
+      if (
+        response.ok &&
+        data.message === "Password has been reset successfully"
+      ) {
+        router.push("/adminsuccessfullpage");
       } else {
-        setError("Email not sent");
+        setError("password not changed");
       }
     } catch (err) {
       if (err instanceof Error) {

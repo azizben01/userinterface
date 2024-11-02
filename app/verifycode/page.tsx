@@ -22,16 +22,16 @@ export default function VerifyCode() {
         }
       );
       if (!response.ok) {
-        throw new Error("Invalid Email");
+        throw new Error("Invalid code");
       }
       const data = await response.json();
       // redirect to verify code if email correct
       // data.message == "Password reset email sent";
 
-      if (response.ok && data.message === "Password reset email sent") {
-        router.push("/verifycode");
+      if (response.ok && data.message === "Code verified") {
+        router.push("/changeadminpassword");
       } else {
-        setError("Email not sent");
+        setError("wrong code");
       }
     } catch (err) {
       if (err instanceof Error) {
