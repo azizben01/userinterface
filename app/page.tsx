@@ -8,7 +8,7 @@ export default function HomePage() {
       {/* Hero Section with Gradient */}
       <main className="flex-1 flex flex-col items-center justify-center text-center relative pt-28 md:pt-20 min-h-screen">
         <div
-          className="absolute inset-0 bg-cover bg-center filter blur-sm object-cover"
+          className="absolute bg-fixed inset-0 bg-cover bg-center filter blur-sm object-cover"
           style={{ backgroundImage: "url('/images/backgroundimage4.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
