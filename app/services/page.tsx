@@ -128,6 +128,8 @@ export default function ServiceRequestpage() {
                 Website Design and Development
               </option>
               <option value="UX/UI Design">UX/UI Design</option>
+              <option value="Mobile application development">Mobile application development</option>
+              <option value="Mobile application development"></option>
               <option value="E-commerce Development">
                 E-commerce Development
               </option>
