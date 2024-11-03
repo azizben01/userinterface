@@ -112,9 +112,9 @@ const AdminPage = () => {
           }
         );
         if (response.ok) {
-          setMessages((prevMessages) =>
-            prevMessages.filter((message) => message.id !== id)
-          );
+          setMessages((prevMessages) => {
+            return prevMessages.filter((message) => message.id !== id);
+          });
         }
       } catch (error) {
         console.error("Error deleting message:", error);
