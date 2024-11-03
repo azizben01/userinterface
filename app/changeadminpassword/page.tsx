@@ -1,7 +1,6 @@
 "use client";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ChangeAdminPassword() {
   const [password, setPassword] = useState("");
@@ -9,16 +8,24 @@ export default function ChangeAdminPassword() {
   const [error, setError] = useState("");
   const router = useRouter();
 
+  useEffect(() => {
+    // Redirect back to verify page if no email is in session storage
+    if (!sessionStorage.getItem("resetEmail")) {
+      router.push("/verifypassword");
+    }
+  }, [router]);
+
   const handleRequestCode = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Check if passwords match
     if (password !== confirmPassword) {
       setError("Passwords do not match");
       return;
     }
 
     try {
+      const email = sessionStorage.getItem("resetEmail");
+
       const response = await fetch(
         "https://softcreatixbackend.onrender.com/resetpassword",
         {
@@ -26,7 +33,7 @@ export default function ChangeAdminPassword() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ password }),
+          body: JSON.stringify({ email, password }),
         }
       );
 
@@ -36,18 +43,16 @@ export default function ChangeAdminPassword() {
         throw new Error(data.error || "Failed to reset password");
       }
 
-      // Check success message
       if (data.message === "Password has been reset successfully") {
-        setPassword(""); // Clear fields on success
+        setPassword("");
         setConfirmPassword("");
+        sessionStorage.removeItem("resetEmail");
         router.push("/adminsuccessfullpage");
       } else {
         setError("Password was not changed");
       }
     } catch (err) {
-      const errorMessage =
-        err instanceof Error ? err.message : "An error occurred";
-      setError(errorMessage);
+      setError(err instanceof Error ? err.message : "An error occurred");
     }
   };
 
@@ -60,7 +65,7 @@ export default function ChangeAdminPassword() {
         <h6 className="text-sm mb-8 sm:mb-10 text-custom-hover">
           You can now provide your new password.
         </h6>
-        {error && <p className="text-red-500 text-center mb-4"> {error} </p>}
+        {error && <p className="text-red-500 text-center mb-4">{error}</p>}
         <form
           onSubmit={handleRequestCode}
           className="flex flex-col space-y-4 mt-6"
@@ -84,14 +89,6 @@ export default function ChangeAdminPassword() {
           <button className="bg-gradient-to-b from-gray-700 to-gray-500 text-white px-4 py-2 rounded-3xl hover:bg-gray-900 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full">
             Save new password
           </button>
-          <div className="text-center">
-            <Link
-              href="/adminsuccessfullpage"
-              className="text-custom-gray2 hover:underline"
-            >
-              Go to successful page
-            </Link>
-          </div>
         </form>
       </div>
     </main>
