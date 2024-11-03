@@ -30,13 +30,16 @@ export default function ChangeAdminPassword() {
         }
       );
 
-      if (!response.ok) {
-        throw new Error("Failed to reset password");
-      }
-
       const data = await response.json();
 
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to reset password");
+      }
+
+      // Check success message
       if (data.message === "Password has been reset successfully") {
+        setPassword(""); // Clear fields on success
+        setConfirmPassword("");
         router.push("/adminsuccessfullpage");
       } else {
         setError("Password was not changed");
