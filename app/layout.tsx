@@ -43,9 +43,8 @@ export default function RootLayout({
         {/* Header Section */}
         {showHeader && (
           <header
-            className={`fixed top-0 left-0 right-0 z-20 text-lg text-custom-gray1 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-transparent p-[7px] ${
-              isScrolled ? "bg-gray-900 text-white" : "bg-transparent"
-            }`}
+            className={`fixed top-0 left-0 right-0 z-20 text-lg text-custom-gray1 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-transparent px-custom-px py-custom-py
+      }, ${isScrolled ? "bg-gray-900 text-white" : "bg-transparent"}`}
           >
             <nav className="flex justify-between items-center container mx-auto">
               <div className="flex flex-col sm:flex-row items-center">

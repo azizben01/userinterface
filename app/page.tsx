@@ -6,14 +6,14 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Hero Section with Gradient */}
-      <main className="flex-1 flex flex-col items-center justify-center text-center relative pt-28 md:pt-20 min-h-screen">
+      <main className="flex items-center text-center md:pt-20 px-custom-px min-h-screen">
         <div
           className="absolute bg-fixed inset-0 bg-cover bg-center filter blur-sm object-cover"
-          style={{ backgroundImage: "url('/images/backgroundimage4.jpg')" }}
+          style={{ backgroundImage: "url('/images/cubes.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
 
-        <div className="relative p-6 sm:p-8 md:animate-fade-in z-10">
+        <div className="relative sm:p-8 md:animate-fade-in z-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Welcome to SoftCreatix
           </h1>
@@ -49,7 +49,7 @@ export default function HomePage() {
       </main>
 
       {/* Services Overview */}
-      <section className="p-8 bg-white mt-8">
+      <section className="px-custom-px py-custom-py bg-white mt-8">
         <h2 className="text-3xl font-bold text-center text-gray-500 mb-6">
           Our Services
         </h2>
@@ -134,8 +134,16 @@ export default function HomePage() {
               business objectives.
             </p>
           </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-xl font-semibold">Artificial Intelligence</h3>
+            <p>
+              We leverage advanced AI technologies to build intelligent
+              solutions. Our AI solutions can enhance your business processes
+              and customer experiences.
+            </p>
+          </div>
         </div>
-        <div className="text-center items-center mt-10">
+        <div className="text-center items-center mt-8">
           <Link
             href="/services"
             className="px-6 py-3 bg-gray-600 text-white rounded-2xl hover:bg-gray-800"
@@ -145,7 +153,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* Why choose us */}
-      <section className="p-8 bg-gray-50 mt-8">
+      <section className="px-custom-px py-custom-py bg-gray-50 mt-8">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
           Why Choose SoftCreatix?
         </h2>
@@ -196,7 +204,7 @@ export default function HomePage() {
       </section>
 
       {/* Technology and tools */}
-      <section className="p-8 bg-white mt-8 mb-4">
+      <section className="py-custom-py px-custom-px bg-white mt-8 mb-4">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
           Technologies We Use
         </h2>
@@ -441,7 +449,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials  */}
-      <section className="p-8 bg-gray-50 mt-8">
+      <section className="px-custom-px py-custom-py bg-gray-50 mt-8">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
           What Our Clients Say
         </h2>
@@ -475,7 +483,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* Portfolio */}
-      <section className="p-8 bg-white mt-8">
+      <section className="px-custom-px py-custom-py bg-white mt-8">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
           Our Portfolio
         </h2>
@@ -526,7 +534,7 @@ export default function HomePage() {
         </div> */}
       </section>
       {/* Team members */}
-      <section className="p-8 bg-white mt-8">
+      <section className="px-custom-px py-custom-py bg-white mt-8">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
           Meet Our Team
         </h2>
@@ -601,7 +609,7 @@ export default function HomePage() {
       </section>
 
       {/* About us section */}
-      <section className="p-8 bg-gray-50 mt-8">
+      <section className="px-custom-px py-custom-py bg-gray-50 mt-8">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
           About SoftCreatix
         </h2>
@@ -622,7 +630,7 @@ export default function HomePage() {
       </section>
 
       {/* Call to action */}
-      <section className="p-8 bg-gray-900 mt-8 text-white text-center">
+      <section className="py-custom-py px-cutom-px bg-gray-900 mt-8 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">
           Ready to Start Your Project?
         </h2>
