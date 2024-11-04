@@ -591,6 +591,17 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <Image
+              src="/images/anicet.jpg"
+              width={100}
+              height={100}
+              alt="Jane Smith"
+              className="rounded-full mx-auto h-32 w-32 mb-4"
+            />
+            <h3 className="text-xl font-semibold">Anicet </h3>
+            <p>Frontend Developper</p>
+          </div>
+          <div className="text-center">
+            <Image
               src="/images/ben.jpg"
               width={100}
               height={100}
