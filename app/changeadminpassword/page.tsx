@@ -1,10 +1,12 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import { PiEye, PiEyeSlash } from "react-icons/pi";
 
 export default function ChangeAdminPassword() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
 
@@ -78,14 +80,26 @@ export default function ChangeAdminPassword() {
             className="border px-4 py-2 rounded-3xl w-full"
             required
           />
-          <input
-            type="password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            placeholder="Confirm new password"
-            className="border px-4 py-2 rounded-3xl w-full"
-            required
-          />
+          <div className="relative w-full">
+            <input
+              type={passwordVisible ? "text" : "password"} // Toggle type based on passwordVisible state            value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              placeholder="Confirm new password"
+              className="border px-4 py-2 rounded-3xl w-full"
+              required
+            />
+            <button
+              type="button"
+              onClick={() => setPasswordVisible(!passwordVisible)} // Toggle password visibility
+              className="absolute inset-y-0 right-4 flex items-center text-gray-500 hover:text-gray-700"
+            >
+              {passwordVisible ? (
+                <PiEyeSlash className="text-xl" /> // Eye slash icon if visible
+              ) : (
+                <PiEye className="text-xl" /> // Eye icon if hidden
+              )}
+            </button>
+          </div>
           <button className="bg-gradient-to-b from-gray-700 to-gray-500 text-white px-4 py-2 rounded-3xl hover:bg-gray-900 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full">
             Save new password
           </button>

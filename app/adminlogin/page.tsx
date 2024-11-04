@@ -2,10 +2,12 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { PiEye, PiEyeSlash } from "react-icons/pi";
 
 export default function SignInPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
 
@@ -80,14 +82,27 @@ export default function SignInPage() {
               className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
               required
             />
-            <input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
-              required
-            />
+            <div className="relative w-full">
+              <input
+                type={passwordVisible ? "text" : "password"} // Toggle type based on passwordVisible state
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
+                required
+              />
+              <button
+                type="button"
+                onClick={() => setPasswordVisible(!passwordVisible)} // Toggle password visibility
+                className="absolute inset-y-0 right-4 flex items-center text-gray-500 hover:text-gray-700"
+              >
+                {passwordVisible ? (
+                  <PiEyeSlash className="text-xl" /> // Eye slash icon if visible
+                ) : (
+                  <PiEye className="text-xl" /> // Eye icon if hidden
+                )}
+              </button>
+            </div>
 
             <button
               type="submit"

@@ -111,10 +111,14 @@ const AdminPage = () => {
             method: "DELETE",
           }
         );
+        console.log("Response:", response); // Check response status
+
         if (response.ok) {
           setMessages((prevMessages) => {
             return prevMessages.filter((message) => message.id !== id);
           });
+        } else {
+          console.error("Failed to delete message:", response.statusText);
         }
       } catch (error) {
         console.error("Error deleting message:", error);
