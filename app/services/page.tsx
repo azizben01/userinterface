@@ -124,28 +124,28 @@ export default function ServiceRequestpage() {
               <option value="" disabled>
                 Select a service
               </option>
-              <option value="Website Design and Development">
-                Website Design and Development
-              </option>
-              <option value="UX/UI Design">UX/UI Design</option>
-              <option value="Mobile application development">
-                Mobile application development
-              </option>
               <option value="AI Creation">
                 Creation of Artificial Intelligence
+              </option>
+              <option value="Digital Consulting">
+                Digital Consulting and Strategy
               </option>
               <option value="E-commerce Development">
                 E-commerce Development
               </option>
-              <option value="SEO">Search Engine Optimization (SEO)</option>
-              <option value="Maintenance">Maintenance and Support</option>
               <option value="Hosting">Web Hosting</option>
+              <option value="Maintenance">Maintenance and Support</option>
+              <option value="Mobile application development">
+                Mobile application development
+              </option>
+              <option value="SEO">Search Engine Optimization (SEO)</option>
+              <option value="System Integration">System Integration</option>
+              <option value="UX/UI Design">UX/UI Design</option>
               <option value="Web Application Development">
                 Web Application Development
               </option>
-              <option value="System Integration">System Integration</option>
-              <option value="Digital Consulting">
-                Digital Consulting and Strategy
+              <option value="Website Design and Development">
+                Website Design and Development
               </option>
             </select>
           </div>
