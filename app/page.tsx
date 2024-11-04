@@ -574,6 +574,17 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <Image
+              src="/images/gabriel.jpg"
+              width={100}
+              height={100}
+              alt="Jane Smith"
+              className="rounded-full mx-auto h-32 w-32 mb-4"
+            />
+            <h3 className="text-xl font-semibold"> Gabriel</h3>
+            <p>Frontend Developper</p>
+          </div>
+          <div className="text-center">
+            <Image
               src="/images/armel.jpg"
               width={100}
               height={100}
@@ -592,11 +603,11 @@ export default function HomePage() {
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Loic </h3>
-            <p>Backend Developper</p>
+            <p>Full stack Developper</p>
           </div>
           <div className="text-center">
             <Image
-              src="/images/armel.jpg"
+              src="/images/ben.jpg"
               width={100}
               height={100}
               alt="Jane Smith"
