@@ -49,7 +49,7 @@ const AdminPage = () => {
           throw new Error("Failed to fetch messages");
         }
         const data: Message[] = await response.json();
-        console.log("Fetched messages:", data); // Check if each message has an id
+        console.log("Fetched messages:", data); // Ensure each message has an id
         setMessages(data);
       } catch (error) {
         console.error("Error fetching messages:", error);
@@ -213,7 +213,13 @@ const AdminPage = () => {
                       <p>{message.message}</p>
                     </div>
                     <PiTrashFill
-                      onClick={() => handleDeleteMessage(message.id)}
+                      onClick={() => {
+                        console.log(
+                          "Attempting to delete message with id:",
+                          message.id
+                        ); // Log the id
+                        handleDeleteMessage(message.id);
+                      }}
                       className="text-2xl text-gray-500 hover:text-red-700 cursor-pointer"
                     />
                   </li>
