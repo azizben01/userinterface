@@ -74,12 +74,6 @@ export default function ResetPasswordPage() {
             >
               Remember Password? Login
             </Link>
-            <Link
-              href="/verifycode"
-              className="text-custom-gray2 hover:underline"
-            >
-              verify code
-            </Link>
           </div>
         </form>
       </div>

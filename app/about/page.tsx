@@ -2,7 +2,7 @@ import { FaHandsHelping, FaRocket, FaUsers } from "react-icons/fa";
 
 function AboutUsPage() {
   return (
-    <div className="container mt-28">
+    <div className="container mt-32">
       <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-6 sm:mb-10 text-gray-800">
         About SoftCreatix
       </h1>
