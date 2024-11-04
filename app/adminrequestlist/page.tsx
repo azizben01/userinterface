@@ -49,6 +49,7 @@ const AdminPage = () => {
           throw new Error("Failed to fetch messages");
         }
         const data: Message[] = await response.json();
+        console.log("Fetched messages:", data); // Check if each message has an id
         setMessages(data);
       } catch (error) {
         console.error("Error fetching messages:", error);
@@ -103,6 +104,10 @@ const AdminPage = () => {
 
   //function to delete a customer message
   const handleDeleteMessage = async (id: number) => {
+    if (id === undefined) {
+      console.error("Message ID is undefined, cannot delete");
+      return;
+    }
     if (window.confirm("Are you sure you want to delete this message?")) {
       try {
         const response = await fetch(
@@ -111,7 +116,7 @@ const AdminPage = () => {
             method: "DELETE",
           }
         );
-        console.log("Response:", response); // Check response status
+        console.log("Response:", response);
 
         if (response.ok) {
           setMessages((prevMessages) => {
