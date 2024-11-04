@@ -133,7 +133,6 @@ export default function ServiceRequestpage() {
               <option value="E-commerce Development">
                 E-commerce Development
               </option>
-              <option value="Hosting">Web Hosting</option>
               <option value="Maintenance">Maintenance and Support</option>
               <option value="Mobile application development">
                 Mobile application development
@@ -147,6 +146,7 @@ export default function ServiceRequestpage() {
               <option value="Website Design and Development">
                 Website Design and Development
               </option>
+              <option value="Hosting">Web Hosting</option>
             </select>
           </div>
 
