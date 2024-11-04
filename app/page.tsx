@@ -500,27 +500,11 @@ export default function HomePage() {
             </p>
           </div>
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">Project Name</h3>
+            <h3 className="text-xl font-semibold">Online Motel Reservation</h3>
             <p>
-              A brief description of the project and the technology stack used.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">Project Name</h3>
-            <p>
-              A brief description of the project and the technology stack used.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">Project Name</h3>
-            <p>
-              A brief description of the project and the technology stack used.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">Project Name</h3>
-            <p>
-              A brief description of the project and the technology stack used.
+              Similar in a better way then booking or rbnb, we simplify the
+              process of booking accommodation accross different cities and
+              countries.
             </p>
           </div>
         </div>
