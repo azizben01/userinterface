@@ -580,7 +580,7 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <Image
-              src="/images/armel.jpg"
+              src="/images/backenddevelopper.jpg"
               width={100}
               height={100}
               alt="Jane Smith"
