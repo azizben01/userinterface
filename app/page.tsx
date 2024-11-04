@@ -6,15 +6,15 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Hero Section with Gradient */}
-      <main className="flex flex-col items-center text-center md:pt-20 px-custom-px min-h-screen">
+      <main className="flex items-center text-center md:pt-20 px-custom-px min-h-screen">
         <div
           className="absolute bg-fixed inset-0 bg-cover bg-center filter blur-sm object-cover"
           style={{ backgroundImage: "url('/images/cubes.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
 
-        <div className="relative sm:p-8 md:animate-fade-in z-10 px-4 sm:px-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+        <div className="relative sm:p-8 md:animate-fade-in z-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Welcome to SoftCreatix
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-white mb-6">
@@ -22,8 +22,6 @@ export default function HomePage() {
             are here to explore innovative solutions or looking to collaborate
             with a team of experts in software development, web design, and
             digital transformation, you have come to the right place.
-            <br />
-            <br />
             SoftCreatix is a leading software development company in Rwanda,
             specializing in creating innovative software applications. We are
             passionate about crafting custom-made solutions tailored to your
@@ -42,7 +40,7 @@ export default function HomePage() {
           <div className="space-x-4">
             <Link
               href="/services"
-              className="slide-up px-6 py-3 bg-custom-gray1 text-white rounded-3xl hover:bg-custom-gray2 transition-transform duration-300 transform hover:scale-105"
+              className="slide-up px-4 py-2 sm:px-6 sm:py-3 bg-custom-gray1 text-white rounded-3xl hover:bg-custom-gray2 transition-transform duration-300 transform hover:scale-105"
             >
               Get Started
             </Link>
