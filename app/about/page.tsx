@@ -6,7 +6,7 @@ function AboutUsPage() {
       <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-6 sm:mb-10 text-gray-800">
         About SoftCreatix
       </h1>
-      <p className="text-base sm:text-lg text-center mb-8 sm:mb-12 px-2 md:px-20 lg:px-48 text-gray-600 leading-relaxed">
+      <p className="px-custom-px text-center mb-8 sm:mb-12 px-custom-px text-gray-600 leading-relaxed">
         SoftCreatix is a leading provider of innovative digital solutions,
         offering a comprehensive range of services that help businesses and
         individuals achieve their full potential through cutting-edge technology
@@ -14,7 +14,7 @@ function AboutUsPage() {
         fostering innovation through the power of digital transformation.
       </p>
       {/* Vision and Values Section */}
-      <section className="flex flex-col lg:flex-row text-white space-y-6 lg:space-y-0 lg:space-x-10 ml-0 sm:ml-3 mb-12 sm:mb-16">
+      <section className=" px-custom-px py-custom-py flex flex-col lg:flex-row text-white space-y-6 lg:space-y-0 lg:space-x-10 ml-0 sm:ml-3 mb-12 sm:mb-16">
         <div className="lg:w-1/2 p-4 bg-gray-800 rounded-2xl shadow-lg">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Our Vision</h2>
           <p className="text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
@@ -56,7 +56,7 @@ function AboutUsPage() {
       </section>
 
       {/* Our Team Section */}
-      <section className="mb-12 sm:mb-16 px-2 sm:px-3">
+      <section className=" px-custom-px py-custom-py">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 text-gray-700">
           Meet Our Team
         </h2>
@@ -66,31 +66,49 @@ function AboutUsPage() {
               name: "Patrick",
               title: "Founder & CEO",
               desc: "With years of experience in software development, Patrick leads our team with vision and integrity.",
+              contact: "+34 602394 989",
             },
             {
               name: "Mbokani Predit",
               title: "Lead Developer",
               desc: "Mbokani oversees all technical aspects, ensuring that we always stay at the forefront of innovation.",
+              contact: "+254 11 1827802",
+            },
+            {
+              name: "Loic",
+              title: "Lead developer",
+              desc: "Loic brings technical expertise and creativity to every project.",
+              contact: "+250 785 703 429",
             },
             {
               name: "Gloire",
               title: "Full Stack Developer",
               desc: "Gloire transforms ideas into visually stunning and user-friendly interfaces.",
+              contact: "+250 791 460 743",
             },
             {
               name: "Armel",
               title: "UI/UX Designer",
               desc: "Armel ensures that every project runs smoothly and is delivered on time.",
+              contact: "+250 791 568 558",
             },
             {
               name: "Aziz",
               title: "Full Stack Developer",
               desc: "Aziz brings technical expertise and creativity to every project.",
+              contact: "+250 791 207 043",
             },
             {
-              name: "Loic",
-              title: "Full stack developer",
-              desc: "Aziz brings technical expertise and creativity to every project.",
+              name: "Anicet",
+              title: "Frontend developer",
+              desc: "Anicet brings technical expertise and creativity to every project.",
+              contact: "+250 791 434 908",
+            },
+            {
+              name: "Gabriel",
+              title: "Frontend developer",
+              desc: "Gabriel brings technical expertise and creativity to every project.",
+              contact: "+250 791 348 977",
             },
           ].map((member, index) => (
             <div key={index} className="p-4 bg-gray-800 shadow-md rounded-xl">
@@ -99,17 +117,18 @@ function AboutUsPage() {
               </h3>
               <p className="text-lg mb-2">{member.title}</p>
               <p className="text-white">{member.desc}</p>
+              <p className="text-white">{member.contact}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* History Section */}
-      <section className="py-8 sm:py-16 bg-gray-50">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-gray-700">
+      <section className="py-custom-py bg-gray-50">
+        <h2 className="text-2xl font-bold text-center mb-6 text-gray-700">
           Our Journey
         </h2>
-        <div className="max-w-5xl mx-auto text-center text-base sm:text-lg text-gray-600 leading-relaxed">
+        <div className="px-custom-px mx-auto text-center text-gray-600 leading-relaxed">
           <p className="mb-6 sm:mb-8">
             Founded in 2015, SoftCreatix started with a vision to revolutionize
             the digital space. What began as a small startup has now evolved
@@ -124,8 +143,8 @@ function AboutUsPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-8 sm:py-16 bg-white ">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 text-gray-700">
+      <section className="py-custom-py bg-white ">
+        <h2 className="text-2xl font-bold text-center mb-6 text-gray-700">
           What Our Clients Say
         </h2>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 text-center">
@@ -161,7 +180,7 @@ function AboutUsPage() {
         </div>
       </section>
       {/* CTA Section */}
-      <section className="sm:py-16 py-12 px-4 sm:px-8 bg-gray-900 text-white text-center mb-16">
+      <section className="py-custom-py px-custom-px bg-gray-900 text-white text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4 max-w-[90%] mx-auto">
           Ready to Transform Your Business?
         </h2>

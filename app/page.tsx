@@ -8,8 +8,8 @@ export default function HomePage() {
       {/* Hero Section with Gradient */}
       <main className="flex items-center text-center md:pt-20 px-custom-px min-h-screen">
         <div
-          className="absolute bg-fixed inset-0 bg-cover bg-center filter blur-sm object-cover"
-          style={{ backgroundImage: "url('/images/cubes.jpg')" }}
+          className="absolute bg-fixed inset-0 bg-cover bg-center" //filter blur-sm object-cover
+          style={{ backgroundImage: "url('/images/background7.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
 
@@ -58,7 +58,7 @@ export default function HomePage() {
           comprehensive range of services to meet the needs of its clients. Here
           a list of the main services provided:
         </h6>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-90 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-xl font-semibold">
               Website Design and Development
@@ -536,7 +536,7 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <Image
-              src="/images/backenddevelopper.jpeg"
+              src="/images/mbokani.jpg"
               width={100}
               height={100}
               alt="Jane Smith"
@@ -580,7 +580,7 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <Image
-              src="/images/backenddevelopper.jpg"
+              src="/images/backenddevelopper.jpeg"
               width={100}
               height={100}
               alt="Jane Smith"

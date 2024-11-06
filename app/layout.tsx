@@ -74,12 +74,6 @@ export default function RootLayout({
                 >
                   Services
                 </Link>
-                {/* <Link
-                href="/adminlogin"
-                className="px-4 py-2 text-md rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300"
-              >
-                Admin
-              </Link> */}
               </div>
               {/* Mobile Menu Icon */}
               <div className="md:hidden">
