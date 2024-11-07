@@ -91,19 +91,19 @@ export default function RootLayout({
 
             {/*Mobile navigation menu*/}
             {menuOpen && (
-              <div className="md:hidden mt-4 bg-gray-900 text-white py-12">
+              <div className="md:hidden mt-4 bg-gray-900 text-white py-8">
                 <div className="flex flex-col items-center space-y-4">
                   <Link
                     href="/"
                     onClick={handleLinkClick}
-                    className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
+                    className="px-2 py-2 text-lg hover:bg-gray-800 rounded-lg"
                   >
                     Home
                   </Link>
                   <Link
                     href="/services"
                     onClick={handleLinkClick}
-                    className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
+                    className="px-2 py-2 text-lg hover:bg-gray-800 rounded-lg"
                   >
                     Services
                   </Link>

@@ -3,10 +3,10 @@ import { FaHandsHelping, FaRocket, FaUsers } from "react-icons/fa";
 function AboutUsPage() {
   return (
     <div className="container mt-32">
-      <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-6 sm:mb-10 text-gray-800">
+      <h1 className="text-2xl md:text-3xl sm:text-5xl font-extrabold text-center mb-6 sm:mb-10 text-gray-800">
         About SoftCreatix
       </h1>
-      <p className="px-custom-px text-center mb-8 sm:mb-12 px-custom-px text-gray-600 leading-relaxed">
+      <p className="px-responsive-px md:px-custom-px text-center mb-8 sm:mb-12 text-gray-600 leading-relaxed">
         SoftCreatix is a leading provider of innovative digital solutions,
         offering a comprehensive range of services that help businesses and
         individuals achieve their full potential through cutting-edge technology
@@ -14,8 +14,8 @@ function AboutUsPage() {
         fostering innovation through the power of digital transformation.
       </p>
       {/* Vision and Values Section */}
-      <section className=" px-custom-px py-custom-py flex flex-col lg:flex-row text-white space-y-6 lg:space-y-0 lg:space-x-10 ml-0 sm:ml-3 mb-12 sm:mb-16">
-        <div className="lg:w-1/2 p-4 bg-gray-800 rounded-2xl shadow-lg">
+      <section className=" px-responsive-px py-responsive-py md:px-custom-px flex flex-col lg:flex-row text-white space-y-6 lg:space-y-0 lg:space-x-10 ml-0 sm:ml-3 mb-12 sm:mb-16">
+        <div className="lg:w-1/2 p-4 md-p-4 bg-gray-800 rounded-2xl shadow-lg">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Our Vision</h2>
           <p className="text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
             Our vision is to be a global leader in digital transformation,
@@ -24,9 +24,9 @@ function AboutUsPage() {
             individuals and organizations to unlock new opportunities, stay
             ahead of the curve, and achieve their ultimate goals.
           </p>
-          <FaRocket className="text-4xl sm:text-5xl mx-auto" />
+          <FaRocket className="text-2xl md:text-4xl sm:text-5xl mx-auto" />
         </div>
-        <div className="lg:w-1/2 p-4 bg-gray-800 text-white rounded-2xl shadow-lg">
+        <div className="lg:w-1/2 p-4 md-p-4 bg-gray-800 text-white rounded-2xl shadow-lg">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Our Values</h2>
           <p className="text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
             At SoftCreatix, we are driven by our core values, which guide our
@@ -51,13 +51,13 @@ function AboutUsPage() {
               Integrity: We conduct our business with honesty and transparency.
             </li>
           </ul>
-          <FaHandsHelping className="text-4xl sm:text-5xl mx-auto mt-4 sm:mt-6" />
+          <FaHandsHelping className="text-2xl md:text-4xl sm:text-5xl mx-auto mt-4 sm:mt-6" />
         </div>
       </section>
 
       {/* Our Team Section */}
-      <section className=" px-custom-px py-custom-py">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 text-gray-700">
+      <section className=" px-responsive-px py-responsive-py md:px-custom-px">
+        <h2 className="text-xl md:text-2xl font-bold text-center mb-6 sm:mb-10 text-gray-700">
           Meet Our Team
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 text-white">
@@ -111,8 +111,11 @@ function AboutUsPage() {
               contact: "+250 791 348 977",
             },
           ].map((member, index) => (
-            <div key={index} className="p-4 bg-gray-800 shadow-md rounded-xl">
-              <h3 className="text-xl sm:text-2xl font-bold mb-2">
+            <div
+              key={index}
+              className="p-2 md:p-4 bg-gray-800 shadow-md rounded-xl"
+            >
+              <h3 className="text-lg md:text-2xl font-bold mb-2">
                 {member.name}
               </h3>
               <p className="text-lg mb-2">{member.title}</p>
@@ -124,11 +127,11 @@ function AboutUsPage() {
       </section>
 
       {/* History Section */}
-      <section className="py-custom-py bg-gray-50">
-        <h2 className="text-2xl font-bold text-center mb-6 text-gray-700">
+      <section className="py-custom-py bg-gray-50 md:px-custom-px">
+        <h2 className="text-xl md:text-2xl font-bold text-center mb-6 text-gray-700">
           Our Journey
         </h2>
-        <div className="px-custom-px mx-auto text-center text-gray-600 leading-relaxed">
+        <div className="px-responsive-px mx-auto text-center text-gray-600 leading-relaxed">
           <p className="mb-6 sm:mb-8">
             Founded in 2015, SoftCreatix started with a vision to revolutionize
             the digital space. What began as a small startup has now evolved
@@ -143,7 +146,7 @@ function AboutUsPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-custom-py bg-white ">
+      <section className="py-responsive-py px-responsive-px bg-white ">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-700">
           What Our Clients Say
         </h2>
@@ -180,8 +183,8 @@ function AboutUsPage() {
         </div>
       </section>
       {/* CTA Section */}
-      <section className="py-custom-py px-custom-px bg-gray-900 text-white text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4 max-w-[90%] mx-auto">
+      <section className="py-responsive-py px-responsive-px bg-gray-900 text-white text-center">
+        <h2 className="text-lg md:text-2xl font-bold mb-4 max-w-[90%] mx-auto">
           Ready to Transform Your Business?
         </h2>
         <p className="text-base sm:text-lg mb-6 sm:mb-8 max-w-[90%] mx-auto">
@@ -190,7 +193,7 @@ function AboutUsPage() {
         </p>
         <a
           href="/contact"
-          className="px-6 sm:px-8 py-3 bg-white text-gray-900 font-bold rounded-full hover:bg-gray-200 transition duration-300"
+          className="px-4 md:px-8 py-3 bg-white text-gray-900 font-bold rounded-full hover:bg-gray-200 transition duration-300"
         >
           Get in Touch
         </a>

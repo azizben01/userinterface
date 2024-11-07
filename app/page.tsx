@@ -6,14 +6,18 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Hero Section with Gradient */}
-      <main className="flex items-center text-center md:px-custom-px md:py-custom-py py-responsive-py px-responsive-px min-h-screen">
+      <main className="relative flex items-center text-center min-h-screen py-responsive-py px-responsive-px md:px-custom-px md:py-custom-py">
+        {/* Background Image */}
         <div
-          className="absolute bg-fixed inset-0 bg-cover bg-center" //filter blur-sm object-cover
+          className="absolute inset-0 bg-cover bg-center md:bg-fixed"
           style={{ backgroundImage: "url('/images/background7.jpg')" }}
         />
+
+        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
 
-        <div className="relative sm:p-8 md:animate-fade-in z-10">
+        {/* Main Content */}
+        <div className="relative z-10 sm:p-8 md:animate-fade-in">
           <h1 className="text-3xl mt-12 md:text-5xl font-bold text-white mb-4">
             Welcome to SoftCreatix
           </h1>
@@ -524,7 +528,7 @@ export default function HomePage() {
         <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           Meet Our Team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           <div className="text-center">
             <Image
               src="/images/ceopicture.jpg"
