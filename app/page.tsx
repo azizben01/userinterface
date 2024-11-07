@@ -49,7 +49,7 @@ export default function HomePage() {
       </main>
 
       {/* Services Overview */}
-      <section className="px-responsive-px md:px-custom-px py-responsive-py bg-white mt-8">
+      <section className="px-responsive-px md:px-custom-px py-responsive-py bg-white">
         <h2 className="text-xl md:text-3xl font-bold text-center text-gray-500 mb-6">
           Our Services
         </h2>
