@@ -49,7 +49,7 @@ export default function HomePage() {
       </main>
 
       {/* Services Overview */}
-      <section className="px-responsive-px md:px-custom-px py-responsive-py bg-white">
+      <section className="px-responsive-px md:px-custom-px py-responsive-py mt-4 md:mt-8bg-white">
         <h2 className="text-xl md:text-3xl font-bold text-center text-gray-500 mb-6">
           Our Services
         </h2>
@@ -157,7 +157,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* Why choose us */}
-      <section className="px-responsive-px py-reponsive-py bg-gray-50 mt-8">
+      <section className="px-responsive-px py-reponsive-py bg-gray-50 mt-4 md:mt-8">
         <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           Why Choose SoftCreatix?
         </h2>
@@ -208,7 +208,7 @@ export default function HomePage() {
       </section>
 
       {/* Technology and tools */}
-      <section className="px-responsive-px py-reponsive-py bg-white mt-8 mb-4">
+      <section className="px-responsive-px py-reponsive-py bg-white mt-4 md:mt-8 mb-4">
         <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           Technologies We Use
         </h2>
@@ -445,7 +445,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials  */}
-      <section className="px-responsive-px py-responsive-py bg-gray-50 mt-8">
+      <section className="px-responsive-px py-responsive-py bg-gray-50 mt-4 md:mt-8">
         <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           What Our Clients Say
         </h2>
@@ -520,7 +520,7 @@ export default function HomePage() {
         </div> */}
       </section>
       {/* Team members */}
-      <section className="px-reponsive-px py-reponsive-py bg-white mt-8">
+      <section className="px-reponsive-px py-reponsive-py bg-white mt-4 md:mt-8">
         <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           Meet Our Team
         </h2>
@@ -617,7 +617,7 @@ export default function HomePage() {
       </section>
 
       {/* About us section */}
-      <section className="px-responsive-px py-responsive-py bg-gray-50 mt-8">
+      <section className="px-responsive-px py-responsive-py bg-gray-50 mt-4 md:mt-8">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
           About SoftCreatix
         </h2>
@@ -638,11 +638,11 @@ export default function HomePage() {
       </section>
 
       {/* Call to action */}
-      <section className="py-responsive-py px-responsive-px bg-gray-900 mt-8 text-white text-center">
-        <h2 className="text-3xl font-bold mb-4">
+      <section className="py-responsive-py px-responsive-px bg-gray-900 mt-4 md:mt-8 text-white text-center">
+        <h2 className="text-lg md:text-3xl font-bold mb-4">
           Ready to Start Your Project?
         </h2>
-        <p className="text-lg mb-6">
+        <p className="text-sm md:text-lg mb-6">
           Let’s work together to transform your ideas into reality!{" "}
         </p>
         <Link
@@ -651,12 +651,12 @@ export default function HomePage() {
         >
           Contact Us
         </Link>
-        <p className="mt-8">
+        <p className="mt-8 text-sm md:text-lg">
           <Link href="/adminlogin">
             &copy; 2024 SoftCreatix. All rights reserved.
           </Link>
         </p>
-        <p>Developped by SoftCreatix.</p>
+        <p className="text-sm md:text-lg">Developped by SoftCreatix.</p>
       </section>
     </div>
   );
