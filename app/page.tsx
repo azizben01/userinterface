@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Hero Section with Gradient */}
-      <main className="flex items-center text-center md:pt-20 px-custom-px min-h-screen">
+      <main className="flex items-center text-center md:px-custom-px md:py-custom-py py-responsive-py px-responsive-px min-h-screen">
         <div
           className="absolute bg-fixed inset-0 bg-cover bg-center" //filter blur-sm object-cover
           style={{ backgroundImage: "url('/images/background7.jpg')" }}
@@ -14,10 +14,10 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70" />
 
         <div className="relative sm:p-8 md:animate-fade-in z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-3xl mt-12 md:text-5xl font-bold text-white mb-4">
             Welcome to SoftCreatix
           </h1>
-          <p className="text-sm sm:text-base md:text-lg text-white mb-6">
+          <p className="text-center md:text-lg text-white mb-6">
             At SoftCreatix, we are thrilled to have you on board! Whether you
             are here to explore innovative solutions or looking to collaborate
             with a team of experts in software development, web design, and
@@ -30,7 +30,7 @@ export default function HomePage() {
             to deliver exceptional quality, foster innovation, and create
             digital experiences that leave a lasting impact.
           </p>
-          <p className="text-sm sm:text-base md:text-lg text-white font-bold mb-2">
+          <p className="text-sm md:text-lg text-white font-bold mb-2">
             Let’s work together to transform your ideas into reality!
           </p>
           <p className="text-sm sm:text-base md:text-lg text-white font-bold mb-10">
@@ -49,8 +49,8 @@ export default function HomePage() {
       </main>
 
       {/* Services Overview */}
-      <section className="px-custom-px py-custom-py bg-white mt-8">
-        <h2 className="text-3xl font-bold text-center text-gray-500 mb-6">
+      <section className="px-responsive-px md:px-custom-px py-responsive-py bg-white mt-8">
+        <h2 className="text-xl md:text-3xl font-bold text-center text-gray-500 mb-6">
           Our Services
         </h2>
         <h6 className="text-lg font-bold text-center text-gray-500 mb-6">
@@ -59,8 +59,8 @@ export default function HomePage() {
           a list of the main services provided:
         </h6>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-90 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">
+          <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-90 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-lg md:text-xl font-semibold">
               Website Design and Development
             </h3>
             <p>
@@ -68,19 +68,21 @@ export default function HomePage() {
               experience.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-lg transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">UX/UI Design</h3>
+          <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-lg transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-lg md:text-xl font-semibold">UX/UI Design</h3>
             <p>
               Design of intuitive and aesthetically pleasing user interfaces to
               enhance visitor engagement.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">E-commerce Development</h3>
+          <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-lg md:text-xl font-semibold">
+              E-commerce Development
+            </h3>
             <p>Robust and secure online commerce solutions to boost sales.</p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">
+          <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-lg md:text-xl font-semibold">
               Search Engine Optimization (SEO)
             </h3>
             <p>
@@ -88,22 +90,24 @@ export default function HomePage() {
               engines.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">Maintenance and Support</h3>
+          <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-lg md:text-xl font-semibold">
+              Maintenance and Support
+            </h3>
             <p>
               Ongoing maintenance services to ensure website functionality and
               security.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">Web Hosting</h3>
+          <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-lg md:text-xl font-semibold">Web Hosting</h3>
             <p>
               Reliable and high-performance hosting solutions to guarantee
               maximum website uptime.
             </p>
           </div>
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-lg md:text-xl font-semibold">
               Web Application Development
             </h3>
             <p>
@@ -153,11 +157,11 @@ export default function HomePage() {
         </div>
       </section>
       {/* Why choose us */}
-      <section className="px-custom-px py-custom-py bg-gray-50 mt-8">
-        <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
+      <section className="px-responsive-px py-reponsive-py bg-gray-50 mt-8">
+        <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           Why Choose SoftCreatix?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:px-responsive-px md:grid-cols-3 gap-6">
           <div className="text-center">
             <Image
               src="/images/background5.jpg"
@@ -204,8 +208,8 @@ export default function HomePage() {
       </section>
 
       {/* Technology and tools */}
-      <section className="py-custom-py px-custom-px bg-white mt-8 mb-4">
-        <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
+      <section className="px-responsive-px py-reponsive-py bg-white mt-8 mb-4">
+        <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           Technologies We Use
         </h2>
         <div className="overflow-hidden">
@@ -437,25 +441,17 @@ export default function HomePage() {
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
           </div>
-          {/* <div className="text-center mt-20">
-          <Link
-            href="/about"
-            className="px-6 py-3 bg-gray-600 text-white rounded-md hover:bg-gray-800"
-          >
-            View entire tools
-          </Link>
-        </div> */}
         </div>
       </section>
 
       {/* Testimonials  */}
-      <section className="px-custom-px py-custom-py bg-gray-50 mt-8">
-        <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
+      <section className="px-responsive-px py-responsive-py bg-gray-50 mt-8">
+        <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           What Our Clients Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 bg-white rounded-lg shadow-lg">
-            <p className="text-lg font-italic">
+          <div className="p-3 md:p-6 bg-white rounded-lg shadow-lg">
+            <p className="text-sm md:text-lg font-italic">
               SoftCreatix helped us streamline our business processes with a
               custom solution. The team was incredibly professional, and the
               results exceeded our expectations.
@@ -464,8 +460,8 @@ export default function HomePage() {
               Mina Mapaluza, CEO of TechBiz
             </p>
           </div>
-          <div className="p-6 bg-white rounded-lg shadow-lg">
-            <p className="text-lg font-italic">
+          <div className="p-3 md:p-6 bg-white rounded-lg shadow-lg">
+            <p className="text-sm md:text-lg font-italic">
               Their mobile app development service transformed our customer
               engagement strategy. Highly recommend!
             </p>
@@ -473,8 +469,8 @@ export default function HomePage() {
               Jane Smith, CTO of FinStart
             </p>
           </div>
-          <div className="p-6 bg-white rounded-lg shadow-lg">
-            <p className="text-lg font-italic">
+          <div className="p-3 md:p-6 bg-white rounded-lg shadow-lg">
+            <p className="text-sm md:text-lg font-italic">
               They created my Holy Spirit Academia website in no time and with
               all the custom features I needed. Highly recommend!
             </p>
@@ -483,24 +479,30 @@ export default function HomePage() {
         </div>
       </section>
       {/* Portfolio */}
-      <section className="px-custom-px py-custom-py bg-white mt-8">
-        <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
+      <section className="px-responsive-px py-responsive-py bg-white mt-8">
+        <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           Our Portfolio
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">Holy Spirit Academia</h3>
+          <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-lg md:text-xl font-semibold">
+              Holy Spirit Academia
+            </h3>
             <p>The Custome website for the church Holy Spirit Academia.</p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">The SoftCreatix Website</h3>
+          <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-lg md:text-xl font-semibold">
+              The SoftCreatix Website
+            </h3>
             <p>
               We, SOftCreatix created our own modern website where you can view
               and request our services.{" "}
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
-            <h3 className="text-xl font-semibold">Online Motel Reservation</h3>
+          <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
+            <h3 className="text-lg md:text-xl font-semibold">
+              Online Motel Reservation
+            </h3>
             <p>
               Similar in a better way then booking or rbnb, we simplify the
               process of booking accommodation accross different cities and
@@ -518,11 +520,11 @@ export default function HomePage() {
         </div> */}
       </section>
       {/* Team members */}
-      <section className="px-custom-px py-custom-py bg-white mt-8">
-        <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
+      <section className="px-reponsive-px py-reponsive-py bg-white mt-8">
+        <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
           Meet Our Team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center">
             <Image
               src="/images/ceopicture.jpg"
@@ -540,7 +542,7 @@ export default function HomePage() {
               width={100}
               height={100}
               alt="Jane Smith"
-              className="rounded-full mx-auto h-32 w-32 mb-4"
+              className="rounded-full mx-auto h-26 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Mbokani Predit</h3>
             <p>Lead Developper</p>
@@ -606,7 +608,7 @@ export default function HomePage() {
               width={100}
               height={100}
               alt="Jane Smith"
-              className="rounded-full mx-auto h-32 w-32 mb-4"
+              className="rounded-full mx-auto h-26 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Ben Aziz </h3>
             <p>Full stack Developper</p>
@@ -615,7 +617,7 @@ export default function HomePage() {
       </section>
 
       {/* About us section */}
-      <section className="px-custom-px py-custom-py bg-gray-50 mt-8">
+      <section className="px-responsive-px py-responsive-py bg-gray-50 mt-8">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
           About SoftCreatix
         </h2>
@@ -636,7 +638,7 @@ export default function HomePage() {
       </section>
 
       {/* Call to action */}
-      <section className="py-custom-py px-cutom-px bg-gray-900 mt-8 text-white text-center">
+      <section className="py-responsive-py px-responsive-px bg-gray-900 mt-8 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">
           Ready to Start Your Project?
         </h2>

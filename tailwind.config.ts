@@ -12,6 +12,8 @@ const config: Config = {
       padding: {
         "custom-px": "100px",
         "custom-py": "15px",
+        "responsive-px": "20px",
+        "responsive-py": "15px",
       },
       width: {
         "custom-width": "800px",

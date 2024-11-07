@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 // RootLayout component that wraps the entire app
 export default function RootLayout({
   children,
@@ -17,8 +17,12 @@ export default function RootLayout({
   const showHeader = pathname != "/adminrequestlist";
 
   // Toggle mobile menu visibility
+  // const toggleMobileMenu = () => {
+  //   setMenuOpen((prev) => !prev);
+  // };
+
   const toggleMobileMenu = () => {
-    setMenuOpen((prev) => !prev);
+    setMenuOpen(!menuOpen);
   };
   const handleLinkClick = () => {
     setMenuOpen(false); // Closes the menu when a link is clicked
@@ -43,28 +47,26 @@ export default function RootLayout({
         {/* Header Section */}
         {showHeader && (
           <header
-            className={`fixed top-0 left-0 right-0 z-20 text-lg text-custom-gray1 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-transparent px-custom-px py-custom-py
-      }, ${isScrolled ? "bg-gray-900 text-white" : "bg-transparent"}`}
+            className={`fixed top-0 left-0 right-0 z-20 text-lg text-custom-gray1 transition-all duration-300 ease-in-out backdrop-blur-md border border-transparent md:px-custom-px md:py-custom-py px-responsive-px py-responsive-py ${
+              isScrolled ? "bg-gray-900 text-white" : "bg-transparent"
+            }`}
           >
             <nav className="flex justify-between items-center container mx-auto">
-              <div className="flex flex-col sm:flex-row items-center">
-                {/* Logo with responsive size adjustments */}
+              <div className="flex flex-col items-center">
+                {/* Logo */}
                 <Image
                   src="/images/logobackground.png"
                   alt="softreatixlogo"
-                  width={150} // smaller width on mobile
-                  height={100} // smaller height on mobile
-                  // className="sm:w-[200px] sm:h-[140px] hover:scale-105 transition-transform duration-300"
+                  width={150}
+                  height={100}
                 />
-                {/* <span className="mt-6 sm:mt-0 sm:ml-4 text-2xl sm:text-3xl font-bold tracking-wide text-center sm:text-left">
-                  SoftCreatix
-                </span> */}
               </div>
+
               {/* Desktop Navigation Links */}
               <div className="hidden md:flex space-x-6 items-center">
                 <Link
                   href="/"
-                  className="px-4 py-2 text-md rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 "
+                  className="px-4 py-2 text-md rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300"
                 >
                   Home
                 </Link>
@@ -75,39 +77,25 @@ export default function RootLayout({
                   Services
                 </Link>
               </div>
-              {/* Mobile Menu Icon */}
+
+              {/* Mobile Menu Icon (visible only on mobile) */}
               <div className="md:hidden">
                 <button
                   onClick={toggleMobileMenu}
-                  className="text-white focus:outline-none"
+                  className="text-gray-500 focus:outline-none"
                 >
-                  {/* Hamburger Menu Icon */}
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    ></path>
-                  </svg>
+                  <HiOutlineMenuAlt3 className="w-8 h-8" />
                 </button>
               </div>
             </nav>
 
-            {/* Mobile Navigation Menu */}
+            {/*Mobile navigation menu*/}
             {menuOpen && (
-              <div className="md:hidden mt-4 bg-gray-900 text-white py-4">
+              <div className="md:hidden mt-4 bg-gray-900 text-white py-12">
                 <div className="flex flex-col items-center space-y-4">
                   <Link
                     href="/"
                     onClick={handleLinkClick}
-                    passHref
                     className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
                   >
                     Home
@@ -115,7 +103,6 @@ export default function RootLayout({
                   <Link
                     href="/services"
                     onClick={handleLinkClick}
-                    passHref
                     className="px-4 py-2 text-lg hover:bg-gray-800 rounded-lg"
                   >
                     Services
