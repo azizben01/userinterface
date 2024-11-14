@@ -549,7 +549,7 @@ export default function HomePage() {
               className="rounded-full mx-auto h-26 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Ben Obama</h3>
-            <p>Backend Developper</p>
+            <p>Backend Developer</p>
           </div>
           <div className="text-center">
             <Image
@@ -560,7 +560,7 @@ export default function HomePage() {
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold"> Gloire</h3>
-            <p>Full Stack Developper</p>
+            <p>Full Stack Developer</p>
           </div>
           <div className="text-center">
             <Image
@@ -571,7 +571,7 @@ export default function HomePage() {
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold"> Gabriel</h3>
-            <p>Frontend Developper</p>
+            <p>Frontend Developer</p>
           </div>
           <div className="text-center">
             <Image
@@ -582,7 +582,7 @@ export default function HomePage() {
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Armel </h3>
-            <p>UI/UX Designer</p>
+            <p>frontend Developer</p>
           </div>
           <div className="text-center">
             <Image
@@ -593,7 +593,7 @@ export default function HomePage() {
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Loic </h3>
-            <p>Lead Developper</p>
+            <p>Lead Developer</p>
           </div>
           <div className="text-center">
             <Image
@@ -604,7 +604,7 @@ export default function HomePage() {
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Anicet </h3>
-            <p>Frontend Developper</p>
+            <p>Frontend Developer</p>
           </div>
           <div className="text-center">
             <Image
@@ -615,7 +615,7 @@ export default function HomePage() {
               className="rounded-full mx-auto h-26 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Ben Aziz </h3>
-            <p>Full stack Developper</p>
+            <p>Full stack Developer</p>
           </div>
         </div>
       </section>
