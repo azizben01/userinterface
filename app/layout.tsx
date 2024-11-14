@@ -56,7 +56,7 @@ export default function RootLayout({
                 {/* Logo */}
                 <Image
                   src="/images/softcreatixlogo.png"
-                  alt="softreatixlogo"
+                  alt="softcreatixlogo"
                   width={150}
                   height={100}
                 />
