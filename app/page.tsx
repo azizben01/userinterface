@@ -478,7 +478,7 @@ export default function HomePage() {
               They created my Holy Spirit Academia website in no time and with
               all the custom features I needed. Highly recommend!
             </p>
-            <p className="text-md font-bold mt-4">Pastor Jean Bosco</p>
+            <p className="text-md font-bold mt-4">Pastor SAMUEL JEREMY</p>
           </div>
         </div>
       </section>
