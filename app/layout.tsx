@@ -57,7 +57,7 @@ export default function RootLayout({
                 <Image
                   src="/images/softcreatixlogo.png"
                   alt="softcreatixlogo"
-                  width={150}
+                  width={130}
                   height={100}
                 />
               </div>
