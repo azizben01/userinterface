@@ -55,7 +55,7 @@ export default function RootLayout({
               <div className="flex flex-col items-center">
                 {/* Logo */}
                 <Image
-                  src="/images/Softcreatixlogo.png"
+                  src="/images/softcreatixlogo.png"
                   alt="softreatixlogo"
                   width={150}
                   height={100}

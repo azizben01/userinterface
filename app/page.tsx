@@ -549,7 +549,7 @@ export default function HomePage() {
               className="rounded-full mx-auto h-26 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Ben Obama</h3>
-            <p>Backend Developer</p>
+            <p>full stack Developer</p>
           </div>
           <div className="text-center">
             <Image
@@ -657,7 +657,7 @@ export default function HomePage() {
         </Link>
         <p className="mt-8 text-sm md:text-lg">
           <Link href="/adminlogin">
-            &copy; 2024 SoftCreatix. All rights reserved.
+            &copy; 2024 GENERAL CONSULTING GROUP. All rights reserved.
           </Link>
         </p>
         <p className="text-sm md:text-lg">Developped by SoftCreatix.</p>
