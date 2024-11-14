@@ -57,7 +57,7 @@ export default function RootLayout({
                 <Image
                   src="/images/GENERALCONSLOGO-removebg-preview.png"
                   alt="softcreatixlogo"
-                  width={130}
+                  width={150}
                   height={100}
                 />
               </div>
