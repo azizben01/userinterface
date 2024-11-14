@@ -69,10 +69,10 @@ function AboutUsPage() {
               contact: "+34 602394 989",
             },
             {
-              name: "Mbokani Predit",
-              title: "Lead Developer",
-              desc: "Mbokani oversees all technical aspects, ensuring that we always stay at the forefront of innovation.",
-              contact: "+254 11 1827802",
+              name: "Ben Obama",
+              title: "backend Developer",
+              desc: "Ben Obama oversees all technical aspects, ensuring that we always stay at the forefront of innovation.",
+              contact: "+250 789 373 917",
             },
             {
               name: "Loic",

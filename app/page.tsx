@@ -542,14 +542,14 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <Image
-              src="/images/mbokani.jpg"
+              src="/images/obama.jpg"
               width={100}
               height={100}
               alt="Jane Smith"
               className="rounded-full mx-auto h-26 w-32 mb-4"
             />
-            <h3 className="text-xl font-semibold">Mbokani Predit</h3>
-            <p>Lead Developper</p>
+            <h3 className="text-xl font-semibold">Ben Obama</h3>
+            <p>Backend Developper</p>
           </div>
           <div className="text-center">
             <Image
@@ -586,14 +586,14 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <Image
-              src="/images/backenddevelopper.jpeg"
+              src="/images/questionmark.png"
               width={100}
               height={100}
               alt="Jane Smith"
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Loic </h3>
-            <p>Full stack Developper</p>
+            <p>Lead Developper</p>
           </div>
           <div className="text-center">
             <Image
