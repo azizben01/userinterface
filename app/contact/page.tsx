@@ -79,8 +79,7 @@ const ContactPage = () => {
             contact@generalconsultinggroups.com
           </p>
           <p className="text-gray-700 mb-2">
-            <span className="text-lg font-bold">WhatsApp:</span> +250 785 703
-            429 & +34 602 39 49 89
+            <span className="text-lg font-bold">WhatsApp:</span>+34 602 39 49 89
           </p>
         </div>
 

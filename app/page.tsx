@@ -584,7 +584,7 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold">Armel </h3>
             <p>frontend Developer</p>
           </div>
-          <div className="text-center">
+          {/* <div className="text-center">
             <Image
               src="/images/questionmark.png"
               width={100}
@@ -594,7 +594,7 @@ export default function HomePage() {
             />
             <h3 className="text-xl font-semibold">Loic </h3>
             <p>Lead Developer</p>
-          </div>
+          </div> */}
           <div className="text-center">
             <Image
               src="/images/anicet.jpg"

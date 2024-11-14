@@ -74,12 +74,12 @@ function AboutUsPage() {
               desc: "Ben Obama oversees all technical aspects, ensuring that we always stay at the forefront of innovation.",
               contact: "+250 789 373 917",
             },
-            {
-              name: "Loic",
-              title: "Lead developer",
-              desc: "Loic brings technical expertise and creativity to every project.",
-              contact: "+250 785 703 429",
-            },
+            // {
+            //   name: "Loic",
+            //   title: "Lead developer",
+            //   desc: "Loic brings technical expertise and creativity to every project.",
+            //   contact: "+250 785 703 429",
+            // },
             {
               name: "Gloire",
               title: "Full Stack Developer",
