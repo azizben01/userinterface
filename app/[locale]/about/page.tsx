@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 function AboutUsPage() {
   const t = useTranslations("about");
   const values = t("values.list", { returnObjects: true });
-  const team = t("team.list", { returnObjects: true });
 
   // Fallback if values is not an array
   const valuesArray = Array.isArray(values) ? values : [];

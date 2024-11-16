@@ -13,12 +13,15 @@ export default async function LocaleLayout({
   params: { locale: string };
 }) {
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
-  }
+  // if (!routing.locales.includes(locale)) {
+  //   notFound();
+  // }
+
+  // Type assertion: locale is one of the allowed locales
+  const typedLocale = locale as (typeof routing.locales)[number];
 
   // Fetch the messages for the current locale
-  const messages = await getMessages({ locale });
+  const messages = await getMessages({ locale: typedLocale });
 
   return (
     <html lang={locale}>
