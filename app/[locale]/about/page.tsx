@@ -1,8 +1,13 @@
 import { FaHandsHelping, FaRocket, FaUsers } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 
-function AboutUsPage() {
+function AboutUsPage({
+  params,
+}: {
+  params: { locale: "en" | "fr" | "ger" | "span" };
+}) {
   const t = useTranslations("about");
+  const { locale } = params;
   return (
     <div className="container mt-32">
       <h1 className="text-2xl md:text-3xl sm:text-5xl font-extrabold text-center mb-6 sm:mb-10 text-gray-800">
@@ -86,7 +91,7 @@ function AboutUsPage() {
           {t("cta.contact")}
         </p>
         <a
-          href="/contact"
+          href={`/${locale}/contact`}
           className="px-4 md:px-8 py-3 bg-white text-gray-900 font-bold rounded-full hover:bg-gray-200 transition duration-300"
         >
           {t("cta.touch")}
