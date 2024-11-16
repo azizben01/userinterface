@@ -3,8 +3,9 @@ import { useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { IoPersonSharp } from "react-icons/io5";
 import { MdPhoneIphone } from "react-icons/md";
+import { useTranslations } from "next-intl";
 
-export default function ServiceRequestpage() {
+export default function ServiceRequestPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,6 +13,23 @@ export default function ServiceRequestpage() {
     services: "",
     description: "",
   });
+  // map of service key:
+
+  const serviceKeys = [
+    "AI Creation",
+    "Digital Consulting",
+    "E-commerce Development",
+    "Maintenance",
+    "Mobile application development",
+    "SEO",
+    "System Integration",
+    "UX/UI Design",
+    "Web Application Development",
+    "Website Design and Development",
+    "Hosting",
+  ];
+
+  const t = useTranslations("services"); // Load translations for this page
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -39,8 +57,8 @@ export default function ServiceRequestpage() {
 
       if (response.ok) {
         const data = await response.json();
-        console.log("Response from server:", data);
-        alert("Service request submitted successfully!");
+        console.log(t("serverSuccess"), data);
+        alert(t("formSuccess"));
         setFormData({
           name: "",
           email: "",
@@ -49,25 +67,22 @@ export default function ServiceRequestpage() {
           description: "",
         });
       } else {
-        console.error("Server error:", response.statusText);
-        alert("Failed to submit the service request.");
+        console.error(t("serverError"), response.statusText);
+        alert(t("formError"));
       }
     } catch (error) {
-      console.error("Request error:", error);
-      alert("There was an error submitting the form. Please try again.");
+      console.error(t("requestError"), error);
+      alert(t("networkError"));
     }
   };
 
   return (
-    <div className="min-h-screen bg-custom-gray flex justify-center items-center p-8">
+    <div className="min-h-screen bg-custom-blue1 flex justify-center items-center p-8">
       <div className="bg-white mt-28 p-8 rounded-lg shadow-lg max-w-xl w-full max-h-lg h-full">
         <h1 className="text-3xl font-bold text-custom-gray1 mb-6 text-center">
-          Request a Service
+          {t("title")}
         </h1>
-        <p className="text-center text-gray-500 mb-8">
-          Fill out the form below to request a service. We will get back to you
-          as soon as possible.
-        </p>
+        <p className="text-center text-gray-500 mb-8">{t("description")}</p>
 
         {/* Service Request Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -79,7 +94,7 @@ export default function ServiceRequestpage() {
               name="name"
               value={formData.name}
               onChange={handleInputChange}
-              placeholder="your name"
+              placeholder={t("placeholder.name")}
               required
               className="pl-10 mt-1 block w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
             />
@@ -93,7 +108,7 @@ export default function ServiceRequestpage() {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              placeholder="your email"
+              placeholder={t("placeholder.email")}
               required
               className="pl-10 mt-1 block w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
             />
@@ -106,7 +121,7 @@ export default function ServiceRequestpage() {
               name="phonenumber"
               value={formData.phonenumber}
               onChange={handleInputChange}
-              placeholder="your phone number"
+              placeholder={t("placeholder.phonenumber")}
               required
               className="pl-10 border border-gray-300 w-full px-4 py-2 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
             />
@@ -122,31 +137,13 @@ export default function ServiceRequestpage() {
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
             >
               <option value="" disabled>
-                Select a service
+                {t("placeholder.services")}
               </option>
-              <option value="AI Creation">
-                Creation of Artificial Intelligence
-              </option>
-              <option value="Digital Consulting">
-                Digital Consulting and Strategy
-              </option>
-              <option value="E-commerce Development">
-                E-commerce Development
-              </option>
-              <option value="Maintenance">Maintenance and Support</option>
-              <option value="Mobile application development">
-                Mobile application development
-              </option>
-              <option value="SEO">Search Engine Optimization (SEO)</option>
-              <option value="System Integration">System Integration</option>
-              <option value="UX/UI Design">UX/UI Design</option>
-              <option value="Web Application Development">
-                Web Application Development
-              </option>
-              <option value="Website Design and Development">
-                Website Design and Development
-              </option>
-              <option value="Hosting">Web Hosting</option>
+              {serviceKeys.map((key) => (
+                <option key={key} value={key}>
+                  {t(`services.${key}`)}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -158,7 +155,7 @@ export default function ServiceRequestpage() {
               onChange={handleInputChange}
               rows={2}
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
-              placeholder="Describe your project or requirements in detail."
+              placeholder={t("placeholder.description")}
             />
           </div>
 
@@ -166,7 +163,7 @@ export default function ServiceRequestpage() {
             type="submit"
             className="w-full bg-gray-900 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-800 hover:scale-105 transition-transform duration-200 focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
           >
-            Submit Request
+            {t("submit")}
           </button>
         </form>
       </div>

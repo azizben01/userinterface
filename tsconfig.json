@@ -26,8 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/page.tsx",
-    "app/Verifycode"
+    "app/[locale]/page.tsx",
+    "app/[locale]/verifycode"
   ],
   "exclude": ["node_modules"]
 }

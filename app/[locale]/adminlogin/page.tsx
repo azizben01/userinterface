@@ -1,10 +1,11 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { PiEye, PiEyeSlash } from "react-icons/pi";
 
-export default function SignInPage() {
+export default function SignInPage({ locale = "en" }: { locale: string }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -114,7 +115,7 @@ export default function SignInPage() {
 
           <div className="mt-4 text-center">
             <Link
-              href="/resetpassword"
+              href={`${locale}/resetpassword`}
               className="text-custom-gray2 hover:text-custom-gray3 transition-all duration-300"
             >
               Forgot Password?

@@ -1,5 +1,8 @@
 "use client";
+
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 interface ContactFormData {
   name: string;
@@ -8,6 +11,7 @@ interface ContactFormData {
 }
 
 const ContactPage = () => {
+  const t = useTranslations("Contact"); // Using translations for this page
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
@@ -26,7 +30,6 @@ const ContactPage = () => {
 
     try {
       const response = await fetch(
-        //"http://192.168.1.69/submitcontact",
         "https://softcreatixbackend.onrender.com/submitcontact",
         {
           method: "POST",
@@ -39,52 +42,49 @@ const ContactPage = () => {
 
       if (response.ok) {
         const data = await response.json();
-        console.log("Response fron server", data);
-        alert("Message sent successfully!");
+        console.log(t("serverResponse"), data);
+        alert(t("successMessage"));
         setFormData({ name: "", email: "", message: "" });
       } else {
-        // console.error("Failed to send message:", response.statusText);
-        // alert("There was an error sending your message. Please try again.");
-        const errorData = await response.json(); // Parse the JSON error response
-        const errorMessage = errorData.message || response.statusText; // Use the specific error message if available
-        console.error("Failed to send message:", errorMessage);
-        alert(`There was an error sending your message: ${errorMessage}`);
+        const errorData = await response.json();
+        const errorMessage = errorData.message || response.statusText;
+        console.error(t("errorMessage"), errorMessage);
+        alert(`${t("errorGeneric")}: ${errorMessage}`);
       }
     } catch (error) {
-      console.error("Request error:", error);
-      alert("There was an error submitting the form. Please try again.");
+      console.error(t("requestError"), error);
+      alert(t("errorSubmission"));
     }
   };
 
   return (
-    <div className="container mx-auto py-16 mt-24">
-      <h1 className="text-4xl font-bold text-center mb-5">Contact Us</h1>
-      <h6 className="px-5 text-lg mb-16">
-        For any information or assistance you may need, please contact us at the
-        addresses below. We ensure prompt feedback.
-      </h6>
+    <div className="md: px-custom-px container mx-auto py-16 mt-24">
+      <h1 className="text-4xl font-bold text-center mb-5">{t("title")}</h1>
+      <h6 className="px-5 text-lg mb-16">{t("subtitle")}</h6>
 
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 p-4">
-          <h2 className="text-2xl font-bold mb-4">Our Contact Information</h2>
+          <h2 className="text-2xl font-bold mb-4">{t("contactInfoTitle")}</h2>
           <p className="text-gray-700 mb-2">
-            <span className="text-lg font-bold">Address:</span> KN 4 Av 22,
-            KIGALI - RWANDA
+            <span className="text-lg font-bold">{t("addressLabel")}:</span> KN 4
+            Av 22, KIGALI - RWANDA
           </p>
           <p className="text-gray-700 mb-2">
-            <span className="text-lg font-bold">Phone:</span> +250 798 812 499
+            <span className="text-lg font-bold">{t("phoneLabel")}:</span> +250
+            798 812 499
           </p>
           <p className="text-gray-700 mb-2">
-            <span className="text-lg font-bold">Email:</span>{" "}
+            <span className="text-lg font-bold">{t("emailLabel")}:</span>{" "}
             contact@generalconsultinggroups.com
           </p>
           <p className="text-gray-700 mb-2">
-            <span className="text-lg font-bold">WhatsApp:</span>+34 602 39 49 89
+            <span className="text-lg font-bold">{t("whatsappLabel")}:</span> +34
+            602 39 49 89
           </p>
         </div>
 
         <div className="md:w-1/2 p-4">
-          <h2 className="text-2xl font-bold mb-4">Contact Form</h2>
+          <h2 className="text-2xl font-bold mb-4">{t("formTitle")}</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex flex-col md:flex-row md:space-x-4">
               <input
@@ -93,7 +93,7 @@ const ContactPage = () => {
                 value={formData.name}
                 onChange={handleInputChange}
                 className="p-2 mb-4 rounded-xl input w-full md:w-1/2 border-2"
-                placeholder="Name"
+                placeholder={t("namePlaceholder")}
                 required
               />
               <input
@@ -102,7 +102,7 @@ const ContactPage = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 className="p-2 mb-4 rounded-xl input w-full md:w-1/2 border-2"
-                placeholder="Email"
+                placeholder={t("emailPlaceholder")}
                 required
               />
             </div>
@@ -111,7 +111,7 @@ const ContactPage = () => {
               value={formData.message}
               onChange={handleInputChange}
               className="p-4 input w-full h-40 border-2 rounded-xl"
-              placeholder="Message"
+              placeholder={t("messagePlaceholder")}
               required
             ></textarea>
             <div className="flex justify-center">
@@ -119,7 +119,7 @@ const ContactPage = () => {
                 type="submit"
                 className="bg-gray-900 text-white px-4 py-2 rounded-3xl hover:from-green-600 hover:to-teal-600 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-3/4 mx-auto"
               >
-                Submit
+                {t("submitButton")}
               </button>
             </div>
           </form>
