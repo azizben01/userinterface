@@ -38,7 +38,7 @@ export default function SignInPage({
       const data = await response.json();
 
       if (data.message === "Login successful") {
-        router.push("/adminrequestlist");
+        router.push(`/${locale}/adminrequestlist`);
       } else {
         setError("Invalid login. Please try again.");
       }
