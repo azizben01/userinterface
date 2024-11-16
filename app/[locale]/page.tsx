@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 export default function HomePage({
   params,
 }: {
-  params: { locale: "en" | "fr" };
+  params: { locale: "en" | "fr" | "ger" | "span" };
 }) {
   const { locale } = params;
   const translate = useTranslations("Home");
@@ -420,82 +420,65 @@ export default function HomePage({
       {/* Testimonials  */}
       <section className="md: px-custom-px px-responsive-px py-responsive-py bg-gray-50 mt-4 md:mt-8">
         <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
-          What Our Clients Say
+          {translate("testimonial.title")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-3 md:p-6 bg-white rounded-lg shadow-lg">
             <p className="text-sm md:text-lg font-italic">
-              SoftCreatix helped us streamline our business processes with a
-              custom solution. The team was incredibly professional, and the
-              results exceeded our expectations.
+              {translate("testimonial.client1Description")}
             </p>
             <p className="text-md font-bold mt-4">
-              Mina Mapaluza, CEO of TechBiz
+              {translate("testimonial.client1")}
             </p>
           </div>
           <div className="p-3 md:p-6 bg-white rounded-lg shadow-lg">
             <p className="text-sm md:text-lg font-italic">
-              Their mobile app development service transformed our customer
-              engagement strategy. Highly recommend!
+              {translate("testimonial.client2Description")}
             </p>
             <p className="text-md font-bold mt-4">
-              Jane Smith, CTO of FinStart
+              {translate("testimonial.client2")}
             </p>
           </div>
           <div className="p-3 md:p-6 bg-white rounded-lg shadow-lg">
             <p className="text-sm md:text-lg font-italic">
-              They created my Holy Spirit Academia website in no time and with
-              all the custom features I needed. Highly recommend!
+              {translate("testimonial.client3Description")}
             </p>
-            <p className="text-md font-bold mt-4">Pastor SAMUEL JEREMY</p>
+            <p className="text-md font-bold mt-4">
+              {translate("testimonial.client3")}
+            </p>
           </div>
         </div>
       </section>
       {/* Portfolio */}
       <section className="md: px-custom-px px-responsive-px py-responsive-py bg-white mt-8">
         <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
-          Our Portfolio
+          {translate("portfolio.title")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-lg md:text-xl font-semibold">
-              Holy Spirit Academia
+              {translate("portfolio.project1")}
             </h3>
-            <p>The Custome website for the church Holy Spirit Academia.</p>
+            <p>{translate("portfolio.project1Description")}</p>
           </div>
           <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-lg md:text-xl font-semibold">
-              The SoftCreatix Website
+              {translate("portfolio.project2")}
             </h3>
-            <p>
-              We, SOftCreatix created our own modern website where you can view
-              and request our services.{" "}
-            </p>
+            <p>{translate("portfolio.project2Description")} </p>
           </div>
           <div className="p-3 md:p-6 bg-gray-50 rounded-3xl shadow-md hover:scale-105 transform transiton-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-900 hover:text-white">
             <h3 className="text-lg md:text-xl font-semibold">
-              Online Motel Reservation
+              {translate("portfolio.project3")}
             </h3>
-            <p>
-              Similar in a better way then booking or rbnb, we simplify the
-              process of booking accommodation accross different cities and
-              countries.
-            </p>
+            <p>{translate("portfolio.project3Description")}</p>
           </div>
         </div>
-        {/* <div className="text-center mt-6">
-          <Link
-            href=""
-            className="px-6 py-3 bg-gray-600 text-white rounded-2xl hover:bg-gray-800"
-          >
-            View Full Portfolio
-          </Link>
-        </div> */}
       </section>
       {/* Team members */}
       <section className="px-reponsive-px py-reponsive-py bg-white mt-4 md:mt-8">
         <h2 className="text-xl md:text-3xl font-bold text-gray-500 text-center mb-6">
-          Meet Our Team
+          {translate("meet.title")}
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           <div className="text-center">
@@ -507,7 +490,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Mr Patrick</h3>
-            <p>Founder & CEO</p>
+            <p>{translate("meet.ceo")}</p>
           </div>
           <div className="text-center">
             <Image
@@ -518,7 +501,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-26 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Ben Obama</h3>
-            <p>full stack Developer</p>
+            <p>{translate("meet.fullstack")}</p>
           </div>
           <div className="text-center">
             <Image
@@ -529,7 +512,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold"> Gloire</h3>
-            <p>Full Stack Developer</p>
+            <p>{translate("meet.fullstack")}</p>
           </div>
           <div className="text-center">
             <Image
@@ -540,7 +523,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold"> Gabriel</h3>
-            <p>Frontend Developer</p>
+            <p>{translate("meet.front")}</p>
           </div>
           <div className="text-center">
             <Image
@@ -551,7 +534,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Armel </h3>
-            <p>frontend Developer</p>
+            <p>{translate("meet.front")}</p>
           </div>
           {/* <div className="text-center">
             <Image
@@ -573,7 +556,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Anicet </h3>
-            <p>Frontend Developer</p>
+            <p>{translate("meet.front")}</p>
           </div>
           <div className="text-center">
             <Image
@@ -584,7 +567,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-26 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Ben Aziz </h3>
-            <p>Full stack Developer</p>
+            <p>{translate("meet.front")}</p>
           </div>
         </div>
       </section>
@@ -592,20 +575,17 @@ export default function HomePage({
       {/* About us section */}
       <section className="md: px-custom-px px-responsive-px py-responsive-py bg-gray-50 mt-4 md:mt-8">
         <h2 className="text-3xl font-bold text-gray-500 text-center mb-6">
-          About SoftCreatix
+          {translate("homeabout.title")}
         </h2>
         <p className="text-lg text-center mb-6">
-          SoftCreatix is a leading software development company committed to
-          creating innovative digital solutions for businesses worldwide. Our
-          passion for technology and dedication to customer satisfaction drives
-          us to deliver cutting-edge software tailored to your needs.
+          {translate("homeabout.subtitle")}
         </p>
         <div className="text-center">
           <Link
             href={`/${locale}/about`}
             className="px-6 py-3 bg-gray-600 text-white rounded-2xl hover:bg-gray-800"
           >
-            Learn More
+            {translate("homeabout.button")}
           </Link>
         </div>
       </section>
@@ -613,23 +593,23 @@ export default function HomePage({
       {/* Call to action */}
       <section className="py-responsive-py px-responsive-px bg-gray-900 mt-4 md:mt-8 text-white text-center">
         <h2 className="text-lg md:text-3xl font-bold mb-4">
-          Ready to Start Your Project?
+          {translate("homecall.title")}
         </h2>
         <p className="text-sm md:text-lg mb-6">
-          Let’s work together to transform your ideas into reality!{" "}
+          {translate("homecall.subtitle")}
         </p>
         <Link
           href={`/${locale}/contact`}
           className="px-6 py-3 bg-white text-gray-900 rounded-2xl hover:bg-gray-100"
         >
-          Contact Us
+          {translate("homecall.button")}
         </Link>
         <p className="mt-8 text-sm md:text-lg">
           <Link href={`${locale}/adminlogin`}>
-            &copy; 2024 GENERAL CONSULTING GROUP. All rights reserved.
+            {translate("homecall.copyright")}
           </Link>
         </p>
-        <p className="text-sm md:text-lg">Developped by SoftCreatix.</p>
+        <p className="text-sm md:text-lg">{translate("homecall.developped")}</p>
       </section>
     </div>
   );

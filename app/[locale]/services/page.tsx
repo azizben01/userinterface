@@ -16,16 +16,16 @@ export default function ServiceRequestPage() {
   // map of service key:
 
   const serviceKeys = [
-    "AI Creation",
-    "Digital Consulting",
-    "E-commerce Development",
+    "AI_Creation",
+    "Digital_Consulting",
+    "E-commerce_Development",
     "Maintenance",
-    "Mobile application development",
+    "Mobile_application_development",
     "SEO",
-    "System Integration",
-    "UX/UI Design",
-    "Web Application Development",
-    "Website Design and Development",
+    "System_Integration",
+    "UX/UI_Design",
+    "Web Application_Development",
+    "Website_Design_and_Development",
     "Hosting",
   ];
 
@@ -77,7 +77,7 @@ export default function ServiceRequestPage() {
   };
 
   return (
-    <div className="min-h-screen bg-custom-blue1 flex justify-center items-center p-8">
+    <div className="min-h-screen bg-gray-300 flex justify-center items-center p-8">
       <div className="bg-white mt-28 p-8 rounded-lg shadow-lg max-w-xl w-full max-h-lg h-full">
         <h1 className="text-3xl font-bold text-custom-gray1 mb-6 text-center">
           {t("title")}
@@ -141,7 +141,7 @@ export default function ServiceRequestPage() {
               </option>
               {serviceKeys.map((key) => (
                 <option key={key} value={key}>
-                  {t(`services.${key}`)}
+                  {t(`services.${key.replace(/ /g, "_")}`)}
                 </option>
               ))}
             </select>
@@ -163,7 +163,7 @@ export default function ServiceRequestPage() {
             type="submit"
             className="w-full bg-gray-900 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-800 hover:scale-105 transition-transform duration-200 focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
           >
-            {t("submit")}
+            {t("formAction.submit")}
           </button>
         </form>
       </div>

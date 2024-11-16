@@ -1,6 +1,11 @@
 {
+  "header": {
+    "home": "Accueil",
+    "language": "Choisir une langue",
+    "services": "services"
+  },
   "Home": {
-    "title": "Bienvenue a SoftCreatix",
+    "title": "Bienvenue chez SoftCreatix",
     "subtitle": "Chez SoftCreatix, nous sommes ravis de vous compter parmi nous ! Que vous sont là pour explorer des solutions innovantes ou cherchent à collaborer avec une équipe d'experts en développement de logiciels, conception de sites Web et transformation numérique, vous êtes au bon endroit. SoftCreatix est une société leader dans le développement de logiciels au Rwanda, spécialisé dans la création d'applications logicielles innovantes. Nous sommes passionné par l'élaboration de solutions sur mesure adaptées à votre besoins spécifiques, des applications mobiles transparentes aux applications avancées des plateformes commerciales qui stimulent la croissance et l’efficacité. Notre mission est offrir une qualité exceptionnelle, favoriser l’innovation et créer des expériences numériques qui laissent un impact durable.",
     "subtitle1": "Travaillons ensemble pour transformer vos idées en réalité !",
     "subtitle2": "SoftCreatix - Créer les solutions de demain, aujourd'hui.",
@@ -30,7 +35,7 @@
       "consultingDescription": "Conseils et stratégies pour maximiser l'impact en ligne et atteindre les objectifs commerciaux.",
       "AI": "Intelligence Artificielle",
       "AIdescription": "Nous exploitons les technologies avancées d'IA pour créer des solutions intelligentes. Nos solutions d'IA peuvent améliorer vos processus commerciaux et l'expérience client.",
-      "requestbutton": "demander un service"
+      "requestbutton": "Demander un service"
     },
     "chooseus": {
       "title": "Pourquoi choisir SoftCreatix?",
@@ -43,6 +48,42 @@
     },
     "tech": {
       "title": "Technologies que nous utilisons"
+    },
+    "testimonial": {
+      "title": "Ce que disent nos clients",
+      "client1Description": "SoftCreatix nous a aidés à rationaliser nos processus commerciaux avec une solution personnalisée. L'équipe était incroyablement professionnelle et les résultats ont dépassé nos attentes.",
+      "client1": "M. Patrick",
+      "client2Description": "Leur service de développement d'applications mobiles a transformé notre stratégie d'engagement client grâce au développement de l'application QuickStay. Hautement recommandé !",
+      "client2": "M. Patric",
+      "client3Description": "Ils ont créé le site web de mon Holy Spirit Academia en un rien de temps avec toutes les fonctionnalités personnalisées dont j'avais besoin. Hautement recommandé !",
+      "client3": "Pasteur SAMUEL JEREMY"
+    },
+    "portfolio": {
+      "title": "Notre Portefeuille",
+      "project1": "Holy Spirit Academia",
+      "project1Description": "Le site web personnalisé pour l'église Holy Spirit Academia.",
+      "project2": "Le site web de SoftCreatix",
+      "project2Description": "Nous, SoftCreatix, avons créé notre propre site web moderne où vous pouvez consulter et demander nos services.",
+      "project3": "Réservation de Motel en Ligne",
+      "project3Description": "Similaire mais meilleur que Booking ou Airbnb, nous simplifions le processus de réservation d'hébergements dans différentes villes et pays."
+    },
+    "meet": {
+      "title": "Rencontrez Notre Équipe",
+      "ceo": "Fondateur et PDG",
+      "fullstack": "Développeur Full Stack",
+      "front": "Développeur Frontend"
+    },
+    "homeabout": {
+      "title": "À propos de SoftCreatix",
+      "subtitle": "SoftCreatix est une entreprise leader dans le développement de logiciels, engagée à créer des solutions numériques innovantes pour les entreprises du monde entier. Notre passion pour la technologie et notre engagement envers la satisfaction client nous motivent à fournir des logiciels de pointe adaptés à vos besoins.",
+      "button": "En savoir plus"
+    },
+    "homecall": {
+      "title": "Prêt à démarrer votre projet ?",
+      "subtitle": "Travaillons ensemble pour transformer vos idées en réalité !",
+      "button": "Contactez-nous",
+      "copyright": " &copy; 2024 GENERAL CONSULTING GROUP. Tous droits réservés.",
+      "developped": "Développé par SoftCreatix."
     }
   },
   "Contact": {
@@ -75,16 +116,16 @@
       "services": "Sélectionnez un service",
       "description": "Décrivez votre projet ou vos besoins en détail."
     },
-    "AI Creation": "Création d'intelligence artificielle",
-    "Digital Consulting": "Consulting digital et stratégie",
-    "E-commerce Development": "Développement de commerce électronique",
+    "AI_Creation": "Création d'intelligence artificielle",
+    "Digital_Consulting": "Consulting digital et stratégie",
+    "E-commerce_Development": "Développement de commerce électronique",
     "Maintenance": "Maintenance et support",
-    "Mobile application development": "Développement d'applications mobiles",
+    "Mobile_application_development": "Développement d'applications mobiles",
     "SEO": "Optimisation pour les moteurs de recherche (SEO)",
-    "System Integration": "Intégration de systèmes",
-    "UX/UI Design": "Design UX/UI",
-    "Web Application Development": "Développement d'applications web",
-    "Website Design and Development": "Conception et développement de sites web",
+    "System_Integration": "Intégration de systèmes",
+    "UX/UI_Design": "Design UX/UI",
+    "Web Application_Development": "Développement d'applications web",
+    "Website_Design_and_Development": "Conception et développement de sites web",
     "Hosting": "Hébergement web",
     "formAction": {
       "submit": "Soumettre la demande",
@@ -105,38 +146,25 @@
     },
     "values": {
       "title": "Nos Valeurs",
-      "description": "Chez SoftCreatix, nous sommes guidés par nos valeurs fondamentales, qui orientent notre approche dans tout ce que nous faisons :",
-      "list": [
-        "Innovation : Nous favorisons la créativité pour fournir des solutions à la pointe.",
-        "Excellence : Nous offrons une qualité exceptionnelle dans tout ce que nous faisons.",
-        "Collaboration : Nous croyons au pouvoir du travail d'équipe et des partenariats.",
-        "Focus Client : Le succès de nos clients est au cœur de notre mission.",
-        "Intégrité : Nous menons nos affaires avec honnêteté et transparence."
-      ]
+      "description": "Chez SoftCreatix, nous sommes guidés par nos valeurs fondamentales, qui orientent notre approche dans tout ce que nous faisons :"
     },
-    "team": {
-      "title": "Rencontrez Notre Équipe",
-      "members": [
-        {
-          "name": "Patrick",
-          "title": "Fondateur & PDG",
-          "description": "Avec des années d'expérience dans le développement logiciel, Patrick dirige notre équipe avec vision et intégrité.",
-          "contact": "+34 602394 989"
-        },
-        {
-          "name": "Ben Obama",
-          "title": "Développeur Backend",
-          "description": "Ben Obama supervise tous les aspects techniques, s'assurant que nous restons toujours à la pointe de l'innovation.",
-          "contact": "+250 789 373 917"
-        }
-      ]
+    "list": {
+      "l1": "- Innovation : Nous favorisons la créativité pour fournir des solutions à la pointe.",
+      "l2": "- Excellence : Nous offrons une qualité exceptionnelle dans tout ce que nous faisons.",
+      "l3": "- Collaboration : Nous croyons au pouvoir du travail d'équipe et des partenariats.",
+      "l4": "- Focus Client : Le succès de nos clients est au cœur de notre mission.",
+      "l5": "- Intégrité : Nous menons nos affaires avec honnêteté et transparence."
     },
     "journey": {
       "title": "Notre Parcours",
       "description": " Fondée en 2015, SoftCreatix a commencé avec la vision de révolutionner l'espace numérique. Ce qui a commencé comme une petite startup est maintenant devenu une entreprise florissante qui sert des clients à travers le monde. Au fil des années, nous avons bâti une équipe de experts et élargi notre portefeuille pour inclure des solutions logicielles de pointe, des applications Web et mobiles personnalisées et des services complets de transformation numérique."
     },
     "testimonial": {
-      "title": "L'avis de nos clients"
+      "title": "L'avis de nos clients",
+      "first": "Ben Aziz: Stagiaire Professionel",
+      "firstopinion": "SoftCreatix a transformé notre entreprise grâce à ses solutions innovantes. L'expertise et le professionnalisme de leur équipe ont dépassé nos attentes.",
+      "second": "Gloire: Stagiaire Professionel",
+      "secondopinion": "Grâce à SoftCreatix, notre application mobile a connu une croissance fulgurante. Leur engagement envers la qualité et la satisfaction du client est inégalé."
     },
     "cta": {
       "title": "Pret a transformer votre business?",

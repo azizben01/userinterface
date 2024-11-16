@@ -1,0 +1,194 @@
+{
+  "header": {
+    "home": "主页",
+    "language": "语言",
+    "services": "服务"
+  },
+  "Home": {
+    "title": "欢迎来到 SoftCreatix",
+    "subtitle": "在 SoftCreatix，我们很高兴欢迎您的到来！无论您是想探索创新解决方案，还是希望与软件开发、网页设计和数字化转型领域的专家团队合作，这里就是您需要的地方。SoftCreatix 是一家位于卢旺达的领先软件开发公司，专注于创建创新的软件应用程序。我们致力于根据您的具体需求定制解决方案，从便捷的移动应用程序到推动增长和效率的先进商业平台。我们的使命是提供卓越的质量，推动创新，并创造持久的数字体验。",
+    "subtitle1": "让我们一起将您的想法变为现实！",
+    "subtitle2": "SoftCreatix - 创造明天的解决方案，今天实现。",
+    "button": "开始",
+    "services": {
+      "title": "我们的服务",
+      "subtitle": "SoftCreatix 是一家专业的网站开发公司，提供全面的服务以满足客户的需求。以下是主要服务的列表：",
+      "website": "网站设计与开发",
+      "websiteDescription": "创建优化的定制网站，提供卓越的用户体验。",
+      "design": "用户体验（UX）/用户界面（UI）设计",
+      "designDescription": "设计直观且美观的用户界面，提升访客参与度。",
+      "commerce": "电子商务开发",
+      "commerceDescription": "提供可靠且安全的在线商务解决方案，提升销售额。",
+      "searchEngine": "搜索引擎优化 (SEO)",
+      "searchEngineDescription": "制定 SEO 策略以提高网站的搜索引擎可见性和排名。",
+      "maintenance": "维护与支持",
+      "maintenanceDescription": "持续的维护服务，确保网站功能和安全性。",
+      "Host": "网站托管",
+      "HostDescription": "可靠且高性能的托管解决方案，保证最大的网站正常运行时间。",
+      "app": "网络应用开发",
+      "appDescription": "创建定制的网络应用程序，以满足特定的业务需求。",
+      "integration": "系统集成",
+      "integrationDescription": "整合各种系统和工具，实现高效的在线运营管理。",
+      "mobile": "移动应用程序",
+      "mobileDescription": "创建定制的移动应用程序，以满足特定的业务需求。",
+      "consulting": "数字咨询与策略",
+      "consultingDescription": "提供建议和策略，最大化在线影响力并实现业务目标。",
+      "AI": "人工智能",
+      "AIdescription": "我们利用先进的人工智能技术构建智能解决方案。我们的 AI 解决方案可以提升您的业务流程和客户体验。",
+      "requestbutton": "请求服务"
+    },
+    "chooseus": {
+      "title": "为什么选择 SoftCreatix？",
+      "one": "多年的经验",
+      "onedescription": "我们在行业中拥有超过 10 年的经验，成功完成了数百个跨行业的软件项目。",
+      "two": "尖端创新",
+      "twodescription": "我们始终走在技术的最前沿，为您的业务提供最新、最有效的解决方案。",
+      "three": "24/7 支持",
+      "threedescription": "我们的专属团队提供全天候支持，确保您的系统始终正常运行。"
+    },
+    "tech": {
+      "title": "我们使用的技术"
+    },
+    "testimonial": {
+      "title": "客户评价",
+      "client1Description": "SoftCreatix 为我们提供了一个定制解决方案，优化了我们的业务流程。团队非常专业，结果超出了我们的预期。",
+      "client1": "帕特里克先生",
+      "client2Description": "他们的移动应用开发服务通过 QuickStay 应用的开发，改变了我们的客户参与策略。强烈推荐！",
+      "client2": "帕特里克先生",
+      "client3Description": "他们在短时间内为我创建了 Holy Spirit Academia 网站，并满足了我所有的定制需求。非常推荐！",
+      "client3": "牧师塞缪尔·杰里米"
+    },
+    "portfolio": {
+      "title": "我们的作品集",
+      "project1": "Holy Spirit Academia",
+      "project1Description": "Holy Spirit Academia 教会的定制网站。",
+      "project2": "SoftCreatix 网站",
+      "project2Description": "我们，SoftCreatix，创建了我们自己的现代网站，您可以在此查看并请求我们的服务。",
+      "project3": "在线酒店预订",
+      "project3Description": "类似于但优于 Booking 或 Airbnb，我们简化了跨城市和国家预订住宿的流程。"
+    },
+    "meet": {
+      "title": "认识我们的团队",
+      "ceo": "创始人兼首席执行官",
+      "fullstack": "全栈开发工程师",
+      "front": "前端开发工程师"
+    },
+    "homeabout": {
+      "title": "关于 SoftCreatix",
+      "subtitle": "SoftCreatix 是一家领先的软件开发公司，致力于为全球企业创造创新的数字解决方案。我们对技术的热情和对客户满意度的承诺，推动我们提供量身定制的尖端软件解决方案。",
+      "button": "了解更多"
+    },
+    "homecall": {
+      "title": "准备开始您的项目了吗？",
+      "subtitle": "让我们一起将您的想法变为现实！",
+      "button": "联系我们",
+      "copyright": "&copy; 2024 GENERAL CONSULTING GROUP. 保留所有权利。",
+      "developped": "由 SoftCreatix 开发。"
+    }
+  },
+
+  "Contact": {
+    "title": "联系我们",
+    "subtitle": "如需任何信息或帮助，请通过以下地址联系我们。",
+    "contactInfoTitle": "我们的联系方式",
+    "addressLabel": "地址",
+    "phoneLabel": "电话",
+    "emailLabel": "电子邮件",
+    "whatsappLabel": "WhatsApp",
+    "formTitle": "联系表单",
+    "namePlaceholder": "姓名",
+    "emailPlaceholder": "电子邮件",
+    "messagePlaceholder": "留言",
+    "submitButton": "提交",
+    "successMessage": "消息发送成功！",
+    "errorMessage": "消息发送失败",
+    "errorGeneric": "发送消息时出错",
+    "requestError": "请求错误",
+    "errorSubmission": "提交表单时出错。请再试一次。",
+    "serverResponse": "来自服务器的响应"
+  },
+  "services": {
+    "title": "请求服务",
+    "description": "填写以下表单以请求服务。我们将尽快回复您。",
+    "placeholder": {
+      "name": "您的姓名",
+      "email": "您的电子邮件",
+      "phonenumber": "您的电话号码",
+      "services": "选择一项服务",
+      "description": "详细描述您的项目或需求。"
+    },
+    "AI Creation": "人工智能创建",
+    "Digital Consulting": "数字咨询与战略",
+    "E-commerce Development": "电子商务开发",
+    "Maintenance": "维护与支持",
+    "Mobile application development": "移动应用开发",
+    "SEO": "搜索引擎优化 (SEO)",
+    "System Integration": "系统集成",
+    "UX/UI Design": "UX/UI设计",
+    "Web Application Development": "Web应用开发",
+    "Website Design and Development": "网站设计与开发",
+    "Hosting": "网站托管",
+    "formAction": {
+      "submit": "提交请求",
+      "formSuccess": "服务请求提交成功！",
+      "formError": "提交服务请求失败。",
+      "serverError": "服务器错误：",
+      "requestError": "请求错误：",
+      "networkError": "提交表单时发生错误，请再试一次。"
+    }
+  },
+
+  "about": {
+    "title": "关于SoftCreatix",
+    "description": "SoftCreatix 是一家领先的创新数字解决方案提供商，提供全面的服务，帮助企业和个人通过尖端技术和无与伦比的服务实现其全部潜力。我们致力于通过数字化转型的力量推动增长并促进创新。",
+    "vision": {
+      "title": "我们的愿景",
+      "description": "我们的愿景是成为全球数字转型的领导者，帮助企业在快速发展的技术环境中蓬勃发展。我们努力创造具有影响力的解决方案，帮助个人和组织解锁新的机会，保持领先并实现他们的最终目标。"
+    },
+    "values": {
+      "title": "我们的价值观",
+      "description": "在SoftCreatix，我们的核心价值观驱动着我们对一切事物的做法，指引我们前进："
+    },
+    "list": {
+      "l1": "- 创新：我们鼓励创意，提供前沿解决方案。",
+      "l2": "- 卓越：我们在所有工作中提供卓越的质量。",
+      "l3": "- 合作：我们相信团队合作和伙伴关系的力量。",
+      "l4": "- 客户至上：客户的成功是我们使命的核心。",
+      "l5": "- 诚信：我们以诚实和透明的方式开展业务。"
+    },
+    "team": {
+      "title": "认识我们的团队",
+      "members": [
+        {
+          "name": "Patrick",
+          "title": "创始人兼首席执行官",
+          "description": "拥有多年的软件开发经验，Patrick 带领我们的团队以远见和诚信为指引。",
+          "contact": "+34 602394 989"
+        },
+        {
+          "name": "Ben Obama",
+          "title": "后端开发者",
+          "description": "Ben Obama 负责监督所有技术方面，确保我们始终走在创新的前沿。",
+          "contact": "+250 789 373 917"
+        }
+      ]
+    },
+    "journey": {
+      "title": "我们的历程",
+      "description": "SoftCreatix成立于2015年，旨在通过创新数字化解决方案革命化数字空间。从一个小型初创公司起步，到现在已经发展成为一家服务全球客户的繁荣公司。多年来，我们建立了一支专家团队，并扩展了我们的产品组合，涵盖了先进的软件解决方案、定制的网页和移动应用程序以及全面的数字化转型服务。"
+    },
+    "testimonial": {
+      "title": "客户的意见",
+      "first": "本·阿齐兹：专业实习生",
+      "firstopinion": "SoftCreatix通过其创新解决方案改变了我们的公司。他们团队的专业知识和专业精神超出了我们的预期。",
+      "second": "格洛丽：专业实习生",
+      "secondopinion": "感谢SoftCreatix，我们的移动应用经历了爆炸性的增长。他们对质量和客户满意度的承诺是无与伦比的。"
+    },
+
+    "cta": {
+      "title": "准备好转型您的业务了吗？",
+      "contact": "今天就联系 SoftCreatix，了解我们如何帮助您将愿景变为现实。",
+      "touch": "联系我们"
+    }
+  }
+}

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { FiChevronDown } from "react-icons/fi";
 import { CiGlobe } from "react-icons/ci";
+import { useTranslations } from "next-intl";
 
 export default function ClientHeader({
   isScrolled,
@@ -17,6 +18,7 @@ export default function ClientHeader({
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const router = useRouter();
+  const translate = useTranslations("header");
 
   const toggleMobileMenu = () => setMenuOpen(!menuOpen);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
@@ -51,13 +53,13 @@ export default function ClientHeader({
             href="/"
             className="px-4 py-2 text-md rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300"
           >
-            Home
+            {translate("home")}
           </Link>
           <Link
             href={`/${locale}/services`}
             className="px-4 py-2 text-md rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300"
           >
-            Services
+            {translate("services")}
           </Link>
 
           {/* Language Dropdown */}
@@ -67,7 +69,7 @@ export default function ClientHeader({
               className="flex items-center space-x-2 px-4 py-2 text-md rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 focus:outline-none"
             >
               <CiGlobe className="w-6 h-6" />
-              <span>Languages</span>
+              <span> {translate("language")}</span>
               <FiChevronDown className="w-4 h-4" />
             </button>
             {dropdownOpen && (
@@ -87,15 +89,39 @@ export default function ClientHeader({
                   </li>
                   <li
                     className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
-                    onClick={() => handleLanguageChange("es")}
+                    onClick={() => handleLanguageChange("span")}
                   >
                     Spanish
                   </li>
                   <li
                     className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
-                    onClick={() => handleLanguageChange("de")}
+                    onClick={() => handleLanguageChange("ger")}
                   >
                     German
+                  </li>
+                  <li
+                    className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                    onClick={() => handleLanguageChange("chin")}
+                  >
+                    Chenese
+                  </li>
+                  <li
+                    className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                    onClick={() => handleLanguageChange("russ")}
+                  >
+                    Russian
+                  </li>
+                  <li
+                    className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                    onClick={() => handleLanguageChange("arab")}
+                  >
+                    Arabic
+                  </li>
+                  <li
+                    className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                    onClick={() => handleLanguageChange("portu")}
+                  >
+                    Portuguese
                   </li>
                 </ul>
               </div>
@@ -132,6 +158,70 @@ export default function ClientHeader({
             >
               Services
             </Link>
+            <div className="relative">
+              <button
+                onClick={toggleDropdown}
+                className="flex items-center space-x-2 px-4 py-2 text-md rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 focus:outline-none"
+              >
+                <CiGlobe className="w-6 h-6" />
+                <span> {translate("language")}</span>
+                <FiChevronDown className="w-4 h-4" />
+              </button>
+              {dropdownOpen && (
+                <div className="items-center mt-2 w-40 bg-gray-800 text-white rounded-lg shadow-lg">
+                  <ul className="py-2">
+                    <li
+                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                      onClick={() => handleLanguageChange("en")}
+                    >
+                      English
+                    </li>
+                    <li
+                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                      onClick={() => handleLanguageChange("fr")}
+                    >
+                      French
+                    </li>
+                    <li
+                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                      onClick={() => handleLanguageChange("span")}
+                    >
+                      Spanish
+                    </li>
+                    <li
+                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                      onClick={() => handleLanguageChange("ger")}
+                    >
+                      German
+                    </li>
+                    <li
+                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                      onClick={() => handleLanguageChange("chin")}
+                    >
+                      Chenese
+                    </li>
+                    <li
+                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                      onClick={() => handleLanguageChange("russ")}
+                    >
+                      Russian
+                    </li>
+                    <li
+                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                      onClick={() => handleLanguageChange("arab")}
+                    >
+                      Arabic
+                    </li>
+                    <li
+                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+                      onClick={() => handleLanguageChange("portu")}
+                    >
+                      Portuguese
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}

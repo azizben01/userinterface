@@ -1,0 +1,191 @@
+{
+  "header": {
+    "home": "bienvenido",
+    "language": "elige un idioma",
+    "services": "servicios"
+  },
+  "Home": {
+    "title": "Bienvenido a SoftCreatix",
+    "subtitle": "En SoftCreatix, ¡estamos encantados de tenerte a bordo! Ya sea que estés aquí para explorar soluciones innovadoras o buscando colaborar con un equipo de expertos en desarrollo de software, diseño web y transformación digital, has llegado al lugar correcto. SoftCreatix es una empresa líder en desarrollo de software en Ruanda, especializada en la creación de aplicaciones de software innovadoras. Nos apasiona diseñar soluciones a medida adaptadas a tus necesidades específicas, desde aplicaciones móviles fluidas hasta plataformas empresariales avanzadas que impulsan el crecimiento y la eficiencia. Nuestra misión es ofrecer una calidad excepcional, fomentar la innovación y crear experiencias digitales que dejen un impacto duradero.",
+    "subtitle1": "¡Trabajemos juntos para transformar tus ideas en realidad!",
+    "subtitle2": "SoftCreatix - Creando soluciones del mañana, hoy.",
+    "button": "Comenzar",
+    "services": {
+      "title": "Nuestros Servicios",
+      "subtitle": "SoftCreatix, una empresa especializada en desarrollo web, ofrece una gama completa de servicios para satisfacer las necesidades de sus clientes. Aquí tienes una lista de los principales servicios ofrecidos:",
+      "website": "Diseño y desarrollo de sitios web",
+      "websiteDescription": "Creación de sitios web personalizados optimizados para una experiencia de usuario excepcional.",
+      "design": "Diseño UX/UI",
+      "designDescription": "Diseño de interfaces de usuario intuitivas y estéticamente agradables para mejorar la interacción de los visitantes.",
+      "commerce": "Desarrollo de comercio electrónico",
+      "commerceDescription": "Soluciones de comercio en línea robustas y seguras para aumentar las ventas.",
+      "searchEngine": "Optimización para motores de búsqueda (SEO)",
+      "searchEngineDescription": "Estrategias de SEO para mejorar la visibilidad y el posicionamiento del sitio web en los motores de búsqueda.",
+      "maintenance": "Mantenimiento y soporte",
+      "maintenanceDescription": "Servicios de mantenimiento continuos para garantizar la funcionalidad y seguridad del sitio web.",
+      "Host": "Alojamiento web",
+      "HostDescription": "Soluciones de alojamiento confiables y de alto rendimiento para garantizar el máximo tiempo de actividad del sitio web.",
+      "app": "Desarrollo de aplicaciones web",
+      "appDescription": "Creación de aplicaciones web personalizadas para satisfacer necesidades específicas del negocio.",
+      "integration": "Integración de sistemas",
+      "integrationDescription": "Integración de varios sistemas y herramientas para una gestión eficiente de operaciones en línea.",
+      "mobile": "Aplicaciones móviles",
+      "mobileDescription": "Creación de aplicaciones móviles personalizadas para satisfacer necesidades específicas del negocio.",
+      "consulting": "Consultoría y estrategia digital",
+      "consultingDescription": "Asesoramiento y estrategias para maximizar el impacto en línea y alcanzar los objetivos empresariales.",
+      "AI": "Inteligencia Artificial",
+      "AIdescription": "Aprovechamos tecnologías avanzadas de inteligencia artificial para construir soluciones inteligentes. Nuestras soluciones de IA pueden mejorar tus procesos empresariales y experiencias de clientes.",
+      "requestbutton": "Solicitar un servicio"
+    },
+    "chooseus": {
+      "title": "¿Por qué elegir SoftCreatix?",
+      "one": "Años de experiencia",
+      "onedescription": "Con más de 10 años en la industria, hemos entregado con éxito cientos de proyectos de software en diversos sectores.",
+      "two": "Innovación de vanguardia",
+      "twodescription": "Nos mantenemos a la vanguardia de la tecnología para proporcionar las soluciones más eficientes y actualizadas para tu negocio.",
+      "three": "Soporte 24/7",
+      "threedescription": "Nuestro equipo dedicado ofrece soporte las 24 horas, asegurando que tus sistemas estén siempre en funcionamiento."
+    },
+    "tech": {
+      "title": "Tecnologías que usamos"
+    },
+    "testimonial": {
+      "title": "Lo que dicen nuestros clientes",
+      "client1Description": "SoftCreatix nos ayudó a optimizar nuestros procesos comerciales con una solución personalizada. El equipo fue increíblemente profesional y los resultados superaron nuestras expectativas.",
+      "client1": "Sr. Patrick",
+      "client2Description": "Su servicio de desarrollo de aplicaciones móviles transformó nuestra estrategia de compromiso con los clientes mediante el desarrollo de la aplicación QuickStay. ¡Altamente recomendado!",
+      "client2": "Sr. Patric",
+      "client3Description": "Crearon mi sitio web Holy Spirit Academia en poco tiempo y con todas las funciones personalizadas que necesitaba. ¡Altamente recomendado!",
+      "client3": "Pastor SAMUEL JEREMY"
+    },
+    "portfolio": {
+      "title": "Nuestro Portafolio",
+      "project1": "Holy Spirit Academia",
+      "project1Description": "El sitio web personalizado para la iglesia Holy Spirit Academia.",
+      "project2": "El sitio web de SoftCreatix",
+      "project2Description": "Nosotros, SoftCreatix, creamos nuestro propio sitio web moderno donde puedes consultar y solicitar nuestros servicios.",
+      "project3": "Reserva de Motel en Línea",
+      "project3Description": "Similar, pero mejor que Booking o Airbnb, simplificamos el proceso de reservar alojamientos en diferentes ciudades y países."
+    },
+    "meet": {
+      "title": "Conozca a Nuestro Equipo",
+      "ceo": "Fundador y CEO",
+      "fullstack": "Desarrollador Full Stack",
+      "front": "Desarrollador Frontend"
+    },
+    "homeabout": {
+      "title": "Acerca de SoftCreatix",
+      "subtitle": "SoftCreatix es una empresa líder en desarrollo de software comprometida con la creación de soluciones digitales innovadoras para empresas en todo el mundo. Nuestra pasión por la tecnología y nuestra dedicación a la satisfacción del cliente nos impulsan a ofrecer software de vanguardia adaptado a sus necesidades.",
+      "button": "Aprender más"
+    },
+    "homecall": {
+      "title": "¿Listo para comenzar su proyecto?",
+      "subtitle": "¡Trabajemos juntos para transformar sus ideas en realidad!",
+      "button": "Contáctenos",
+      "copyright": " &copy; 2024 GENERAL CONSULTING GROUP. Todos los derechos reservados.",
+      "developped": "Desarrollado por SoftCreatix."
+    }
+  },
+  "Contact": {
+    "title": "Contáctanos",
+    "subtitle": "Para cualquier información o asistencia, por favor contáctanos en las direcciones a continuación.",
+    "contactInfoTitle": "Nuestra información de contacto",
+    "addressLabel": "Dirección",
+    "phoneLabel": "Teléfono",
+    "emailLabel": "Correo electrónico",
+    "whatsappLabel": "WhatsApp",
+    "formTitle": "Formulario de contacto",
+    "namePlaceholder": "Nombre",
+    "emailPlaceholder": "Correo electrónico",
+    "messagePlaceholder": "Mensaje",
+    "submitButton": "Enviar",
+    "successMessage": "¡Mensaje enviado con éxito!",
+    "errorMessage": "Error al enviar el mensaje",
+    "errorGeneric": "Hubo un error al enviar tu mensaje",
+    "requestError": "Error de solicitud",
+    "errorSubmission": "Hubo un error al enviar el formulario. Por favor intenta nuevamente.",
+    "serverResponse": "Respuesta del servidor"
+  },
+  "services": {
+    "title": "Solicite un servicio",
+    "description": "Complete el formulario a continuación para solicitar un servicio. Le responderemos lo antes posible.",
+    "placeholder": {
+      "name": "Su nombre",
+      "email": "Su correo electrónico",
+      "phonenumber": "Su número de teléfono",
+      "services": "Seleccione un servicio",
+      "description": "Describa su proyecto o necesidades en detalle."
+    },
+    "AI Creation": "Creación de inteligencia artificial",
+    "Digital Consulting": "Consultoría digital y estrategia",
+    "E-commerce Development": "Desarrollo de comercio electrónico",
+    "Maintenance": "Mantenimiento y soporte",
+    "Mobile application development": "Desarrollo de aplicaciones móviles",
+    "SEO": "Optimización para motores de búsqueda (SEO)",
+    "System Integration": "Integración de sistemas",
+    "UX/UI Design": "Diseño UX/UI",
+    "Web Application Development": "Desarrollo de aplicaciones web",
+    "Website Design and Development": "Diseño y desarrollo de sitios web",
+    "Hosting": "Alojamiento web",
+    "formAction": {
+      "submit": "Enviar solicitud",
+      "formSuccess": "¡Solicitud de servicio enviada con éxito!",
+      "formError": "Error al enviar la solicitud de servicio.",
+      "serverError": "Error del servidor:",
+      "requestError": "Error en la solicitud:",
+      "networkError": "Ocurrió un error al enviar el formulario. Por favor, inténtelo de nuevo."
+    }
+  },
+  "about": {
+    "title": "Acerca de SoftCreatix",
+    "description": "SoftCreatix es un líder en la provisión de soluciones digitales innovadoras, ofreciendo una gama completa de servicios que ayudan a empresas e individuos a alcanzar su máximo potencial mediante tecnología de vanguardia y un servicio inigualable. Nos comprometemos a fomentar el crecimiento y la innovación a través del poder de la transformación digital.",
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Nuestra visión es ser un líder global en transformación digital, permitiendo que las empresas prosperen en un panorama tecnológico en constante evolución. Nos esforzamos por crear soluciones impactantes que permitan a las personas y organizaciones desbloquear nuevas oportunidades, mantenerse por delante y alcanzar sus metas finales."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "description": "En SoftCreatix, nos guiamos por nuestros valores fundamentales, que orientan nuestro enfoque en todo lo que hacemos:"
+    },
+    "list": {
+      "l1": "- Innovación: Fomentamos la creatividad para proporcionar soluciones innovadoras.",
+      "l2": "- Excelencia: Ofrecemos calidad excepcional en todo lo que hacemos.",
+      "l3": "- Colaboración: Creemos en el poder del trabajo en equipo y las asociaciones.",
+      "l4": "- Enfoque en el Cliente: El éxito de nuestros clientes está en el corazón de nuestra misión.",
+      "l5": "- Integridad: Llevamos a cabo nuestros negocios con honestidad y transparencia."
+    },
+    "team": {
+      "title": "Conozca a Nuestro Equipo",
+      "members": [
+        {
+          "name": "Patrick",
+          "title": "Fundador y CEO",
+          "description": "Con años de experiencia en desarrollo de software, Patrick lidera nuestro equipo con visión e integridad.",
+          "contact": "+34 602394 989"
+        },
+        {
+          "name": "Ben Obama",
+          "title": "Desarrollador Backend",
+          "description": "Ben Obama supervisa todos los aspectos técnicos, asegurándose de que siempre estemos a la vanguardia de la innovación.",
+          "contact": "+250 789 373 917"
+        }
+      ]
+    },
+    "journey": {
+      "title": "Nuestro Trayecto",
+      "description": "Fundada en 2015, SoftCreatix comenzó con la visión de revolucionar el espacio digital. Lo que comenzó como una pequeña startup ahora se ha convertido en una empresa próspera que sirve a clientes en todo el mundo. A lo largo de los años, hemos construido un equipo de expertos y ampliado nuestro portafolio para incluir soluciones de software de vanguardia, aplicaciones web y móviles personalizadas, y servicios integrales de transformación digital."
+    },
+    "testimonial": {
+      "title": "La Opinión de Nuestros Clientes",
+      "first": "Ben Aziz: Pasante Profesional",
+      "firstopinion": "SoftCreatix ha transformado nuestra empresa con sus soluciones innovadoras. La experiencia y el profesionalismo de su equipo superaron nuestras expectativas.",
+      "second": "Gloire: Pasante Profesional",
+      "secondopinion": "Gracias a SoftCreatix, nuestra aplicación móvil ha experimentado un crecimiento explosivo. Su compromiso con la calidad y la satisfacción del cliente es incomparable."
+    },
+    "cta": {
+      "title": "¿Listo para transformar su negocio?",
+      "contact": "Contacte con SoftCreatix hoy para descubrir cómo podemos ayudarle a hacer realidad su visión.",
+      "touch": "Póngase en contacto"
+    }
+  }
+}

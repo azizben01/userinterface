@@ -1,4 +1,9 @@
 {
+  "header": {
+    "home": "Home",
+    "language": "Languages",
+    "services": "services"
+  },
   "Home": {
     "title": "Welcome to SoftCreatix",
     "subtitle": " At SoftCreatix, we are thrilled to have you on board! Whether you are here to explore innovative solutions or looking to collaborate with a team of experts in software development, web design, and digital transformation, you have come to the right place. SoftCreatix is a leading software development company in Rwanda, specializing in creating innovative software applications. We are passionate about crafting custom-made solutions tailored to your specific needs, from seamless mobile applications to advanced business platforms that drive growth and efficiency. Our mission is to deliver exceptional quality, foster innovation, and create digital experiences that leave a lasting impact.",
@@ -43,6 +48,42 @@
     },
     "tech": {
       "title": "Technologies we use"
+    },
+    "testimonial": {
+      "title": "What our clients say",
+      "client1Description": " SoftCreatix helped us streamline our business processes with a custom solution. The team was incredibly professional, and the results exceeded our expectations.",
+      "client1": "Mr Patrick",
+      "client2Description": "Their mobile app development service transformed our customer engagement strategy through the development of the QuickStay application. Highly recommend!",
+      "client2": "Mr Patric",
+      "client3Description": "They created my Holy Spirit Academia website in no time and with all the custom features I needed. Highly recommend!",
+      "client3": "Pastor SAMUEL JEREMY"
+    },
+    "portfolio": {
+      "title": "Our Portfolio",
+      "project1": "Holy Spirit Academia",
+      "project1Description": "The Custome website for the church Holy Spirit Academia.",
+      "project2": "The SoftCreatix Website",
+      "project2Description": "We, SOftCreatix created our own modern website where you can view and request our services.",
+      "project3": "Online Motel Reservation",
+      "project3Description": "Similar in a better way then booking or rbnb, we simplify the process of booking accommodation accross different cities and countries."
+    },
+    "meet": {
+      "title": "Meet Our Team",
+      "ceo": "Founder & CEO",
+      "fullstack": "Full Stack Developer",
+      "front": "Frontend Developer"
+    },
+    "homeabout": {
+      "title": "About SoftCreatix",
+      "subtitle": "SoftCreatix is a leading software development company committed to creating innovative digital solutions for businesses worldwide. Our passion for technology and dedication to customer satisfaction drives us to deliver cutting-edge software tailored to your needs.",
+      "button": "Learn More"
+    },
+    "homecall": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Let’s work together to transform your ideas into reality!",
+      "button": "Contact Us",
+      "copyright": " &copy; 2024 GENERAL CONSULTING GROUP. All rights reserved.",
+      "developped": "Developped by SoftCreatix."
     }
   },
 
@@ -77,16 +118,16 @@
       "services": "Select a service",
       "description": "Describe your project or needs in detail."
     },
-    "AI Creation": "Creation of artificial intelligence",
-    "Digital Consulting": "Digital consulting and strategy",
-    "E-commerce Development": "Electronic commerce development",
+    "AI_Creation": "Creation of artificial intelligence",
+    "Digital_Consulting": "Digital consulting and strategy",
+    "E-commerce_Development": "Electronic commerce development",
     "Maintenance": "Maintenance and support",
-    "Mobile application development": "Mobile application development",
+    "Mobile_application_development": "Mobile application development",
     "SEO": "Search Engine Optimization (SEO)",
-    "System Integration": "System integration",
+    "System_Integration": "System integration",
     "UX/UI Design": "UX/UI Design",
-    "Web Application Development": "Web application development",
-    "Website Design and Development": "Website design and development",
+    "Web_Application_Development": "Web application development",
+    "Website_Design_and_Development": "Website design and development",
     "Hosting": "Web hosting",
     "formAction": {
       "submit": "Submit request",
@@ -107,14 +148,14 @@
     },
     "values": {
       "title": "Our Values",
-      "description": "At SoftCreatix, we are driven by our core values, which guide our approach to everything we do:",
-      "list": [
-        "Innovation: We foster creativity to provide cutting-edge solutions.",
-        "Excellence: We deliver exceptional quality in everything we do.",
-        "Collaboration: We believe in the power of teamwork and partnerships.",
-        "Client Focus: Our clients' success is at the heart of our mission.",
-        "Integrity: We conduct our business with honesty and transparency."
-      ]
+      "description": "At SoftCreatix, we are driven by our core values, which guide our approach to everything we do:"
+    },
+    "list": {
+      "l1": "- Innovation: We foster creativity to provide cutting-edge solutions.",
+      "l2": "- Excellence: We deliver exceptional quality in everything we do.",
+      "l3": "- Collaboration: We believe in the power of teamwork and partnerships.",
+      "l4": "- Client Focus: Our clients' success is at the heart of our mission.",
+      "l5": "- Integrity: We conduct our business with honesty and transparency."
     },
     "team": {
       "title": "Meet Our Team",
@@ -138,7 +179,11 @@
       "description": " Founded in 2015, SoftCreatix started with a vision to revolutionize the digital space. What began as a small startup has now evolved into a thriving company that serves clients across the globe. Over the years, we have built a team of experts and expanded our portfolio to include cutting-edge software solutions, custom web and mobile applications, and comprehensive digital transformation services."
     },
     "testimonial": {
-      "title": "What our clients say"
+      "title": "Customer's Opinion",
+      "first": "Ben Aziz: Professional Intern",
+      "firstopinion": "SoftCreatix has transformed our company with its innovative solutions. The expertise and professionalism of their team exceeded our expectations.",
+      "second": "Gloire: Professional Intern",
+      "secondopinion": "Thanks to SoftCreatix, our mobile app has experienced explosive growth. Their commitment to quality and customer satisfaction is unparalleled."
     },
 
     "cta": {
