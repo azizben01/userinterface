@@ -1,10 +1,15 @@
-// app/page.tsx
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-export default function HomePage({ locale = "en" }: { locale: string }) {
+export default function HomePage({
+  params,
+}: {
+  params: { locale: "en" | "fr" };
+}) {
+  const { locale } = params;
   const translate = useTranslations("Home");
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Hero Section with Gradient */}
@@ -35,7 +40,7 @@ export default function HomePage({ locale = "en" }: { locale: string }) {
 
           <div className="space-x-4">
             <Link
-              href={`${locale}/services`}
+              href={`/${locale}/services`}
               className="slide-up px-4 py-2 sm:px-6 sm:py-3 bg-custom-gray1 text-white rounded-3xl hover:bg-custom-gray2 transition-transform duration-300 transform hover:scale-105"
             >
               {translate("button")}

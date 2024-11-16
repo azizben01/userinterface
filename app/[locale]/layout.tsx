@@ -10,25 +10,21 @@ export default async function LocaleLayout({
   params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: (typeof routing.locales)[number] }; // Use valid locales
 }) {
   // Ensure that the incoming `locale` is valid
-  // if (!routing.locales.includes(locale)) {
-  //   notFound();
-  // }
-
-  // Type assertion: locale is one of the allowed locales
-  const typedLocale = locale as (typeof routing.locales)[number];
+  if (!routing.locales.includes(locale)) {
+    notFound();
+  }
 
   // Fetch the messages for the current locale
-  const messages = await getMessages({ locale: typedLocale });
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <ClientWrapper>{children}</ClientWrapper>{" "}
-          {/* Client-side logic here */}
+          <ClientWrapper>{children}</ClientWrapper>
         </NextIntlClientProvider>
       </body>
     </html>

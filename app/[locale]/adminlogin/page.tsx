@@ -4,7 +4,12 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { PiEye, PiEyeSlash } from "react-icons/pi";
 
-export default function SignInPage({ locale = "en" }: { locale: string }) {
+export default function SignInPage({
+  params,
+}: {
+  params: { locale: "en" | "fr" }; // Explicitly type the locale
+}) {
+  const locale = params.locale; // Extract locale from params
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -32,9 +37,8 @@ export default function SignInPage({ locale = "en" }: { locale: string }) {
 
       const data = await response.json();
 
-      // Redirect to admin dashboard if login is successful
       if (data.message === "Login successful") {
-        router.push("/adminrequestlist"); // Adjust the path as needed
+        router.push("/adminrequestlist");
       } else {
         setError("Invalid login. Please try again.");
       }
@@ -42,7 +46,7 @@ export default function SignInPage({ locale = "en" }: { locale: string }) {
       if (err instanceof Error) {
         setError(err.message);
       } else {
-        setError("an unknown error has occured");
+        setError("An unknown error has occurred");
       }
     }
   };
@@ -50,7 +54,6 @@ export default function SignInPage({ locale = "en" }: { locale: string }) {
   return (
     <main className="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-400 ">
       <div className="flex flex-col lg:flex-row w-full max-w-4xl bg-white rounded-lg shadow-2xl overflow-hidden transform transition-all lg:h-custom-height">
-        {/* Left Panel */}
         <div className="w-full lg:w-1/2 bg-gray-900 flex flex-col items-center justify-center p-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-white mb-2 animate-slide-in">
@@ -62,7 +65,6 @@ export default function SignInPage({ locale = "en" }: { locale: string }) {
           </div>
         </div>
 
-        {/* Right Panel: Sign In Form */}
         <div className="w-full lg:w-1/2 p-8">
           <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center animate-fade-in">
             Log in
@@ -84,7 +86,7 @@ export default function SignInPage({ locale = "en" }: { locale: string }) {
             />
             <div className="relative w-full">
               <input
-                type={passwordVisible ? "text" : "password"} // Toggle type based on passwordVisible state
+                type={passwordVisible ? "text" : "password"}
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -93,13 +95,13 @@ export default function SignInPage({ locale = "en" }: { locale: string }) {
               />
               <button
                 type="button"
-                onClick={() => setPasswordVisible(!passwordVisible)} // Toggle password visibility
+                onClick={() => setPasswordVisible(!passwordVisible)}
                 className="absolute inset-y-0 right-4 flex items-center text-gray-500 hover:text-gray-700"
               >
                 {passwordVisible ? (
-                  <PiEyeSlash className="text-xl" /> // Eye slash icon if visible
+                  <PiEyeSlash className="text-xl" />
                 ) : (
-                  <PiEye className="text-xl" /> // Eye icon if hidden
+                  <PiEye className="text-xl" />
                 )}
               </button>
             </div>
@@ -114,14 +116,12 @@ export default function SignInPage({ locale = "en" }: { locale: string }) {
 
           <div className="mt-4 text-center">
             <Link
-              href={`${locale}/resetpassword`}
+              href={`/${locale}/resetpassword`}
               className="text-custom-gray2 hover:text-custom-gray3 transition-all duration-300"
             >
               Forgot Password?
             </Link>
           </div>
-
-          <div className="mt-4 text-center"></div>
         </div>
       </div>
     </main>
