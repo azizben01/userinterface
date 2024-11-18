@@ -9,7 +9,7 @@ export default function AdminSuccessullPage({
 }) {
   const locale = params.locale;
   return (
-    <main className="flex flex-col min-h-screen items-center justify-center">
+    <main className="flex flex-col min-h-screen items-center justify-center bg-gradient-to-b from-gray-300">
       <div className="w-full lg:w-1/2 flex flex-col items-center border-[3px] border justify-center rounded-3xl p-16">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-black mb-2 animate-slide-in">
