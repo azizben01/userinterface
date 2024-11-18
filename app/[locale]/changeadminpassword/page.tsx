@@ -20,7 +20,7 @@ export default function ChangeAdminPassword({
   useEffect(() => {
     // Redirect back to verify page if no email is in session storage
     if (!sessionStorage.getItem("resetEmail")) {
-      router.push(`/${locale}/verifycode`);
+      router.push(`/verifycode`);
     }
   }, [router]);
 
