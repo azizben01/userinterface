@@ -7,7 +7,9 @@ import { PiEye, PiEyeSlash } from "react-icons/pi";
 export default function SignInPage({
   params,
 }: {
-  params: { locale: "en" | "fr" }; // Explicitly type the locale
+  params: {
+    locale: "fr" | "en" | "ger" | "span" | "chin" | "arab" | "russ" | "portu";
+  }; // Explicitly type the locale
 }) {
   const locale = params.locale; // Extract locale from params
   const [email, setEmail] = useState("");
@@ -52,8 +54,8 @@ export default function SignInPage({
   };
 
   return (
-    <main className="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-400 ">
-      <div className="flex flex-col lg:flex-row w-full max-w-4xl bg-white rounded-lg shadow-2xl overflow-hidden transform transition-all lg:h-custom-height">
+    <main className="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-400 px-responsive-px">
+      <div className="flex flex-col lg:flex-row w-full max-w-4xl bg-white rounded-lg shadow-2xl overflow-hidden transform transition-all lg:h-custom-height mt-12">
         <div className="w-full lg:w-1/2 bg-gray-900 flex flex-col items-center justify-center p-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-white mb-2 animate-slide-in">

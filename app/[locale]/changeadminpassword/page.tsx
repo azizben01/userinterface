@@ -3,7 +3,14 @@ import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { PiEye, PiEyeSlash } from "react-icons/pi";
 
-export default function ChangeAdminPassword() {
+export default function ChangeAdminPassword({
+  params,
+}: {
+  params: {
+    locale: "fr" | "en" | "ger" | "span" | "chin" | "arab" | "russ" | "portu";
+  }; // Explicitly type the locale
+}) {
+  const locale = params.locale;
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -13,7 +20,7 @@ export default function ChangeAdminPassword() {
   useEffect(() => {
     // Redirect back to verify page if no email is in session storage
     if (!sessionStorage.getItem("resetEmail")) {
-      router.push("/verifycode");
+      router.push(`/${locale}/verifycode`);
     }
   }, [router]);
 
@@ -49,7 +56,7 @@ export default function ChangeAdminPassword() {
         setPassword("");
         setConfirmPassword("");
         sessionStorage.removeItem("resetEmail");
-        router.push("/adminsuccessfullpage");
+        router.push(`/${locale}/adminsuccessfullpage`);
       } else {
         setError("Password was not changed");
       }

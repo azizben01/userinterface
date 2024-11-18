@@ -2,10 +2,17 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export default function VerifyCode() {
+export default function VerifyCode({
+  params,
+}: {
+  params: {
+    locale: "fr" | "en" | "ger" | "span" | "chin" | "arab" | "russ" | "portu";
+  }; // Explicitly type the locale
+}) {
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
   const router = useRouter();
+  const locale = params.locale;
 
   const handleRequestCode = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -31,7 +38,7 @@ export default function VerifyCode() {
       sessionStorage.setItem("resetEmail", data.email);
 
       // Redirect to the reset password page
-      router.push("/changeadminpassword");
+      router.push(`/${locale}/changeadminpassword`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "An error occurred");
     }

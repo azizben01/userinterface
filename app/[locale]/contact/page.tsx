@@ -57,7 +57,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="md: px-custom-px container mx-auto py-16 mt-24">
+    <div className="md:px-custom-px container mx-auto py-16 mt-24">
       <h1 className="text-4xl font-bold text-center mb-5">{t("title")}</h1>
       <h6 className="px-5 text-lg mb-16">{t("subtitle")}</h6>
 

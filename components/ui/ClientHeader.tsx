@@ -152,7 +152,7 @@ export default function ClientHeader({
               Home
             </Link>
             <Link
-              href="/services"
+              href={`/${locale}/services`}
               onClick={() => setMenuOpen(false)}
               className="px-2 py-2 text-lg hover:bg-gray-800 rounded-lg"
             >

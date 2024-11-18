@@ -1,6 +1,13 @@
 import Link from "next/link";
 
-export default function AdminSuccessullPage() {
+export default function AdminSuccessullPage({
+  params,
+}: {
+  params: {
+    locale: "fr" | "en" | "ger" | "span" | "chin" | "arab" | "russ" | "portu";
+  }; // Explicitly type the locale
+}) {
+  const locale = params.locale;
   return (
     <main className="flex flex-col min-h-screen items-center justify-center">
       <div className="w-full lg:w-1/2 flex flex-col items-center border-[3px] border justify-center rounded-3xl p-16">
@@ -14,7 +21,7 @@ export default function AdminSuccessullPage() {
           </p>
         </div>
         <Link
-          href={"/adminlogin"}
+          href={`/${locale}/adminlogin`}
           className="mt-10 bg-gradient-to-b from-gray-700 to-gray-500 text-white px-5 py-3 rounded-3xl hover:bg-gray-900 hover:shadow-lg transform transition-transform duration-300 hover:scale-105 "
         >
           Go to login page
