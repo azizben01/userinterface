@@ -13,21 +13,6 @@ export default function ServiceRequestPage() {
     services: "",
     description: "",
   });
-  // map of service key:
-
-  const serviceKeys = [
-    "AI_Creation",
-    "Digital_Consulting",
-    "E-commerce_Development",
-    "Maintenance",
-    "Mobile_application_development",
-    "SEO",
-    "System_Integration",
-    "UX/UI_Design",
-    "Web Application_Development",
-    "Website_Design_and_Development",
-    "Hosting",
-  ];
 
   const t = useTranslations("services"); // Load translations for this page
 
@@ -57,8 +42,8 @@ export default function ServiceRequestPage() {
 
       if (response.ok) {
         const data = await response.json();
-        console.log(t("serverSuccess"), data);
-        alert(t("formSuccess"));
+        console.log(t("formAction.formSuccess"), data);
+        alert(t("formAction.formSuccess"));
         setFormData({
           name: "",
           email: "",
@@ -67,12 +52,12 @@ export default function ServiceRequestPage() {
           description: "",
         });
       } else {
-        console.error(t("serverError"), response.statusText);
-        alert(t("formError"));
+        console.error(t("formAction.serverError"), response.statusText);
+        alert(t("formAction.formError"));
       }
     } catch (error) {
-      console.error(t("requestError"), error);
-      alert(t("networkError"));
+      console.error(t("formAction.requestError"), error);
+      alert(t("formAction.networkError"));
     }
   };
 
@@ -139,11 +124,25 @@ export default function ServiceRequestPage() {
               <option value="" disabled>
                 {t("placeholder.services")}
               </option>
-              {serviceKeys.map((key) => (
-                <option key={key} value={key}>
-                  {t(`services.${key.replace(/ /g, "_")}`)}
-                </option>
-              ))}
+              <option value="">{t("serviceKeys.AI Creation")}</option>
+              <option value="">{t("serviceKeys.Digital Consulting")}</option>
+              <option value="">
+                {t("serviceKeys.E-commerce Development")}
+              </option>
+              <option value="">{t("serviceKeys.Maintenance")}</option>
+              <option value="">
+                {t("serviceKeys.Mobile application development")}
+              </option>
+              <option value="">{t("serviceKeys.SEO")}</option>
+              <option value="">{t("serviceKeys.System Integration")}</option>
+              <option value="">{t("serviceKeys.UX/UI Design")}</option>
+              <option value="">
+                {t("serviceKeys.Web Application Development")}
+              </option>
+              <option value="">
+                {t("serviceKeys.Website Design and Development")}
+              </option>
+              <option value="">{t("serviceKeys.Hosting")}</option>
             </select>
           </div>
 
@@ -170,3 +169,9 @@ export default function ServiceRequestPage() {
     </div>
   );
 }
+
+// {serviceKeys.map((key) => (
+//   <option key={key} value={key}>
+//     {t(`services.${key}`)}
+//   </option>
+// ))}
