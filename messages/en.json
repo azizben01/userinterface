@@ -71,7 +71,9 @@
       "title": "Meet Our Team",
       "ceo": "Founder & CEO",
       "fullstack": "Full Stack Developer",
-      "front": "Frontend Developer"
+      "front": "web application Frontend Developer",
+      "app": "Mobile application developer",
+      "ui": "UI/UX designer"
     },
     "homeabout": {
       "title": "About SoftCreatix",

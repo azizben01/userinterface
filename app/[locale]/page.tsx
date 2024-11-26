@@ -264,13 +264,13 @@ export default function HomePage({
               height={270}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
-            <Image
+            {/* <Image
               src="/images/PHP.jpeg"
               alt="php"
               width={200}
               height={270}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
-            />
+            /> */}
             <Image
               src="/images/git.jpeg"
               alt="git"
@@ -378,13 +378,13 @@ export default function HomePage({
               height={270}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
             />
-            <Image
+            {/* <Image
               src="/images/php.jpeg"
               alt="php"
               width={200}
               height={270}
               className="h-16 hover:scale-110 hover:shadow-xl transform transition duration-300 ease-in-out"
-            />
+            /> */}
             <Image
               src="/images/git.jpeg"
               alt="git"
@@ -523,7 +523,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold"> Gabriel</h3>
-            <p>{translate("meet.front")}</p>
+            <p>{translate("meet.fullstack")}</p>
           </div>
           <div className="text-center">
             <Image
@@ -556,7 +556,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-32 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Anicet </h3>
-            <p>{translate("meet.front")}</p>
+            <p>{translate("meet.ui")}</p>
           </div>
           <div className="text-center">
             <Image
@@ -567,7 +567,7 @@ export default function HomePage({
               className="rounded-full mx-auto h-26 w-32 mb-4"
             />
             <h3 className="text-xl font-semibold">Ben Aziz </h3>
-            <p>{translate("meet.front")}</p>
+            <p>{translate("meet.app")}</p>
           </div>
         </div>
       </section>
