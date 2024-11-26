@@ -9,7 +9,7 @@ function AboutUsPage({
   const t = useTranslations("about");
   const { locale } = params;
   return (
-    <div className="container mt-32">
+    <div className="container mt-32 w-full max-w-full">
       <h1 className="text-2xl md:text-3xl sm:text-5xl font-extrabold text-center mb-6 sm:mb-10 text-gray-800">
         {t("title")}
       </h1>
@@ -17,7 +17,7 @@ function AboutUsPage({
         {t("description")}
       </p>
       {/* Vision and Values Section */}
-      <section className=" px-responsive-px py-responsive-py md:px-custom-px flex flex-col lg:flex-row text-white space-y-6 lg:space-y-0 lg:space-x-10 ml-0 sm:ml-3 mb-12 sm:mb-16">
+      <section className=" px-responsive-px py-responsive-py lg:px-custom-px flex flex-col lg:flex-row text-white space-y-6 lg:space-y-0 lg:space-x-10 sm:ml-3 mb-12 sm:mb-16">
         <div className="lg:w-1/2 p-4 md-p-4 bg-gray-800 rounded-2xl shadow-lg">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">
             {" "}
@@ -83,7 +83,7 @@ function AboutUsPage({
         </div>
       </section>
       {/* CTA Section */}
-      <section className="py-responsive-py px-responsive-px bg-gray-900 text-white text-center">
+      <section className="py-responsive-py bg-gray-900 text-white text-center">
         <h2 className="text-lg md:text-2xl font-bold mb-4 max-w-[90%] mx-auto">
           {t("cta.title")}
         </h2>
