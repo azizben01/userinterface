@@ -121,16 +121,16 @@
       "description": "Опишите ваш проект или потребности подробно."
     },
     "serviceKeys": {
-      "AI Creation": "Создание искусственного интеллекта",
-      "Digital Consulting": "Цифровое консультирование и стратегия",
-      "E-commerce Development": "Разработка электронной коммерции",
+      "AI_Creation": "Создание искусственного интеллекта",
+      "Digital_Consulting": "Цифровое консультирование и стратегия",
+      "E-commerce_Development": "Разработка электронной коммерции",
       "Maintenance": "Обслуживание и поддержка",
-      "Mobile application development": "Разработка мобильных приложений",
+      "Mobile_application_development": "Разработка мобильных приложений",
       "SEO": "Поисковая оптимизация (SEO)",
-      "System Integration": "Системная интеграция",
-      "UX/UI Design": "Дизайн UX/UI",
-      "Web Application Development": "Разработка веб-приложений",
-      "Website Design and Development": "Дизайн и разработка сайтов",
+      "System_Integration": "Системная интеграция",
+      "UX/UI_Design": "Дизайн UX/UI",
+      "Web_Application_Development": "Разработка веб-приложений",
+      "Website_Design_and_Development": "Дизайн и разработка сайтов",
       "Hosting": "Веб-хостинг"
     },
     "formAction": {

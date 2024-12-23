@@ -121,28 +121,28 @@ export default function ServiceRequestPage() {
               required
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
             >
-              <option value="" disabled>
-                {t("placeholder.services")}
+              <option value="a">{t("placeholder.services")}</option>
+              <option value="b">{t("serviceKeys.AI_Creation")}</option>
+              <option value="c">{t("serviceKeys.Digital_Consulting")}</option>
+              <option value="d">
+                {t("serviceKeys.E-commerce_Development")}
               </option>
-              <option value="">{t("serviceKeys.AI Creation")}</option>
-              <option value="">{t("serviceKeys.Digital Consulting")}</option>
-              <option value="">
-                {t("serviceKeys.E-commerce Development")}
+              <option value="Maintenance">
+                {t("serviceKeys.Maintenance")}
               </option>
-              <option value="">{t("serviceKeys.Maintenance")}</option>
-              <option value="">
-                {t("serviceKeys.Mobile application development")}
+              <option value="f">
+                {t("serviceKeys.Mobile_application_development")}
               </option>
-              <option value="">{t("serviceKeys.SEO")}</option>
-              <option value="">{t("serviceKeys.System Integration")}</option>
-              <option value="">{t("serviceKeys.UX/UI Design")}</option>
-              <option value="">
-                {t("serviceKeys.Web Application Development")}
+              <option value="g">{t("serviceKeys.SEO")}</option>
+              <option value="h">{t("serviceKeys.System_Integration")}</option>
+              <option value="i">{t("serviceKeys.UX/UI_Design")}</option>
+              <option value="j">
+                {t("serviceKeys.Web_Application_Development")}
               </option>
-              <option value="">
-                {t("serviceKeys.Website Design and Development")}
+              <option value="k">
+                {t("serviceKeys.Website_Design_and_Development")}
               </option>
-              <option value="">{t("serviceKeys.Hosting")}</option>
+              <option value="l">{t("serviceKeys.Hosting")}</option>
             </select>
           </div>
 

@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { PiEye, PiEyeSlash } from "react-icons/pi";
-
+import { MdOutlineMailOutline } from "react-icons/md";
+import { IoLockOpenOutline } from "react-icons/io5";
 export default function SignInPage({
   params,
 }: {
@@ -41,6 +42,8 @@ export default function SignInPage({
 
       if (data.message === "Login successful") {
         router.push(`/${locale}/adminrequestlist`);
+        // Store the email or reset token in sessionStorage
+        sessionStorage.setItem("loginEmail", data.email);
       } else {
         setError("Invalid login. Please try again.");
       }
@@ -78,21 +81,25 @@ export default function SignInPage({
           {error && <p className="text-red-500 text-center mb-4">{error}</p>}
 
           <form className="flex flex-col space-y-4" onSubmit={handleLogin}>
-            <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
-              required
-            />
+            <div className="relative">
+              <MdOutlineMailOutline className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-800 text-lg" />
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="pl-10 border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
+                required
+              />
+            </div>
             <div className="relative w-full">
+              <IoLockOpenOutline className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-800 text-lg" />
               <input
                 type={passwordVisible ? "text" : "password"}
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
+                className="pl-10 border border-gray-300 px-4 py-2 rounded-3xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300"
                 required
               />
               <button
@@ -119,7 +126,7 @@ export default function SignInPage({
           <div className="mt-4 text-center">
             <Link
               href={`/${locale}/resetpassword`}
-              className="text-custom-gray2 hover:text-custom-gray3 transition-all duration-300"
+              className="text-custom-gray2 hover:text-custom-gray3 transition-all duration-300  py-4"
             >
               Forgot Password?
             </Link>

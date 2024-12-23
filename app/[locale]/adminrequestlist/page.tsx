@@ -7,6 +7,7 @@ interface Service {
   name: string;
   email: string;
   phonenumber: number;
+  services: string;
   description: string;
   status?: string;
 }
@@ -18,10 +19,15 @@ interface Message {
   message: string;
 }
 
-const AdminPage = () => {
+const AdminPage = ({
+  params,
+}: {
+  params: { locale: "en" | "fr" | "ger" | "span" };
+}) => {
+  const { locale } = params;
   const [services, setServices] = useState<Service[]>([]);
   const [messages, setMessages] = useState<Message[]>([]);
-
+  console.log("Current Email:", sessionStorage.getItem("loginEmail"));
   useEffect(() => {
     // Fetch service requests
     const fetchServices = async () => {
@@ -132,15 +138,23 @@ const AdminPage = () => {
   };
 
   return (
-    <main className="min-h-screen bg-custom-gray flex flex-col items-center p-8">
-      <div className="absolute top-4 right-4">
-        <h1 className="text-4xl font-bold p-4 text-custom-gray1">
-          Admin Dashboard
-        </h1>
-      </div>
-
+    <main className="min-h-screen bg-gray-300 flex flex-col items-center p-8">
       <div className="w-full mt-24 max-w-6xl p-6 bg-white rounded-2xl shadow-md">
-        <h1 className="text-3xl font-bold text-center text-custom-gray1 mb-6">
+        <div className="flex justify-end flex-wrap space-x-2 ">
+          <a
+            href={`/${locale}/changeadminemail`}
+            className="text-xl text-custom-gray1 py-2 px-2 text-md rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300"
+          >
+            Change admin email
+          </a>
+          <a
+            href={`/${locale}/adminrequestlist`}
+            className="text-xl text-custom-gray1 py-2 px-2 text-md rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300"
+          >
+            Admin dashboard
+          </a>
+        </div>
+        <h1 className="text-3xl font-bold text-start text-custom-gray1 mb-6">
           Client Requests and Messages
         </h1>
 
@@ -167,6 +181,7 @@ const AdminPage = () => {
                       <p className="text-sm text-gray-600">
                         {service.phonenumber}
                       </p>
+                      <p className="text-lg font-bold">{service.services}</p>
                       <p>{service.description}</p>
                       <button
                         onClick={() => handleComplete(service.id)}

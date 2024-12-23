@@ -119,16 +119,16 @@
       "description": "Describa su proyecto o necesidades en detalle."
     },
     "serviceKeys": {
-      "AI Creation": "Creación de inteligencia artificial",
-      "Digital Consulting": "Consultoría digital y estrategia",
-      "E-commerce Development": "Desarrollo de comercio electrónico",
+      "AI_Creation": "Creación de inteligencia artificial",
+      "Digital_Consulting": "Consultoría digital y estrategia",
+      "E-commerce_Development": "Desarrollo de comercio electrónico",
       "Maintenance": "Mantenimiento y soporte",
-      "Mobile application development": "Desarrollo de aplicaciones móviles",
+      "Mobile_application_development": "Desarrollo de aplicaciones móviles",
       "SEO": "Optimización para motores de búsqueda (SEO)",
-      "System Integration": "Integración de sistemas",
-      "UX/UI Design": "Diseño UX/UI",
-      "Web Application Development": "Desarrollo de aplicaciones web",
-      "Website Design and Development": "Diseño y desarrollo de sitios web",
+      "System_Integration": "Integración de sistemas",
+      "UX/UI_Design": "Diseño UX/UI",
+      "Web_Application_Development": "Desarrollo de aplicaciones web",
+      "Website_Design_and_Development": "Diseño y desarrollo de sitios web",
       "Hosting": "Alojamiento web"
     },
     "formAction": {

@@ -79,14 +79,27 @@ export default function ChangeAdminPassword({
           onSubmit={handleRequestCode}
           className="flex flex-col space-y-4 mt-6"
         >
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Enter new password"
-            className="border px-4 py-2 rounded-3xl w-full"
-            required
-          />
+          <div className="relative">
+            <input
+              type={passwordVisible ? "text" : "password"} // Toggle type based on passwordVisible state            value={confirmPassword}
+              // value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter new password"
+              className="border px-4 py-2 rounded-3xl w-full"
+              required
+            />
+            <button
+              type="button"
+              onClick={() => setPasswordVisible(!passwordVisible)} // Toggle password visibility
+              className="absolute inset-y-0 right-4 flex items-center text-gray-500 hover:text-gray-700"
+            >
+              {passwordVisible ? (
+                <PiEyeSlash className="text-xl" /> // Eye slash icon if visible
+              ) : (
+                <PiEye className="text-xl" /> // Eye icon if hidden
+              )}
+            </button>
+          </div>
           <div className="relative w-full">
             <input
               type={passwordVisible ? "text" : "password"} // Toggle type based on passwordVisible state            value={confirmPassword}

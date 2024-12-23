@@ -120,16 +120,16 @@
       "description": "详细描述您的项目或需求。"
     },
     "serviceKeys": {
-      "AI Creation": "人工智能创建",
-      "Digital Consulting": "数字咨询与战略",
-      "E-commerce Development": "电子商务开发",
+      "AI_Creation": "人工智能创建",
+      "Digital_Consulting": "数字咨询与战略",
+      "E-commerce_Development": "电子商务开发",
       "Maintenance": "维护与支持",
-      "Mobile application development": "移动应用开发",
+      "Mobile_application_development": "移动应用开发",
       "SEO": "搜索引擎优化 (SEO)",
-      "System Integration": "系统集成",
-      "UX/UI Design": "UX/UI设计",
-      "Web Application Development": "Web应用开发",
-      "Website Design and Development": "网站设计与开发",
+      "System_Integration": "系统集成",
+      "UX/UI_Design": "UX/UI设计",
+      "Web_Application_Development": "Web应用开发",
+      "Website_Design_and_Development": "网站设计与开发",
       "Hosting": "网站托管"
     },
     "formAction": {
