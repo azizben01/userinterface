@@ -3,9 +3,8 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  productionBrowserSourceMaps: false, // Moved this here in ES module style
+};
 
 export default withNextIntl(nextConfig);
-module.exports = {
-  productionBrowserSourceMaps: false,
-};
