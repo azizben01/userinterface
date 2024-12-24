@@ -32,9 +32,7 @@ const AdminPage = ({
     // Fetch service requests
     const fetchServices = async () => {
       try {
-        const response = await fetch(
-          "https://softcreatixbackend.onrender.com/requestlist"
-        );
+        const response = await fetch("https://softcreatix.com/api/requestlist");
         if (!response.ok) {
           throw new Error("Failed to fetch services");
         }
@@ -48,9 +46,7 @@ const AdminPage = ({
     // Fetch contact messages
     const fetchMessages = async () => {
       try {
-        const response = await fetch(
-          "https://softcreatixbackend.onrender.com/messagelist"
-        );
+        const response = await fetch("https://softcreatix.com/api/messagelist");
         if (!response.ok) {
           throw new Error("Failed to fetch messages");
         }
@@ -70,7 +66,7 @@ const AdminPage = ({
   const handleComplete = async (id: number) => {
     try {
       const response = await fetch(
-        `https://softcreatixbackend.onrender.com/markAsCompleted/${id}/complete`,
+        `https://softcreatix.com/api/markAsCompleted/${id}/complete`,
         {
           method: "PUT",
         }
@@ -92,7 +88,7 @@ const AdminPage = ({
     if (window.confirm("Are you sure you want to delete this request?")) {
       try {
         const response = await fetch(
-          `https://softcreatixbackend.onrender.com/deleteRequest/${id}`,
+          `https://softcreatix.com/api/deleteRequest/${id}`,
           {
             method: "DELETE",
           }
@@ -117,7 +113,7 @@ const AdminPage = ({
     if (window.confirm("Are you sure you want to delete this message?")) {
       try {
         const response = await fetch(
-          `https://softcreatixbackend.onrender.com/deletecustomermessage/${id}`,
+          `https://softcreatix.com/api/deletecustomermessage/${id}`,
           {
             method: "DELETE",
           }

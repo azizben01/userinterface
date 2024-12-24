@@ -26,16 +26,13 @@ const ChangeAdminEmail = ({
 
     try {
       const currentEmail = sessionStorage.getItem("loginEmail");
-      const response = await fetch(
-        "https://softcreatixbackend.onrender.com/adminEmail",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ currentEmail, password, newEmail }),
-        }
-      );
+      const response = await fetch("https://softcreatix.com/api/adminEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ currentEmail, password, newEmail }),
+      });
 
       const data = await response.json();
 

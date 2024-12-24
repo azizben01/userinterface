@@ -29,7 +29,7 @@ const ContactPage = () => {
 
     try {
       const response = await fetch(
-        "https://softcreatixbackend.onrender.com/submitcontact",
+        "https://softcreatix.com/api/submitcontact",
         {
           method: "POST",
           headers: {

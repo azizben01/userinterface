@@ -19,7 +19,7 @@ export default function ResetPasswordPage({
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://softcreatixbackend.onrender.com/requestpasswordreset",
+        "https://softcreatix.com/api/requestpasswordreset",
         {
           method: "POST",
           headers: {

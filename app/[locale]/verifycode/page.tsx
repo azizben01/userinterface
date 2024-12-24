@@ -17,16 +17,13 @@ export default function VerifyCode({
   const handleRequestCode = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch(
-        "https://softcreatixbackend.onrender.com/verifycode",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ code }),
-        }
-      );
+      const response = await fetch("https://softcreatix.com/api/verifycode", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ code }),
+      });
       const data = await response.json();
 
       if (!response.ok || data.message !== "Code verified") {

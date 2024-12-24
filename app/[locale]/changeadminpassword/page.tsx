@@ -36,7 +36,7 @@ export default function ChangeAdminPassword({
       const email = sessionStorage.getItem("resetEmail");
 
       const response = await fetch(
-        "https://softcreatixbackend.onrender.com/resetpassword",
+        "https://softcreatix.com/api/resetpassword",
         {
           method: "POST",
           headers: {
