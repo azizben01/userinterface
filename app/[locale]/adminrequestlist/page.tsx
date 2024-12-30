@@ -32,7 +32,16 @@ const AdminPage = ({
     // Fetch service requests
     const fetchServices = async () => {
       try {
-        const response = await fetch("https://softcreatix.com/api/requestlist");
+        const response = await fetch(
+          "https://softcreatix.com/api/requestlist",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(services),
+          }
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch services");
         }
@@ -46,7 +55,7 @@ const AdminPage = ({
     // Fetch contact messages
     const fetchMessages = async () => {
       try {
-        const response = await fetch("https://softcreatix.com/api/messagelist");
+        const response = await fetch("");
         if (!response.ok) {
           throw new Error("Failed to fetch messages");
         }
